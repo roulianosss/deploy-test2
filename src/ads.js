@@ -39,25 +39,6 @@ const components = [
 
 ]
 
-components.forEach((component) => {
-    const section = document.createElement("div")
-    section.id = component.name
-    section.classList.add("section", "ads")
-
-    const title = document.createElement("h4")
-    title.innerText = component.name
-    section.appendChild(title)
-
-    const template = document.createElement("div")
-    template.innerHTML = component.template
-    template.classList.add("sub-section", "ads")
-
-    section.appendChild(template)
-
-    document.querySelector(".components").appendChild(section)
-})
-
-
 // PATTERNS
 import keypointCard from "./2_patterns/keypoint-card/template.html?raw"
 import articleCard from "./2_patterns/article-card/template.html?raw"
@@ -73,20 +54,66 @@ const patterns = [
     }
 ]
 
-patterns.forEach((pattern) => {
-    const section = document.createElement("div")
-    section.id = pattern.name
-    section.classList.add("section", "ads")
+// BLOCKS
+// import header from "./3_blocks/header/template.html?raw"
+// import footer from "./3_blocks/footer/template.html?raw"
+import companyValueSection from "./3_blocks/company-value-section/template.html?raw"
 
-    const title = document.createElement("h4")
-    title.innerText = pattern.name
-    section.appendChild(title)
+const blocks = [
+    {
+        name: "companyValueSection",
+        template: companyValueSection
+    }
+]
 
-    const template = document.createElement("div")
-    template.innerHTML = pattern.template
-    template.classList.add("sub-section", "ads")
 
-    section.appendChild(template)
+// RENDER
 
-    document.querySelector(".patterns").appendChild(section)
+const categories = [
+    {
+        name: "components",
+        value: components
+    },
+    {
+        name: "patterns",
+        value: patterns
+    },
+    {
+        name: "blocks",
+        value: blocks
+    }
+]
+
+categories.forEach((category) => {
+
+    const categorySection = document.createElement("section")
+    categorySection.classList.add("ads")
+
+    const categoryTitle = document.createElement("h3")
+    categoryTitle.innerText = category.name.toUpperCase()
+    categorySection.appendChild(categoryTitle)
+
+    const categoryContainer = document.createElement("div")
+    categoryContainer.classList.add("ads", category.name)
+    categorySection.appendChild(categoryContainer)
+
+    category.value.forEach((element) => {
+        const elementSection = document.createElement("div")
+        elementSection.id = element.name
+        elementSection.classList.add("section", "ads")
+
+        const elementTitle = document.createElement("h4")
+        elementTitle.innerText = element.name
+        elementSection.appendChild(elementTitle)
+
+        const elementTemplate = document.createElement("div")
+        elementTemplate.innerHTML = element.template
+        elementTemplate.classList.add("sub-section", "ads")
+
+        elementSection.appendChild(elementTemplate)
+
+        categorySection.appendChild(elementSection)
+    })
+
+    document.querySelector("main.ads").appendChild(categorySection)
 })

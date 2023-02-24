@@ -9,11 +9,8 @@
   gap: 12px;
   background-color: var(--color-secondary-80);
   color: var(--color-secondary-20);
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
   text-decoration: none;
   cursor: pointer;
-  text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: var(--border-radius-small);
@@ -31,7 +28,13 @@
     transform: scale(0.99);
   }
 
-  svg {
+  &__text {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  &__pictogram {
     width: 24px;
     height: 24px;
 
@@ -47,7 +50,7 @@
       background-color: var(--color-secondary-20);
     }
 
-    svg {
+    #{$self}__pictogram {
       --current-color-1: var(--color-neutral-100);
       --current-color-2: var(--color-secondary-70);
     }

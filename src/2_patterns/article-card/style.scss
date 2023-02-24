@@ -1,43 +1,46 @@
 .article-card {
+  $self: &;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-8);
-
   width: 300px;
   height: fit-content;
 
-  img {
+  &__image {
     width: 300px;
     height: 200px;
     object-fit: cover;
-
     background-color: var(--color-neutral-70);
-
     border-radius: var(--border-radius-small);
   }
 
-  .text {
+  &__content {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
     padding-bottom: var(--spacing-16);
+  }
 
-    .date {
-      font-size: var(--font-size-tiny);
-      color: var(--color-secondary-20);
-      font-style: italic;
-    }
+  &__date {
+    font-size: var(--font-size-tiny);
+    color: var(--color-secondary-20);
+  }
 
-    .excerpt {
-      font-size: var(--font-size-small);
+  &__excerpt {
+    font-size: var(--font-size-small);
+  }
+
+  &--reversed {
+    flex-direction: column-reverse;
+
+    #{$self}__content {
+      padding-bottom: 0;
     }
   }
 
   &--horizontal {
     flex-direction: row;
     gap: var(--spacing-16);
-
     width: 600px;
-
   }
 }

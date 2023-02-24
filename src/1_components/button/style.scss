@@ -8,9 +8,12 @@
   border-radius: var(--border-radius-circle);
   width: fit-content;
   height: fit-content;
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-bold);
   transition: background-color, color var(--motion-duration-short) var(--motion-easing-standard);
+
+  &__text, &__icon {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+  }
 
   &--small {
     padding: 10px 16px;

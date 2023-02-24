@@ -7,11 +7,7 @@
   padding: 16px;
   background-color: var(--color-neutral-70);
   color: var(--color-secondary-20);
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
   cursor: pointer;
-  text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: var(--border-radius-small);
@@ -27,6 +23,13 @@
 
   &:active {
     transform: scale(0.99);
+  }
+
+  &__text {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    text-align: center;
   }
 
   &--active {

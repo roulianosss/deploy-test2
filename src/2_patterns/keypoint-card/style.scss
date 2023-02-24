@@ -6,22 +6,20 @@
   padding: 24px 16px;
   gap: var(--spacing-32);
   text-align: center;
-
   max-width: 280px;
 
-
-  svg {
+  &__pictogram {
     width: 64px;
     height: 64px;
   }
 
-  .text {
+  &__content {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
   }
 
-  p {
+  &__description {
     font-size: var(--font-size-small);
   }
 
@@ -32,5 +30,4 @@
   &--large {
     max-width: 320px;
   }
-
 }
