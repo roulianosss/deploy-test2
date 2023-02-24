@@ -58,11 +58,16 @@ const patterns = [
 // import header from "./3_blocks/header/template.html?raw"
 // import footer from "./3_blocks/footer/template.html?raw"
 import companyValueSection from "./3_blocks/company-value-section/template.html?raw"
+import advicesSection from "./3_blocks/advices-section/template.html?raw"
 
 const blocks = [
     {
         name: "companyValueSection",
         template: companyValueSection
+    },
+    {
+        name: "advicesSection",
+        template: advicesSection
     }
 ]
 
