@@ -16,7 +16,7 @@
 - "dist/altaprofits.js"
 
 #### ASSETS :
-- "dist/assets/**/*"
+- "public/assets/**/*"
 
 ---
 
