@@ -201,7 +201,7 @@ h1, h2, h3 {
 /*
 Body
 */
-p, a, li, span, button {
+p, a, li, span, button, input {
   font-family: var(--font-family-body);
 
   &.--micro {
