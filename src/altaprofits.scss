@@ -245,3 +245,19 @@ h1, h2, h3, h4, h5, p, a, li, span, button {
     font-style: italic;
   }
 }
+
+
+/*
+LOGO
+ */
+
+.logo {
+  width: 128px;
+  height: 128px;
+  --current-color-1: var(--color-neutral-0);
+
+  &--2x {
+    width: 256px;
+    height: 256px;
+  }
+}

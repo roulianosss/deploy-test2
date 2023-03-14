@@ -16,6 +16,7 @@
   cursor: pointer;
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-bold);
+  line-height: 120%;
 
   &--arrow {
     &::after {
@@ -106,12 +107,11 @@
   }
 
   .button {
-    $button: &;
 
     &--arrow {
       padding-right: 56px;
 
-      #{$button}--small & {
+      &.button--small {
         padding-right: 42px;
       }
     }
