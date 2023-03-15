@@ -87,9 +87,7 @@ import"./altaprofits.js";(function(){const e=document.createElement("link").relL
 \r
 <a class="link link--arrow" href="#">Link</a>`,g=`<a class="file-link" href="#">\r
     <span class="file-link__text">FileLink</span>\r
-</a>`,_=`<span class="tag">\r
-    <span class="tag__text">Tag</span>\r
-</span>`,m=`<div class="keypoint-card">\r
+</a>`,_='<span class="tag">Tag</span>',m=`<div class="keypoint-card">\r
     <svg class="keypoint-card__pictogram" viewBox="0 0 64 64">\r
         <use href="/assets/pictograms/defensive.svg#picto"></use>\r
     </svg>\r
@@ -145,19 +143,19 @@ import"./altaprofits.js";(function(){const e=document.createElement("link").relL
 <a class="article-card" href="#">\r
     <img class="article-card__image" src="/assets/images/article_default.jpg">\r
     <div class="article-card__content">\r
-        <span class="article-card__tag tag"><span class="tag__text">Category</span></span>\r
         <p class="article-card__date">Publié le <span>1/02/2023</span></p>\r
         <h5 class="article-card__title">Article</h5>\r
         <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit\r
             amet ultricies\r
             lacinia, nisl nisl aliquet nisl, vitae aliquet nisl nisl sit amet lorem. </p>\r
     </div>\r
+    <span class="article-card__tag tag">Category</span>\r
 </a>\r
 \r
 <a class="article-card article-card--reversed" href="#">\r
     <img class="article-card__image" src="/assets/images/article_default.jpg">\r
     <div class="article-card__content">\r
-        <span class="article-card__tag tag"><span class="tag__text">Category</span></span>\r
+        <span class="article-card__tag tag">Category</span>\r
         <p class="article-card__date">Publié le <span>1/02/2023</span></p>\r
         <h5 class="article-card__title">Article</h5>\r
     </div>\r
@@ -166,7 +164,7 @@ import"./altaprofits.js";(function(){const e=document.createElement("link").relL
 <a class="article-card article-card--horizontal" href="#">\r
     <img class="article-card__image" src="/assets/images/article_default.jpg">\r
     <div class="article-card__content">\r
-        <span class="article-card__tag tag"><span class="tag__text">Category</span></span>\r
+        <span class="article-card__tag tag">Category</span>\r
         <p class="article-card__date">Publié le <span>1/02/2023</span></p>\r
         <h5 class="article-card__title">Article</h5>\r
         <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit\r
@@ -220,7 +218,7 @@ import"./altaprofits.js";(function(){const e=document.createElement("link").relL
     <h2 class="advices-section__title">Consultez nos conseils d’épargne</h2>\r
     <div class="advices-section__content">\r
         <a class="article-card" href="#">\r
-            <img class="article-card__image" src="/assets/images/article_default.jpg">\r
+            <img class="article-card__image" src="/assets/images/article_assurance_vie.jpg">\r
             <div class="article-card__content">\r
                 <p class="article-card__date">Publié le <span>26/07/2022</span></p>\r
                 <h5 class="article-card__title">L’assurance vie : un outil pour transmettre votre patrimoine à un proche\r
@@ -228,40 +226,43 @@ import"./altaprofits.js";(function(){const e=document.createElement("link").relL
                 <p class="article-card__excerpt">Pour transmettre une partie de votre patrimoine à un proche sans lien\r
                     de parenté, la meilleure solut</p>\r
             </div>\r
+            <span class="article-card__tag tag">Assurance Vie</span>\r
         </a>\r
         <a class="article-card" href="#">\r
-            <img class="article-card__image" src="/assets/images/article_default.jpg">\r
+            <img class="article-card__image" src="/assets/images/article_per.jpg">\r
             <div class="article-card__content">\r
                 <p class="article-card__date">Publié le <span>26/07/2022</span></p>\r
-                <h5 class="article-card__title">L’assurance vie : un outil pour transmettre votre patrimoine à un proche\r
-                    sans lien de parenté</h5>\r
+                <h5 class="article-card__title">3 raisons d’ouvrir une assurance vie ou un PER à votre enfant\r
+                    mineur</h5>\r
                 <p class="article-card__excerpt">Pour transmettre une partie de votre patrimoine à un proche sans lien\r
                     de parenté, la meilleure solut</p>\r
             </div>\r
+            <span class="article-card__tag tag">PER</span>\r
         </a>\r
         <a class="article-card" href="#">\r
-            <img class="article-card__image" src="/assets/images/article_default.jpg">\r
+            <img class="article-card__image" src="/assets/images/article_scpi.jpg">\r
             <div class="article-card__content">\r
                 <p class="article-card__date">Publié le <span>26/07/2022</span></p>\r
-                <h5 class="article-card__title">L’assurance vie : un outil pour transmettre votre patrimoine à un proche\r
-                    sans lien de parenté</h5>\r
+                <h5 class="article-card__title">Donation : transmettez de votre vivant pour optimiser l’aide apportée à\r
+                    vos proches</h5>\r
                 <p class="article-card__excerpt">Pour transmettre une partie de votre patrimoine à un proche sans lien\r
                     de parenté, la meilleure solut</p>\r
             </div>\r
+            <span class="article-card__tag tag">SCPI</span>\r
         </a>\r
     </div>\r
     <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrez tous nos conseils</a>\r
 </section>`,f=`<section class="insurance-partners-section">\r
-    <h3 class="insurance-partners-section__title">Plus de 20 ans d’expertise à votre service<br> avec des partenaires\r
+    <h3 class="insurance-partners-section__title">Plus de 20 ans d’expertise à votre service avec des partenaires\r
         assureurs</h3>\r
     <div class="insurance-partners-section__content">\r
-        <svg class="logo logo--2x" viewBox="0 0 128 128">\r
+        <svg class="insurance-partners-section__logo logo" viewBox="0 0 128 128">\r
             <use href="/assets/logos/generali.svg#logo"></use>\r
         </svg>\r
-        <svg class="logo logo--2x" viewBox="0 0 128 128">\r
+        <svg class="insurance-partners-section__logo logo" viewBox="0 0 128 128">\r
             <use href="/assets/logos/suravenir.svg#logo"></use>\r
         </svg>\r
-        <svg class="logo logo--2x" viewBox="0 0 128 128">\r
+        <svg class="insurance-partners-section__logo logo" viewBox="0 0 128 128">\r
             <use href="/assets/logos/swisslife.svg#logo"></use>\r
         </svg>\r
     </div>\r
