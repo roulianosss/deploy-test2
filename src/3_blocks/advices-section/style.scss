@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-64);
-  padding: var(--spacing-64) var(--spacing-48);
+  padding: var(--spacing-64) var(--spacing-16);
 
   width: 100%;
 
@@ -22,5 +22,9 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 480px) {
 
+    padding: var(--spacing-48) var(--spacing-16);
+    gap: var(--spacing-48);
+  }
 }

@@ -160,31 +160,41 @@ Heading
 */
 h1, h2, h3, h4, h5 {
   font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
 }
 
 h1 {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-1);
 }
 
 h2 {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-2);
 }
 
 h3 {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-3);
 }
 
 h4 {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-4);
 }
 
 h5 {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-5);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-2);
+  }
+
+  h2 {
+    font-size: var(--font-size-3);
+  }
+
+  h3 {
+    font-size: var(--font-size-4);
+  }
 }
 
 
@@ -255,9 +265,4 @@ LOGO
   width: 128px;
   height: 128px;
   --current-color-1: var(--color-neutral-0);
-
-  &--2x {
-    width: 256px;
-    height: 256px;
-  }
 }

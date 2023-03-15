@@ -7,9 +7,6 @@
   color: var(--color-neutral-0);
   background-color: var(--color-secondary-70);
   border-radius: 4px 24px 24px 4px;
-
-  &__text {
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-semibold);
-  }
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
 }
