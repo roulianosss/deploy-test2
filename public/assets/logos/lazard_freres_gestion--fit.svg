@@ -1,4 +1,4 @@
-<svg id="logo" width="184" height="70" viewBox="0 0 184 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id="logo" viewBox="0 0 184 70" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M35.7401 50.4795H40.4007V51.3444H36.7689V53.6343H40.2257V54.4869H36.7689V56.9251H40.4798V57.8188H35.7401V50.4795ZM37.8601 48.375L38.7222 49.837H38.085L36.698 48.375H37.8601Z"
           fill="var(--current-color-1)"/>
     <path d="M12 50.4795H16.419V51.3444H13.0496V53.6343H16.2232V54.4869H13.0496V57.8188H12V50.4795Z"
