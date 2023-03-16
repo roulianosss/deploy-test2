@@ -14,13 +14,13 @@ Figma : https://www.figma.com/file/kHSUxFoHzmQLfmwLTLBrB7/A50-A0-Altaprofits?nod
 - "src/3_blocks/**/template.html"
 
 #### CSS :
-- "dist/altaprofits.css"
+- "dist/main.css"
 
 #### JS :
-- "dist/altaprofits.js"
+- "dist/main.js"
 
 #### ASSETS :
-- "public/assets/**/*"
+- "dist/assets/**/*"
 
 ---
 
