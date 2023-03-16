@@ -41,6 +41,12 @@ TOKENS
   --current-color-2: rgb(6, 102, 172);
 
   /*
+  GRADIENT
+   */
+  --gradient-grey-down: linear-gradient(180deg, rgba(229, 234, 236, 0) 0%, var(--color-neutral-50) 100%);
+
+
+  /*
   OPACITY
   */
   --opacity-60: 0.6;

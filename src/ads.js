@@ -60,6 +60,7 @@ const patterns = [
 import companyValueSection from "./3_blocks/company-value-section/template.html?raw"
 import advicesSection from "./3_blocks/advices-section/template.html?raw"
 import insurancePartnersSection from "./3_blocks/insurance-partners-section/template.html?raw"
+import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-section/template.html?raw"
 
 const blocks = [
     {
@@ -73,6 +74,10 @@ const blocks = [
     {
         name: "insurancePartnersSection",
         template: insurancePartnersSection
+    },
+    {
+        name: "investmentDisclaimerSection",
+        template: investmentDisclaimerSection
     }
 ]
 
