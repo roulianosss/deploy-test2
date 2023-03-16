@@ -61,6 +61,7 @@ import companyValueSection from "./3_blocks/company-value-section/template.html?
 import advicesSection from "./3_blocks/advices-section/template.html?raw"
 import insurancePartnersSection from "./3_blocks/insurance-partners-section/template.html?raw"
 import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-section/template.html?raw"
+import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 
 const blocks = [
     {
@@ -78,6 +79,10 @@ const blocks = [
     {
         name: "investmentDisclaimerSection",
         template: investmentDisclaimerSection
+    },
+    {
+        name: "productInsurancePartnerSection",
+        template: productInsurancePartnerSection
     }
 ]
 
