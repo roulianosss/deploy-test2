@@ -65,6 +65,7 @@ import productInsurancePartnerSection from "./3_blocks/product-insurance-partner
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
+import productAdvantagesSection from "./3_blocks/product-advantages-section/template.html?raw"
 
 const blocks = [
     {
@@ -94,6 +95,10 @@ const blocks = [
     {
         name: "faqRedirectionSection",
         template: faqRedirectionSection
+    },
+    {
+        name: "productAdvantagesSection",
+        template: productAdvantagesSection
     }
 ]
 
