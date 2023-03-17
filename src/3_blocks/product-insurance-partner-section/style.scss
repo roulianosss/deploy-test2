@@ -11,6 +11,10 @@
   &__title {
     text-align: center;
     max-width: 32ch;
+
+    span {
+      font-family: var(--font-family-heading);
+    }
   }
 
   &__content {

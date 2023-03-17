@@ -42,6 +42,7 @@ const components = [
 // PATTERNS
 import keypointCard from "./2_patterns/keypoint-card/template.html?raw"
 import articleCard from "./2_patterns/article-card/template.html?raw"
+import feeCard from "./2_patterns/fee-card/template.html?raw"
 
 const patterns = [
     {
@@ -51,6 +52,10 @@ const patterns = [
     {
         name: "articleCard",
         template: articleCard
+    },
+    {
+        name: "feeCard",
+        template: feeCard
     }
 ]
 
@@ -66,6 +71,7 @@ import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 import productAdvantagesSection from "./3_blocks/product-advantages-section/template.html?raw"
+import productFeesSection from "./3_blocks/product-fees-section/template.html?raw"
 
 const blocks = [
     {
@@ -99,6 +105,10 @@ const blocks = [
     {
         name: "productAdvantagesSection",
         template: productAdvantagesSection
+    },
+    {
+        name: "productFeesSection",
+        template: productFeesSection
     }
 ]
 
