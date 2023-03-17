@@ -64,6 +64,7 @@ import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-sectio
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
+import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 
 const blocks = [
     {
@@ -89,6 +90,10 @@ const blocks = [
     {
         name: "productContractualDocumentationSection",
         template: productContractualDocumentationSection
+    },
+    {
+        name: "faqRedirectionSection",
+        template: faqRedirectionSection
     }
 ]
 
