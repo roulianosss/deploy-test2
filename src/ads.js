@@ -43,6 +43,7 @@ const components = [
 import keypointCard from "./2_patterns/keypoint-card/template.html?raw"
 import articleCard from "./2_patterns/article-card/template.html?raw"
 import feeCard from "./2_patterns/fee-card/template.html?raw"
+import breadcrumb from "./2_patterns/breadcrumb/template.html?raw"
 
 const patterns = [
     {
@@ -56,6 +57,10 @@ const patterns = [
     {
         name: "feeCard",
         template: feeCard
+    },
+    {
+        name: "breadcrumb",
+        template: breadcrumb
     }
 ]
 
@@ -66,12 +71,13 @@ import companyValueSection from "./3_blocks/company-value-section/template.html?
 import advicesSection from "./3_blocks/advices-section/template.html?raw"
 import insurancePartnersSection from "./3_blocks/insurance-partners-section/template.html?raw"
 import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-section/template.html?raw"
+import productHeroBanner from "./3_blocks/product-hero-banner/template.html?raw"
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
-import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 import productAdvantagesSection from "./3_blocks/product-advantages-section/template.html?raw"
 import productFeesSection from "./3_blocks/product-fees-section/template.html?raw"
+import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 
 const blocks = [
     {
@@ -91,6 +97,10 @@ const blocks = [
         template: investmentDisclaimerSection
     },
     {
+        name: "productHeroBanner",
+        template: productHeroBanner
+    },
+    {
         name: "productInsurancePartnerSection",
         template: productInsurancePartnerSection
     },
@@ -99,16 +109,16 @@ const blocks = [
         template: productContractualDocumentationSection
     },
     {
-        name: "faqRedirectionSection",
-        template: faqRedirectionSection
-    },
-    {
         name: "productAdvantagesSection",
         template: productAdvantagesSection
     },
     {
         name: "productFeesSection",
         template: productFeesSection
+    },
+    {
+        name: "faqRedirectionSection",
+        template: faqRedirectionSection
     }
 ]
 
