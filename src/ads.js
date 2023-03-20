@@ -72,6 +72,7 @@ import advicesSection from "./3_blocks/advices-section/template.html?raw"
 import insurancePartnersSection from "./3_blocks/insurance-partners-section/template.html?raw"
 import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-section/template.html?raw"
 import productHeroBanner from "./3_blocks/product-hero-banner/template.html?raw"
+import productPromoBanner from "./3_blocks/product-promo-banner/template.html?raw"
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
@@ -99,6 +100,13 @@ const blocks = [
     {
         name: "productHeroBanner",
         template: productHeroBanner
+    }, {
+        name: "productPromoBanner",
+        template: productPromoBanner
+    },
+    {
+        name: "productAdvantagesSection",
+        template: productAdvantagesSection
     },
     {
         name: "productInsurancePartnerSection",
@@ -107,10 +115,6 @@ const blocks = [
     {
         name: "productContractualDocumentationSection",
         template: productContractualDocumentationSection
-    },
-    {
-        name: "productAdvantagesSection",
-        template: productAdvantagesSection
     },
     {
         name: "productFeesSection",
