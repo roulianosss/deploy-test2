@@ -42,6 +42,7 @@ const components = [
 // PATTERNS
 import keypointCard from "./2_patterns/keypoint-card/template.html?raw"
 import articleCard from "./2_patterns/article-card/template.html?raw"
+import awardItem from "./2_patterns/award-item/template.html?raw"
 import feeCard from "./2_patterns/fee-card/template.html?raw"
 import breadcrumb from "./2_patterns/breadcrumb/template.html?raw"
 
@@ -53,6 +54,10 @@ const patterns = [
     {
         name: "articleCard",
         template: articleCard
+    },
+    {
+        name: "awardItem",
+        template: awardItem
     },
     {
         name: "feeCard",
@@ -67,12 +72,15 @@ const patterns = [
 // BLOCKS
 // import header from "./3_blocks/header/template.html?raw"
 // import footer from "./3_blocks/footer/template.html?raw"
+import promoBanner from "./3_blocks/promo-banner/template.html?raw"
 import companyValueSection from "./3_blocks/company-value-section/template.html?raw"
 import advicesSection from "./3_blocks/advices-section/template.html?raw"
 import insurancePartnersSection from "./3_blocks/insurance-partners-section/template.html?raw"
 import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-section/template.html?raw"
+import awardsSection from "./3_blocks/awards-section/template.html?raw"
+import reviewsSection from "./3_blocks/reviews-section/template.html?raw"
+import partnerNewsSection from "./3_blocks/partner-news-section/template.html?raw"
 import productHeroBanner from "./3_blocks/product-hero-banner/template.html?raw"
-import promoBanner from "./3_blocks/promo-banner/template.html?raw"
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
@@ -100,6 +108,18 @@ const blocks = [
     {
         name: "investmentDisclaimerSection",
         template: investmentDisclaimerSection
+    },
+    {
+        name: "awardsSection",
+        template: awardsSection
+    },
+    {
+        name: "reviewsSection",
+        template: reviewsSection
+    },
+    {
+        name: "partnerNewsSection",
+        template: partnerNewsSection
     },
     {
         name: "productHeroBanner",

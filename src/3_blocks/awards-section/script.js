@@ -1,0 +1,5 @@
+const sliderContent = document.querySelector(".awards-section__content")
+const sliderContentClone = sliderContent.cloneNode(true)
+sliderContent.classList.add("primary")
+sliderContentClone.classList.add("secondary")
+sliderContent.parentNode.appendChild(sliderContentClone)

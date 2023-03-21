@@ -1,1 +1,1 @@
-console.log("Hello from altaprofits.js")
+import "./3_blocks/awards-section/script.js"
