@@ -43,7 +43,8 @@ TOKENS
   /*
   GRADIENT
    */
-  --gradient-grey-down: linear-gradient(180deg, rgba(229, 234, 236, 0) 0%, var(--color-neutral-50) 100%);
+  --gradient-grey-down: linear-gradient(180deg, rgba(229, 234, 236, 0) 0%, rgba(229, 234, 236, 1) 100%);
+  --gradient-light-blue-down: linear-gradient(180deg, rgba(209, 228, 243, 0) 0%, rgba(209, 228, 243, 1) 100%);
 
 
   /*
