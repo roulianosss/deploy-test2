@@ -20,14 +20,7 @@
     height: 320px;
     overflow-x: hidden;
     border-radius: 160px;
-    -webkit-mask-image: -webkit-gradient(
-                    linear,
-                    left top,
-                    right top,
-                    from(rgba(0, 0, 0, 0)),
-                    color-stop(50%, rgba(0, 0, 0, 1)),
-                    to(rgba(0, 0, 0, 0))
-    );
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
   }
 
   &__content {
@@ -40,16 +33,9 @@
     gap: var(--spacing-32);
     padding: var(--spacing-24);
   }
+  
 
-  &__content.primary {
-    animation: primary 24s linear infinite;
-  }
-
-  &__content.secondary {
-    animation: secondary 24s linear infinite;
-  }
-
-  @keyframes primary {
+  @keyframes awards-section--primary {
     from {
       transform: translate(0%, -50%);
     }
@@ -58,7 +44,7 @@
     }
   }
 
-  @keyframes secondary {
+  @keyframes awards-section--secondary {
     from {
       transform: translate(100%, -50%);
     }
