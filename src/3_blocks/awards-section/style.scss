@@ -20,16 +20,14 @@
     height: 320px;
     overflow-x: hidden;
     border-radius: 160px;
-    //background-color: red;
-  }
-
-  &__fade {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(0, 19, 41, 1) 0%, rgba(0, 19, 41, 0) 100%);
+    -webkit-mask-image: -webkit-gradient(
+                    linear,
+                    left top,
+                    right top,
+                    from(rgba(0, 0, 0, 0)),
+                    color-stop(50%, rgba(0, 0, 0, 1)),
+                    to(rgba(0, 0, 0, 0))
+    );
   }
 
   &__content {
