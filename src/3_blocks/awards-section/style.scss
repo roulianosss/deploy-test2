@@ -19,8 +19,7 @@
     width: 80%;
     height: 320px;
     overflow-x: hidden;
-    border-radius: 160px;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 1)), color-stop(75%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
   }
 
   &__content {
@@ -33,7 +32,7 @@
     gap: var(--spacing-32);
     padding: var(--spacing-24);
   }
-  
+
 
   @keyframes awards-section--primary {
     from {
