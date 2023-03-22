@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 
+  li {
+    list-style: none;
+  }
+
   &__socials {
     display: flex;
     flex-direction: column;
@@ -105,6 +109,10 @@
     color: var(--color-neutral-100);
 
     .resume {
+
+      &__description {
+        font-size: var(--font-size-small);
+      }
 
       &__contact {
         display: flex;
