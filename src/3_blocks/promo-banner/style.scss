@@ -5,6 +5,12 @@
   padding: var(--spacing-32);
   width: 100%;
 
+  .owl-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__item {
     display: flex;
     width: 100%;
