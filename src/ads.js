@@ -88,7 +88,8 @@ import productContractualDocumentationSection
 import productAdvantagesSection from "./3_blocks/product-advantages-section/template.html?raw"
 import productFeesSection from "./3_blocks/product-fees-section/template.html?raw"
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
-import assetsSupport from "./3_blocks/assets-support/template.html?raw"
+import managementAdvantagesSection from "./3_blocks/management-advantages-section/template.html?raw"
+import managementPlusSection from "./3_blocks/management-plus-section/template.html?raw"
 
 const blocks = [
     {
@@ -156,9 +157,14 @@ const blocks = [
         template: faqRedirectionSection
     },
     {
-        name: "assetsSupport",
-        template: assetsSupport
+        name: "managementAdvantagesSection",
+        template: managementAdvantagesSection
+    },
+    {
+        name: "managementPlusSection",
+        template: managementPlusSection
     }
+
 ]
 
 

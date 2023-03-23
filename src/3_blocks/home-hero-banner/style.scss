@@ -7,9 +7,20 @@
   width: 100%;
   height: 50vh;
 
+  .owl-controls {
+    display: none;
+  }
+
+  &__slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
   &__slide {
     padding: var(--spacing-80) var(--spacing-128);
-    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   &__image {
