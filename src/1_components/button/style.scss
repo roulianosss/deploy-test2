@@ -74,6 +74,10 @@
   position: relative;
   height: fit-content;
 
+  &:has(.button--primary) {
+    color: var(--color-neutral-100);
+  }
+
   &:has(.button--light-theme) {
     color: var(--color-secondary-20);
 
