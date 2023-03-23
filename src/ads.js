@@ -40,14 +40,25 @@ const components = [
 ]
 
 // PATTERNS
+import breadcrumb from "./2_patterns/breadcrumb/template.html?raw"
+import tabsNavigation from "./2_patterns/tabs-navigation/template.html?raw"
 import keypointCard from "./2_patterns/keypoint-card/template.html?raw"
 import articleCard from "./2_patterns/article-card/template.html?raw"
 import awardItem from "./2_patterns/award-item/template.html?raw"
 import feeCard from "./2_patterns/fee-card/template.html?raw"
-import breadcrumb from "./2_patterns/breadcrumb/template.html?raw"
-import tabsNavigation from "./2_patterns/tabs-navigation/template.html?raw"
+import managementGuidedCard from "./2_patterns/management-guided-card/template.html?raw"
+import managementOthersCard from "./2_patterns/management-others-card/template.html?raw"
+
 
 const patterns = [
+    {
+        name: "breadcrumb",
+        template: breadcrumb
+    },
+    {
+        name: "tabsNavigation",
+        template: tabsNavigation
+    },
     {
         name: "keypointCard",
         template: keypointCard
@@ -65,12 +76,12 @@ const patterns = [
         template: feeCard
     },
     {
-        name: "breadcrumb",
-        template: breadcrumb
+        name: "managementGuidedCard",
+        template: managementGuidedCard
     },
     {
-        name: "tabsNavigation",
-        template: tabsNavigation
+        name: "managementOthersCard",
+        template: managementOthersCard
     }
 ]
 
