@@ -45,6 +45,7 @@ import articleCard from "./2_patterns/article-card/template.html?raw"
 import awardItem from "./2_patterns/award-item/template.html?raw"
 import feeCard from "./2_patterns/fee-card/template.html?raw"
 import breadcrumb from "./2_patterns/breadcrumb/template.html?raw"
+import tabsNavigation from "./2_patterns/tabs-navigation/template.html?raw"
 
 const patterns = [
     {
@@ -66,6 +67,10 @@ const patterns = [
     {
         name: "breadcrumb",
         template: breadcrumb
+    },
+    {
+        name: "tabsNavigation",
+        template: tabsNavigation
     }
 ]
 
