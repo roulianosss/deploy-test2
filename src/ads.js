@@ -88,6 +88,7 @@ const patterns = [
 // BLOCKS
 // import header from "./3_blocks/header/template.html?raw"
 import footer from "./3_blocks/footer/template.html?raw"
+import wrapper from "./3_blocks/wrapper/template.html?raw"
 import homeHeroBanner from "./3_blocks/home-hero-banner/template.html?raw"
 import promoBanner from "./3_blocks/promo-banner/template.html?raw"
 import companyValueSection from "./3_blocks/company-value-section/template.html?raw"
@@ -112,6 +113,10 @@ const blocks = [
     {
         name: "footer",
         template: footer
+    },
+    {
+        name: "wrapper",
+        template: wrapper
     },
     {
         name: "homeHeroBanner",
