@@ -101,6 +101,7 @@ import productHeroBanner from "./3_blocks/product-hero-banner/template.html?raw"
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
+import productManagementSection from "./3_blocks/product-management-section/template.html?raw"
 import productAdvantagesSection from "./3_blocks/product-advantages-section/template.html?raw"
 import productFeesSection from "./3_blocks/product-fees-section/template.html?raw"
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
@@ -155,6 +156,10 @@ const blocks = [
     {
         name: "productAdvantagesSection",
         template: productAdvantagesSection
+    },
+    {
+        name: "productManagementSection",
+        template: productManagementSection
     },
     {
         name: "productInsurancePartnerSection",
