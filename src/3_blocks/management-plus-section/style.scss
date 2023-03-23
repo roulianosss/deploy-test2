@@ -10,14 +10,14 @@
     color: var(--color-neutral-100);
   }
 
-  &__content {
+  &__content > ul {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-24);
     padding-left: 24px;
   }
 
-  &__item {
+  li {
     color: var(--color-neutral-100);
 
     &, > * {
