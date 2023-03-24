@@ -7,8 +7,6 @@ if (managementOthersCardsExplainations) {
     for (let i = 0; i < explanations.length; i++) {
         const explanation = explanations[i]
         const explanationHeight = explanation.offsetHeight
-        console.log(explanationHeight)
-        console.dir(explanation)
         if (explanationHeight > maxHeight) {
             maxHeight = explanationHeight
         }
