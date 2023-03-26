@@ -108,6 +108,7 @@ import productFeesSection from "./3_blocks/product-fees-section/template.html?ra
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 import managementAdvantagesSection from "./3_blocks/management-advantages-section/template.html?raw"
 import managementPlusSection from "./3_blocks/management-plus-section/template.html?raw"
+import assetsSupportSection from "./3_blocks/assets-support-section/template.html?raw"
 
 const blocks = [
     {
@@ -189,8 +190,11 @@ const blocks = [
     {
         name: "managementPlusSection",
         template: managementPlusSection
+    },
+    {
+        name: "assetsSupportSection",
+        template: assetsSupportSection
     }
-
 ]
 
 
