@@ -1,0 +1,32 @@
+.support-header-container {
+  position: relative;
+  height: 307px;
+  background-image: url("/assets/images/autres-supports.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  &__breadcrumb {
+    padding: 32px 0 0 128px;
+    color: var(--color-neutral-0);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-tiny);
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-family: var(--font-family-display);
+    font-weight: var(--font-weight-bold);
+    font-size: 50px;
+    padding-left: var(--spacing-128);
+  }
+
+  &__sub-title {
+    padding-left: var(--spacing-128);
+    margin-top: 16px;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-semibold);
+  }
+}

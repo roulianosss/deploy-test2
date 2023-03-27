@@ -109,6 +109,11 @@ import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.h
 import managementAdvantagesSection from "./3_blocks/management-advantages-section/template.html?raw"
 import managementPlusSection from "./3_blocks/management-plus-section/template.html?raw"
 import assetsSupportSection from "./3_blocks/assets-support-section/template.html?raw"
+import assetsPilotedSection from "./3_blocks/assets-piloted-section/template.html?raw"
+import partnerPilotedSection from "./3_blocks/partner-piloted-section/template.html?raw"
+import headerPilotedSection from "./3_blocks/header-piloted-section/template.html?raw"
+import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
+import contractsPilotedSection from "./3_blocks/contracts-piloted-section/template.html?raw"
 
 const blocks = [
     {
@@ -194,7 +199,27 @@ const blocks = [
     {
         name: "assetsSupportSection",
         template: assetsSupportSection
-    }
+    },
+    {
+        name: "assetsPilotedSection",
+        template: assetsPilotedSection
+    },
+    {
+        name: "partnerPilotedSection",
+        template: partnerPilotedSection
+    },
+    {
+        name: "headerPilotedSection",
+        template: headerPilotedSection
+    },
+    {
+        name: "headerSupportSection",
+        template: headerSupportSection
+    },
+    {
+        name: "contractsPilotedSection",
+        template: contractsPilotedSection
+    },
 ]
 
 
