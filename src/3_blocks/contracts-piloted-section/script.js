@@ -23,6 +23,13 @@ const data = {
           percentageRate: "-3%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
+        },
+        {
+          title: "Profil 3",
+          srri: 3,
+          percentageRate: "-3%",
+          informations: "Performances cumulées sur 5 ans",
+          iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
       ],
       balanced: [
@@ -326,9 +333,7 @@ const btnsTypeSecondChoiceContainer = document.querySelectorAll(
   ".btns-container__second-choice-container__btns-type-second-choice-container"
 );
 const resultsContainer = document.querySelector(".results-container");
-const btnsParameters = document.querySelectorAll(
-  ".toggle-button"
-);
+const btnsParameters = document.querySelectorAll(".toggle-button");
 const allCards = document.querySelectorAll(".card-container, .grid-row-body");
 const cardsContainer = document.querySelector(".cards-display-container");
 const arrayContainer = document.querySelector(".array-display-container");
@@ -449,7 +454,9 @@ const displayCards = () => {
                 </div>
               </div>
               <div class="card-container__card-informations">
-                <p class="card-container__card-informations__percentage-rate">${card.percentageRate}</p>
+                <p class="card-container__card-informations__percentage-rate">${
+                  card.percentageRate
+                }</p>
                 <p class="card-container__card-informations__card-information-text">
                   ${card.informations}
                 </p>
@@ -536,10 +543,10 @@ const displayCards = () => {
 //fonction pour passer de l'affichage cards au tableau
 const setActiveBtnParameter = (btn) => {
   btnsParameters.forEach((btn) => {
-    btn.classList.toggle("toggle-button--active")
-  })
+    btn.classList.toggle("toggle-button--active");
+  });
   displayResult();
-}
+};
 
 //fonction pour afficher la card cliqué
 const setActiveCard = (card) => {
