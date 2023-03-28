@@ -114,6 +114,7 @@ import partnerPilotedSection from "./3_blocks/partner-piloted-section/template.h
 import headerPilotedSection from "./3_blocks/header-piloted-section/template.html?raw"
 import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
 import contractsPilotedSection from "./3_blocks/contracts-piloted-section/template.html?raw"
+import contractsSupportSection from "./3_blocks/contracts-support-section/template.html?raw"
 
 const blocks = [
     {
@@ -219,6 +220,10 @@ const blocks = [
     {
         name: "contractsPilotedSection",
         template: contractsPilotedSection
+    },
+    {
+        name: "contractsSupportSection",
+        template: contractsSupportSection
     },
 ]
 

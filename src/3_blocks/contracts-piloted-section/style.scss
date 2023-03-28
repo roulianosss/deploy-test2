@@ -439,16 +439,18 @@
     align-items: center;
     justify-content: center;
   }
- &.active {
+  &.active {
     background: var(--color-primary-90);
     border-radius: 0px;
   }
-  
+
   &.active * {
     color: var(--color-secondary-20);
   }
-  
-  &.active .grid-row-body__grid-profil-item-container__grid-srri-item-container p {
+
+  &.active
+    .grid-row-body__grid-profil-item-container__grid-srri-item-container
+    p {
     color: var(--color-neutral-100);
   }
 
@@ -568,8 +570,6 @@
   color: white;
 }
 
-
-
 .btn-parameter.active {
   background-color: var(--color-secondary-20);
   color: white;
@@ -579,7 +579,9 @@
 .active
   p:not(
     .card-container__card-informations__percentage-rate,
-    .card-container__card-informations__card-information-text, .grid-row-body__grid-profil-item-container p
+    .card-container__card-informations__card-information-text,.support-card-container__informations__percentage-rate,
+    .support-card-container__informations__information-text,
+    .grid-row-body__grid-profil-item-container p
   ) {
   color: var(--color-neutral-100);
 }
