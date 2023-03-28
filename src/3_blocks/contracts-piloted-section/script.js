@@ -6,7 +6,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         },
@@ -29,7 +29,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -38,7 +38,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         },
@@ -56,7 +56,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         },
@@ -93,7 +93,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -102,7 +102,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -113,7 +113,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -122,7 +122,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -131,7 +131,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -142,7 +142,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         },
@@ -165,7 +165,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -174,7 +174,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         },
@@ -194,7 +194,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -203,7 +203,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -212,7 +212,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -223,7 +223,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -232,7 +232,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -241,7 +241,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -252,7 +252,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -261,7 +261,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -270,7 +270,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -283,7 +283,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -292,7 +292,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }
@@ -301,7 +301,7 @@ const data = {
         {
           title: "Carte Blanche",
           srri: 5,
-          percentageRate: "-7.83%",
+          percentageRate: "-7.33%",
           informations: "Performances cumulées sur 5 ans",
           iconUrl: "./assets/logos/lazard_freres_gestion--fit.svg"
         }

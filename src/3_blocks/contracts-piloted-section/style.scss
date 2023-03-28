@@ -337,6 +337,7 @@
           font-size: var(--font-size-micro);
           color: var(--color-secondary-20);
           text-align: center;
+          transform: translate(-1px);
         }
       }
     }
@@ -353,12 +354,10 @@
     transition: background-color var(--motion-duration-medium) ease-out;
 
     &__percentage-rate {
-      width: 107px;
-      font-family: var(--font-family-heading);
+      font-family: 'Raleway';
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-3);
       text-align: center;
-      letter-spacing: -0.02em;
       color: var(--color-neutral-0);
     }
 
