@@ -115,6 +115,12 @@ import headerPilotedSection from "./3_blocks/header-piloted-section/template.htm
 import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
 import contractsPilotedSection from "./3_blocks/contracts-piloted-section/template.html?raw"
 import contractsSupportSection from "./3_blocks/contracts-support-section/template.html?raw"
+import altaNewsTalkingAboutSection from "./3_blocks/alta-news-talking-about-section/template.html?raw"
+import webconferencesSection from "./3_blocks/webconferences-section/template.html?raw"
+import pressSection from "./3_blocks/press-section/template.html?raw"
+import expertsVoiceSection from "./3_blocks/experts-voice-section/template.html?raw"
+import headerExpertsVoiceSection from "./3_blocks/header-experts-voice-section/template.html?raw"
+import discoverIntegrationProgramSection from "./3_blocks/discover-integration-program-section/template.html?raw"
 
 const blocks = [
     {
@@ -225,6 +231,30 @@ const blocks = [
         name: "contractsSupportSection",
         template: contractsSupportSection
     },
+    {
+        name: "altaNewsTalkingAboutSection",
+        template: altaNewsTalkingAboutSection
+    },
+    {
+        name: "webconferencesSection",
+        template: webconferencesSection
+    },
+    {
+        name: "pressSection",
+        template: pressSection
+    },
+    // {
+    //     name: "expertsVoiceSection",
+    //     template: expertsVoiceSection
+    // },
+    // {
+    //     name: "headerExpertsVoiceSection",
+    //     template: headerExpertsVoiceSection
+    // },
+    // {
+    //     name: "discoverIntegrationProgramSection",
+    //     template: discoverIntegrationProgramSection
+    // },
 ]
 
 

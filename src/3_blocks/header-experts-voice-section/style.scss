@@ -1,7 +1,7 @@
-.support-header-container {
+.header-experts-container {
   position: relative;
   height: 307px;
-  background-image: url("/assets/images/autres-supports.png");
+  background-image: url("/assets/images/paroles-d-experts-header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,8 +31,29 @@
   }
 }
 
+
 @media screen and (max-width: 1280px) {
-  .support-header-container__title {
-    font-size: var(--font-size-large);
+  .header-experts-container {
+    background-position: 75% 0%;
+    height: 234px;
+
+    &__breadcrumb {
+      // padding: var(--spacing-32) 0 0 128px;
+      padding: var(--spacing-16) ;
+      color: var(--color-neutral-0);
+      font-family: var(--font-family-body);
+      font-size: 12px;
+    }
+  
+    &__title {
+      margin-top: 0px;
+      font-family: var(--font-family-display);
+      font-weight: var(--font-weight-bold);
+      padding: var(--spacing-16);
+      padding-top: 0;
+      // padding-left: var(--spacing-128);
+font-size: var(--spacing-32);
+    }
   }
+
 }

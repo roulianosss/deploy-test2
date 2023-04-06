@@ -1,0 +1,127 @@
+.webconferences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  & h3 {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-2);
+    text-align: center;
+    color: rgb(25, 37, 66);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-40);
+  }
+
+  &__cards-container {
+    display: flex;
+    gap: var(--spacing-24);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 414px;
+      padding: 0px var(--spacing-16);
+      gap: var(--spacing-40);
+      width: 50%;
+      background: #ffffff;
+      box-shadow: 12px 12px 60px rgba(0, 19, 41, 0.12);
+      border-radius: var(--border-radius-small);
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      position: relative;
+
+      &__img {
+        // width: 300px;
+        min-width: 50%;
+        height: 200px;
+        border-radius: var(--border-radius-small);
+        object-fit: cover;
+        background-image: url("/assets/images/webconference-person.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: var(--spacing-8);
+
+        & p:first-of-type {
+          font-family: var(--font-family-body);
+          font-size: (--font-size-medium);
+          color: var(--color-secondary-20);
+        }
+
+        & h3 {
+          font-family: var(--font-family-heading);
+          font-style: normal;
+          font-weight: var(--font-weight-bold);
+          font-size: var(--font-size-large);
+          line-height: var(--spacing-24);
+          color: var(--color-neutral-0);
+          text-align: left;
+          margin-bottom: 0;
+          justify-content: start;
+        }
+
+        & p:last-of-type {
+          font-family: var(--font-family-body);
+          font-style: normal;
+          font-weight: 400;
+          font-size: (--font-size-medium);
+          color: #0666ac;
+          overflow: hidden;
+          max-height: 135px;
+        }
+      }
+
+      & a {
+        position: absolute;
+        bottom: 17px;
+        right: var(--spacing-40);
+      }
+
+      & iframe {
+        width: 45%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .webconferences-container {
+    &__cards-container {
+      flex-direction: column;
+    }
+  }
+
+  .webconferences-container__cards-container__card {
+    min-width: 80%;
+  }
+
+  .webconferences-container__cards-container__card__text-container {
+    width: 40%;
+  }
+
+  .webconferences-container__cards-container__card {
+    gap: var(--spacing-16);
+    width: 100%;
+  }
+
+  .webconferences-container__cards-container__card {
+    padding: 0;
+  }
+}

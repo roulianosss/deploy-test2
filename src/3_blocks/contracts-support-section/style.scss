@@ -55,7 +55,7 @@
         font-family: var(--font-family-body);
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-medium);
-        white-space: nowrap;
+        // white-space: nowrap;
       }
     }
 
@@ -177,7 +177,7 @@
     font-weight: var(--font-weight-bold);
     font-size: 36px;
     text-align: center;
-    font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+    
     color: var(--color-neutral-0);
 
     & h3 {
@@ -188,7 +188,7 @@
       font-weight: var(--font-weight-bold);
       font-size: 36px;
       text-align: center;
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
     }
 
     & > p {
@@ -264,7 +264,7 @@
         font-weight: var(--font-weight-bold);
         font-size:  var(--font-size-3);
         text-align: center;
-        font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+        
         color: rgb(255, 100, 66);
         padding: 0 (--spacing-80);
         margin-bottom: 24px;
@@ -322,7 +322,7 @@
       font-size:  var(--font-size-3);
       text-align: center;
       letter-spacing: -0.02em;
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
       color: var(--color-neutral-0);
     }
 
@@ -374,7 +374,7 @@
       width: 487px;
       font-family:  var(--font-family-heading);
       font-size: var(--font-size-large);
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
       color: var(--color-secondary-20);
     }
   }
@@ -462,7 +462,7 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-2);
     text-align: center;
-    font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+    
     margin-bottom: 50px;
     color: var(--color-neutral-0);
 
@@ -474,7 +474,7 @@
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-2);
       text-align: center;
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
     }
 
     & > p {
@@ -646,7 +646,7 @@
       font-weight: var(--font-weight-bold);
       font-size:  var(--font-size-3);
       text-align: left;
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
       color: var(--color-primary-50);
       padding: 0 (--spacing-80);
       margin-bottom: 24px;
@@ -801,7 +801,7 @@
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-2);
       text-align: center;
-      font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+      
     }
 
     & > p {
@@ -1065,7 +1065,7 @@
     & p:nth-child(1) {
       color: var(--color-secondary-50);
       justify-self: start;
-      padding: 0 15px;
+      padding: 0 var(--spacing-16);
     }
 
     &:nth-child(even) {
@@ -1466,5 +1466,11 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .support-btns-container__first-choice-container__btn {
+    width: 25vw;
   }
 }

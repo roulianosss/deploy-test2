@@ -56,7 +56,7 @@
 
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-medium);
-        white-space: nowrap;
+        // white-space: nowrap;
       }
     }
 
@@ -592,5 +592,12 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .btns-container__first-choice-container__btn {
+    width: 25vw;
   }
 }

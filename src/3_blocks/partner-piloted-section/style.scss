@@ -14,10 +14,10 @@
     align-items: center;
     padding: 0px;
     gap: var(--spacing-16);
-    width: 1279px;
+    // width: 1279px;
 
     &__title {
-      width: 594px;
+      // width: 594px;
       font-family: var(--font-family-heading);
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-2);
@@ -26,7 +26,7 @@
     }
 
     &__description {
-      width: 1279px;
+      // width: 1279px;
       font-family: var(--font-family-body);
       font-size: var(--font-size-large);
       text-align: center;
@@ -43,4 +43,11 @@
     gap: var(--spacing-64);
     width: 652px;
   } 
+}
+
+
+@media screen and (max-width: 1280px) {
+  .partners-piloted-container__partners-logos {
+    flex-direction: column;
+  }
 }
