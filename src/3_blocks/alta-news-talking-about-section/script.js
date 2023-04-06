@@ -4,82 +4,82 @@ const data = [
     date: "22 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/money_vox.png"
+    logoUrl: "./assets/logos/money_vox.png"
   },
   {
     date: "22 Juillet 2022",
     title: "Assurance vie : comment profiter des rendements du non coté",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/capital.png"
+    logoUrl: "./assets/logos/capital.png"
   },
   {
     date: "21 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/le_revenu.png"
+    logoUrl: "./assets/logos/le_revenu.png"
   },
   {
     date: "22 Juillet 2022",
     title:
       "Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/bfm_business.png"
+    logoUrl: "./assets/logos/bfm_business.png"
   },
   {
     date: "21 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/le_revenu.png"
+    logoUrl: "./assets/logos/le_revenu.png"
   },
   {
     date: "22 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/money_vox.png"
+    logoUrl: "./assets/logos/money_vox.png"
   },
   {
     date: "22 Juillet 2022",
     title:
       "Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/bfm_business.png"
+    logoUrl: "./assets/logos/bfm_business.png"
   },
   {
     date: "22 Juillet 2022",
     title: "Assurance vie : comment profiter des rendements du non coté",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/capital.png"
+    logoUrl: "./assets/logos/capital.png"
   },
   {
     date: "22 Juillet 2022",
     title:
       "Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/bfm_business.png"
+    logoUrl: "./assets/logos/bfm_business.png"
   },
   {
     date: "22 Juillet 2022",
     title: "Assurance vie : comment profiter des rendements du non coté",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/capital.png"
+    logoUrl: "./assets/logos/capital.png"
   },
   {
     date: "22 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/money_vox.png"
+    logoUrl: "./assets/logos/money_vox.png"
   },
   {
     date: "21 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/le_revenu.png"
+    logoUrl: "./assets/logos/le_revenu.png"
   },
   {
     date: "21 Juillet 2022",
     title: "Assurance vie : peut-on craindre un blocage des retraits ?",
     description: `“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... `,
-    logoUrl: "/assets/logos/le_revenu.png"
+    logoUrl: "./assets/logos/le_revenu.png"
   }
 ];
 
