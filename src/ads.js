@@ -243,18 +243,18 @@ const blocks = [
         name: "pressSection",
         template: pressSection
     },
-    // {
-    //     name: "expertsVoiceSection",
-    //     template: expertsVoiceSection
-    // },
-    // {
-    //     name: "headerExpertsVoiceSection",
-    //     template: headerExpertsVoiceSection
-    // },
-    // {
-    //     name: "discoverIntegrationProgramSection",
-    //     template: discoverIntegrationProgramSection
-    // },
+    {
+        name: "expertsVoiceSection",
+        template: expertsVoiceSection
+    },
+    {
+        name: "headerExpertsVoiceSection",
+        template: headerExpertsVoiceSection
+    },
+    {
+        name: "discoverIntegrationProgramSection",
+        template: discoverIntegrationProgramSection
+    },
 ]
 
 
