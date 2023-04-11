@@ -18,7 +18,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  // margin-bottom: 30px;
 
   &__accordion-btn {
     width: 100%;
@@ -32,6 +31,7 @@
     cursor: pointer;
     margin-top: 20px;
     transition: background-color var(--motion-duration-medium);
+    user-select: none;
 
     & svg {
       transition: transform 0.4s var(--motion-easing-standard);
@@ -47,16 +47,18 @@
     overflow: hidden;
     transition: max-height 0.5s var(--motion-easing-standard);
     margin-top: 30px;
-
+    
     &__question-container {
       width: 95%;
       display: flex;
       flex-direction: column;
-
+      
       &__question {
         // height: 50px;
+        user-select: none;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 10px;
         border-bottom: 2px solid #6b6b6b;
         cursor: pointer;
 
@@ -66,15 +68,15 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding-right: 5px;
+          padding: 0 5px;
         }
       }
 
       &__response {
         margin: 0 0 0 0;
-        margin: 20px 0;
+        margin: 14px 0;
         font-size: 16px;
-        padding: 0 15px;
+        padding: 0 10px;
         max-height: 0px;
         overflow: hidden;
         transition: max-height 0.5s var(--motion-easing-standard), opacity 0.5s var(--motion-easing-standard);

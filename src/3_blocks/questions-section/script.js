@@ -12,7 +12,6 @@ accordionBtns.forEach((question) =>
 );
 
 function handleClick(e) {
-  console.log(this, e.target)
   if (this.nextElementSibling.style.maxHeight) {
     this.nextElementSibling.style.maxHeight = ``;
     if (
@@ -22,7 +21,7 @@ function handleClick(e) {
       this.lastElementChild.textContent = "+";
       this.nextElementSibling.style.opacity = `0`;
       this.parentElement.parentElement.style.maxHeight = `${
-        this.parentElement.parentElement.scrollHeight + 100
+        this.parentElement.parentElement.scrollHeight + 500
       }px`;
       console.log(this.parentElement.parentElement.style.scrollHeight);
     } else {
@@ -30,7 +29,6 @@ function handleClick(e) {
       this.style.backgroundColor = "";
       this.style.color = "";
     }
-    console.log(this.nextElementSibling.scrollHeight);
     return;
   } else {
     this.nextElementSibling.style.maxHeight = `${this.nextElementSibling.scrollHeight}px`;
@@ -43,10 +41,9 @@ function handleClick(e) {
       this.lastElementChild.textContent = "-";
       setTimeout(() => {
         this.parentElement.parentElement.style.maxHeight = `${
-          this.parentElement.parentElement.scrollHeight + 100
+          this.parentElement.parentElement.scrollHeight + 500
         }px`;
       }, 200);
-      //   this.parentElement.parentElement.style.maxHeight = `${this.parentElement.parentElement.scrollHeight}px`;
       console.log(this.parentElement.parentElement.style.maxHeight);
     } else {
       this.lastElementChild.style.transform = "rotate(-180deg)";
