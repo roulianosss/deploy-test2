@@ -25,9 +25,14 @@
 
     &__logo-container {
       border-radius: var(--border-radius-small);
+      
       display: flex;
       justify-content: center;
       align-items: center;
+
+      & img {
+        max-height: 200px;
+      }
     }
 
     &__informations-container {
@@ -53,14 +58,31 @@
         font-size: var(--font-size-large);
         color: var(--color-neutral-0);
         width: 100%;
+        cursor: pointer;
+      }
+
+      &__underline {
+        color: var(--color-secondary-20);
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size var(--motion-duration-short)
+          var(--motion-easing-standard);
+      }
+
+      & h3:hover &__underline {
+        background-size: 100% 2px;
       }
       
-      & p:last-of-type {
+      & p:nth-last-of-type(2) {
         text-align: left;
         width: 502px;
         font-family: var(--font-family-body);
         font-size: var(--font-size-medium);
         width: 100%;
+        color: #0666ac;
       }
     }
   }

@@ -129,7 +129,7 @@ function displayNews(activePage) {
         class="alta-news-talking-about-container__left-container__card__informations-container"
         >
             <p>${card.date}</p>
-            <h3>${card.title}</h3>
+            <h3><span class="alta-news-talking-about-container__left-container__card__informations-container__underline">${card.title}</h3></span>
             <p>${card.description}</p>
         </div>
     </div>  

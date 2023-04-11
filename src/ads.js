@@ -121,6 +121,7 @@ import pressSection from "./3_blocks/press-section/template.html?raw"
 import expertsVoiceSection from "./3_blocks/experts-voice-section/template.html?raw"
 import headerExpertsVoiceSection from "./3_blocks/header-experts-voice-section/template.html?raw"
 import discoverIntegrationProgramSection from "./3_blocks/discover-integration-program-section/template.html?raw"
+import questionsSection from "./3_blocks/questions-section/template.html?raw"
 
 const blocks = [
     {
@@ -255,6 +256,10 @@ const blocks = [
         name: "discoverIntegrationProgramSection",
         template: discoverIntegrationProgramSection
     },
+    {
+        name: "questionsSection",
+        template: questionsSection
+    }
 ]
 
 

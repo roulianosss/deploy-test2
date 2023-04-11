@@ -40,9 +40,8 @@
       position: relative;
 
       &__img {
-        // width: 300px;
-        min-width: 50%;
-        height: 200px;
+        min-width: 300px;
+        min-height: 200px;
         border-radius: var(--border-radius-small);
         object-fit: cover;
         background-image: url("/assets/images/webconference-person.png");
@@ -94,8 +93,9 @@
       }
 
       & iframe {
-        width: 45%;
-        height: auto;
+        min-width: 300px;
+        min-height: 200px;
+        border-radius: var(--border-radius-small);
       }
     }
   }
@@ -110,11 +110,10 @@
 
   .webconferences-container__cards-container__card {
     min-width: 80%;
-  }
-
-  .webconferences-container__cards-container__card__text-container {
-    width: 40%;
-  }
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+  }  
 
   .webconferences-container__cards-container__card {
     gap: var(--spacing-16);
@@ -123,5 +122,9 @@
 
   .webconferences-container__cards-container__card {
     padding: 0;
+  }
+
+  .webconferences-container__cards-container__card__text-container {
+    padding: 16px;
   }
 }
