@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))o(r);new MutationObserver(r=>{for(const s of r)if(s.type==="childList")for(const c of s.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&o(c)}).observe(document,{childList:!0,subtree:!0});function t(r){const s={};return r.integrity&&(s.integrity=r.integrity),r.referrerPolicy&&(s.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?s.credentials="include":r.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(r){if(r.ep)return;r.ep=!0;const s=t(r);fetch(r.href,s)}})();const nn=`<a class="button button--primary" href="#"> Button</a>\r
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))c(r);new MutationObserver(r=>{for(const s of r)if(s.type==="childList")for(const l of s.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&c(l)}).observe(document,{childList:!0,subtree:!0});function t(r){const s={};return r.integrity&&(s.integrity=r.integrity),r.referrerPolicy&&(s.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?s.credentials="include":r.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function c(r){if(r.ep)return;r.ep=!0;const s=t(r);fetch(r.href,s)}})();const sn=`<a class="button button--primary" href="#"> Button</a>\r
 \r
 <a class="button button--primary button--small" href="#">Button</a>\r
 \r
@@ -28,14 +28,14 @@
 </div>\r
 \r
 \r
-`,en=`<a class="icon-button icon-button--light-theme" href="#">\r
+`,tn=`<a class="icon-button icon-button--light-theme" href="#">\r
     <i class="icon-button__icon fa-solid fa-arrow-up-long"></i>\r
 </a>\r
 \r
 <a class="icon-button icon-button--dark-theme" href="#">\r
     <i class="icon-button__icon fa-solid fa-arrow-up-long"></i>\r
 </a>\r
-`,rn=`<button class="toggle-button toggle-button--primary">\r
+`,an=`<button class="toggle-button toggle-button--primary">\r
     <span class="toggle-button__text">ToggleButton</span>\r
 </button>\r
 <button class="toggle-button toggle-button--primary toggle-button--active">\r
@@ -57,7 +57,7 @@
     <i class="toggle-button__icon fa-solid fa-grip"></i>\r
 </button>\r
 \r
-`,sn=`<a class="tab">\r
+`,on=`<a class="tab">\r
     <span class="tab__text">Tab</span>\r
 </a>\r
 \r
@@ -88,15 +88,15 @@
         <use href="/assets/pictograms/defensive.svg#picto"></use>\r
     </svg>\r
     <span class="tab__text">Tab</span>\r
-</button>`,tn=`<a class="link" href="#">Link</a>\r
+</button>`,cn=`<a class="link" href="#">Link</a>\r
 \r
-<a class="link link--arrow" href="#">Link</a>`,an='<a class="file-link" href="#">FileLink</a>',on='<span class="tag">Tag</span>',cn=`<div class="breadcrumb">\r
+<a class="link link--arrow" href="#">Link</a>`,ln='<a class="file-link" href="#">FileLink</a>',dn='<span class="tag">Tag</span>',pn=`<div class="breadcrumb">\r
     <a class="link" href="#">Notre offre</a>\r
     <span class="breadcrumb__separator">/</span>\r
     <a class="link" href="#">Assurance vie</a>\r
     <span class="breadcrumb__separator">/</span>\r
     <a class="link" href="#">Altaprofits Vie</a>\r
-</div>`,ln=`<div class="tabs-navigation">\r
+</div>`,un=`<div class="tabs-navigation">\r
     <a class="tab tab--active" href="#">\r
         <span class="tab__text">L'essentiel</span>\r
     </a>\r
@@ -109,7 +109,7 @@
     <a class="tab" href="#">\r
         <span class="tab__text">Fonctionnement</span>\r
     </a>\r
-</div>`,dn=`<div class="keypoint-card">\r
+</div>`,_n=`<div class="keypoint-card">\r
     <svg class="keypoint-card__pictogram" viewBox="0 0 64 64">\r
         <use href="/assets/pictograms/defensive.svg#picto"></use>\r
     </svg>\r
@@ -151,7 +151,7 @@
             of a text</p>\r
     </div>\r
 </div>\r
-`,pn=`<a class="article-card" href="#">\r
+`,vn=`<a class="article-card" href="#">\r
     <img class="article-card__image" src="/assets/images/article_default.jpg">\r
     <div class="article-card__content">\r
         <p class="article-card__date">Publié le <span>1/02/2023</span></p>\r
@@ -213,7 +213,7 @@
     </div>\r
 </a>\r
 \r
-`,un=`<div class="award-item">\r
+`,mn=`<div class="award-item">\r
     <img class="award-item__image" src="/assets/images/award_titres_per_le_revenu.jpg">\r
     <div class="award-item__content">\r
         <h5 class="award-item__title">Titres@PER</h5>\r
@@ -231,7 +231,7 @@
         <p class="award-item__date">2022</p>\r
     </div>\r
 </div>\r
-`,_n=`<div class="fee-card">\r
+`,gn=`<div class="fee-card">\r
     <div class="fee-card__value">\r
         <span class="fee-card__number">0,30</span>\r
         <span class="fee-card__unit">%</span>\r
@@ -249,7 +249,7 @@
     <p class="fee-card__list">Frais d’entrée<br>Frais de versement<br>Frais d’arbitrage<br>Frais de sortie ou\r
         rachat\r
     </p>\r
-</div>`,vn=`<div class="management-guided-card">\r
+</div>`,hn=`<div class="management-guided-card">\r
     <div class="management-guided-card__content">\r
         <h4 class="management-guided-card__title">Gestion pilotée</h4>\r
         <p class="management-guided-card__description">Déléguez la gestion de votre épargne à l’assureur qui\r
@@ -264,7 +264,7 @@
         </div>\r
     </div>\r
     <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrir la gestion pilotée</a>\r
-</div>`,mn=`<div class="management-others-card">\r
+</div>`,bn=`<div class="management-others-card">\r
     <div class="management-others-card__content">\r
         <h4 class="management-others-card__title">Autres supports d’investissement</h4>\r
         <p class="management-others-card__description">Vous choisissez librement les supports d'investissement qui\r
@@ -289,7 +289,28 @@
     </div>\r
     <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrir les autres supports\r
         d’investissement</a>\r
-</div>`,gn=`<footer class="footer">\r
+</div>`,fn=`<header>\r
+    <a class="header__logo">\r
+        <img alt="Altaprofits" src="/assets/logos/altaprofits.svg">\r
+    </a>\r
+    <div class="header__navigation">\r
+        <div class="header__actions">\r
+            <div class="header__searchbar"></div>\r
+            <a class="button button--primary button--small" href="#">Souscrire en ligne</a>\r
+            <a class="button button--secondary button--light-theme button--small" href="#">Mon Espace Client</a>\r
+            <div class="header__contact">\r
+                <a class="link" href="#">01 44 77 12 14</a>\r
+                <a class="link" href="#">Être contacté</a>\r
+            </div>\r
+        </div>\r
+        <nav class="header__menu menu">\r
+            <div class="menu__item">\r
+                <a class="menu__name" href="javascript:">Notre offre</a>\r
+                <div class="expand-menu"></div>\r
+            </div>\r
+        </nav>\r
+    </div>\r
+</header>`,wn=`<footer class="footer">\r
     <div class="footer__socials socials">\r
         <h5 class="socials__title">Retrouvez nous sur les réseaux sociaux</h5>\r
         <div class="socials__content">\r
@@ -446,7 +467,7 @@
         <span class="legal__separator"></span>\r
         <a class="link" href="#">Vos données personnelles</a>\r
     </div>\r
-</footer>`,hn=`<div class="wrapper wrapper--66-33">\r
+</footer>`,yn=`<div class="wrapper wrapper--66-33">\r
     <section class="awards-section">\r
         <h3 class="awards-section__title">Déjà récompensé 10 fois en 2022</h3>\r
         <div class="awards-section__slider">\r
@@ -639,7 +660,7 @@
            href="https://fr.trustpilot.com/review/www.altaprofits.com">Voir\r
             tous les avis</a>\r
     </section>\r
-</div>`,bn=`<section class="home-hero-banner">\r
+</div>`,xn=`<section class="home-hero-banner">\r
     <div class="home-hero-banner__slides">\r
         <div class="home-hero-banner__slide" data-name="finance-project">\r
             <div class="home-hero-banner__content">\r
@@ -683,11 +704,11 @@
             <span class="tab__text">Obtenir des revenus réguliers</span>\r
         </button>\r
     </div>\r
-</section>`,fn=`<section class="promo-banner">\r
+</section>`,Cn=`<section class="promo-banner">\r
     <a class="promo-banner__item" href="#">\r
         <img alt="Promo" class="promo-banner__image" src="/assets/images/promo_banner.jpg">\r
     </a>\r
-</section>`,wn=`<section class="company-value-section">\r
+</section>`,En=`<section class="company-value-section">\r
     <h2 class="company-value-section__title">Vos besoins sont nos priorités</h2>\r
     <div class="company-value-section__content">\r
         <div class="keypoint-card">\r
@@ -728,7 +749,7 @@
             </div>\r
         </div>\r
     </div>\r
-</section>`,xn=`<section class="advices-section">\r
+</section>`,Ln=`<section class="advices-section">\r
     <h2 class="advices-section__title">Consultez nos conseils d’épargne</h2>\r
     <div class="advices-section__content">\r
         <a class="article-card" href="#">\r
@@ -766,7 +787,7 @@
         </a>\r
     </div>\r
     <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrez tous nos conseils</a>\r
-</section>`,yn=`<section class="insurance-partners-section">\r
+</section>`,qn=`<section class="insurance-partners-section">\r
     <h3 class="insurance-partners-section__title">Plus de 20 ans d’expertise à votre service avec des partenaires\r
         assureurs</h3>\r
     <div class="insurance-partners-section__content">\r
@@ -780,7 +801,7 @@
             <use href="/assets/logos/swisslife--fit.svg#logo"></use>\r
         </svg>\r
     </div>\r
-</section>`,Cn=`<section class="investment-disclaimer-section investment-disclaimer-section--info">\r
+</section>`,An=`<section class="investment-disclaimer-section investment-disclaimer-section--info">\r
     <h3 class="investment-disclaimer-section__title">Ce qu'il faut savoir avant d'investir</h3>\r
     <div class="investment-disclaimer-section__content">\r
         <div class="investment-disclaimer-section__text"><p>Produit présentant un risque de perte en capital.<br><br>\r
@@ -792,7 +813,7 @@
             L'assureur s'engage sur le nombre d'unités de compte et non sur leur valeur qu'il ne garantit pas.<br><br>\r
             Document publicitaire dépourvu de valeur contractuelle.</p></div>\r
     </div>\r
-</section>`,En=`<section class="awards-section">\r
+</section>`,kn=`<section class="awards-section">\r
     <h3 class="awards-section__title">Déjà récompensé 10 fois en 2022</h3>\r
     <div class="awards-section__slider">\r
         <div class="awards-section__content">\r
@@ -844,14 +865,14 @@
         </div>\r
     </div>\r
     <a class="button button--secondary button--dark-theme" href="#">Voir les récompenses</a>\r
-</section>`,Ln=`<section class="reviews-section">\r
+</section>`,Sn=`<section class="reviews-section">\r
     <h3 class="reviews-section__title">Nos clients en parlent mieux que nous</h3>\r
     <div class="reviews-section__content">\r
         //TRUSTPILOT WIDGET\r
     </div>\r
     <a class="button button--secondary button--light-theme" href="https://fr.trustpilot.com/review/www.altaprofits.com">Voir\r
         tous les avis</a>\r
-</section>`,qn=`<section class="partners-news-section">\r
+</section>`,Pn=`<section class="partners-news-section">\r
     <div class="partners-news-section__header">\r
         <h2 class="partners-news-section__title">Actualités</h2>\r
         <p class="partners-news-section__subtitle">Lazard Frères Gestion analyse au travers des actualités, la situation\r
@@ -885,7 +906,7 @@
             </div>\r
         </a>\r
     </div>\r
-</section>`,kn=`<section class="product-hero-banner">\r
+</section>`,Rn=`<section class="product-hero-banner">\r
     <div class="breadcrumb">\r
         <a class="link" href="#">Notre offre</a>\r
         <span class="breadcrumb__separator">/</span>\r
@@ -907,7 +928,7 @@
     </div>\r
     <img alt="Altaprofits Vie" class="product-hero-banner__image"\r
          src="/assets/images/generali_espace_lux_vie_france_banner.jpg">\r
-</section>`,An=`<section class="product-insurance-partner-section">\r
+</section>`,In=`<section class="product-insurance-partner-section">\r
     <h3 class="product-insurance-partner-section__title"><span\r
             class="product-insurance-partner-section__name">GENERALI</span>, le partenaire assureur</h3>\r
     <div class="product-insurance-partner-section__content">\r
@@ -921,7 +942,7 @@
             d’innovation mais aussi son implantation historique dans l'Hexagone en font un acteur incontournable.\r
             C’est notamment le 1er assureur sur le marché Internet de l’épargne.</p>\r
     </div>\r
-</section>`,Sn=`<section class="product-contractual-documentation-section">\r
+</section>`,zn=`<section class="product-contractual-documentation-section">\r
     <h3 class="product-contractual-documentation-section__title">Documentation contractuelle du contrat <span\r
             class="product-contractual-documentation-section__name">Altaprofits Vie</span>\r
     </h3>\r
@@ -931,7 +952,7 @@
         <a class="file-link" href="#">Liste des supports financiers</a>\r
         <a class="file-link" href="#">Performances de la gestion pilotée</a>\r
     </div>\r
-</section>`,Pn=`<div class="product-management-section">\r
+</section>`,Tn=`<div class="product-management-section">\r
     <h2 class="product-management-section__title">Choisissez le mode de gestion de votre contrat</h2>\r
     <div class="product-management-section__content product-management-section__content--two">\r
         <div class="management-guided-card">\r
@@ -984,7 +1005,7 @@
                 d’investissement</a>\r
         </div>\r
     </div>\r
-</div>`,Rn=`<section class="product-advantages-section">\r
+</div>`,Vn=`<section class="product-advantages-section">\r
     <h2 class="product-advantages-section__title">Les atouts <span class="product-advantages-section__name">Altaprofits Vie</span>\r
     </h2>\r
     <div class="product-advantages-section__content">\r
@@ -1039,7 +1060,7 @@
         </div>\r
     </div>\r
     <a class="button button--secondary button--light-theme" href="#">Télécharger la brochure</a>\r
-</section>`,In=`<section class="product-fees-section">\r
+</section>`,Un=`<section class="product-fees-section">\r
     <h2 class="product-fees-section__title">Optimisez vos rendements avec des frais réduits</h2>\r
     <div class="product-fees-section__content">\r
         <div class="fee-card fee-card--highlight">\r
@@ -1097,10 +1118,10 @@
         <a class="file-link" href="#">Pour plus de transparence, consultez l'annexe des frais du contrat Altaprofits\r
             Vie</a>\r
     </div>\r
-</section>`,zn=`<section class="faq-redirection-section">\r
+</section>`,Bn=`<section class="faq-redirection-section">\r
     <h3 class="faq-redirection-section__title">Vos questions les plus fréquentes</h3>\r
     <a class="button button--secondary button--dark-theme button--arrow" href="#">Consulter la FAQ</a>\r
-</section>`,Tn=`<section class="management-advantages-section">\r
+</section>`,Mn=`<section class="management-advantages-section">\r
     <div class="management-advantages-section__header">\r
         <h2 class="management-advantages-section__title">Composez votre portefeuille</h2>\r
         <p class="management-advantages-section__subtitle"> Si vous souhaiter gérer vous même en toute autonomie votre\r
@@ -1135,7 +1156,7 @@
             </div>\r
         </div>\r
     </div>\r
-</section>`,Vn=`<section class="management-plus-section">\r
+</section>`,Nn=`<section class="management-plus-section">\r
     <h3 class="management-plus-section__title">Les + Altaprofits</h3>\r
     <div class="management-plus-section__content">\r
         <ul>\r
@@ -1156,7 +1177,7 @@
         </ul>\r
     </div>\r
 </section>\r
-`,Un=`<section class="assets-support">\r
+`,jn=`<section class="assets-support">\r
     <div class="assets-support__left-container">\r
       <h3 class="assets-support__left-container__title">Composez votre portefeuille</h3>\r
       <p class="assets-support__left-container__description">\r
@@ -1221,7 +1242,7 @@
       </ul>\r
     </div>\r
   </section>\r
-  `,Bn=`<section class="assets-piloted">\r
+  `,Dn=`<section class="assets-piloted">\r
   <div class="assets-piloted__left-container">\r
     <h3 class="assets-piloted__left-container__title">\r
       Les atouts de la gestion pilotée\r
@@ -1283,7 +1304,7 @@
     </ul>\r
   </div>\r
 </section>\r
-`,Mn=`<section class="partners-piloted-container">\r
+`,Fn=`<section class="partners-piloted-container">\r
   <div class="partners-piloted-container__text-container">\r
     <h3 class="partners-piloted-container__text-container__title">\r
       Nos partenaires de gestion pilotée\r
@@ -1305,21 +1326,21 @@
     </svg>\r
   </div>\r
 </section>\r
-`,Nn=`<section class="piloted-header-container">\r
+`,Gn=`<section class="piloted-header-container">\r
   <p class="piloted-header-container__breadcrumb">\r
     Accueil supports d’investissement /<b> Gestion pilotée</b>\r
   </p>\r
   <h2 class="piloted-header-container__title">La gestion pilotée</h2>\r
   <p class="piloted-header-container__sub-title">Déléguez la gestion de vos contrats</p>\r
 </section>\r
-`,jn=`<section class="support-header-container">\r
+`,On=`<section class="support-header-container">\r
   <p class="support-header-container__breadcrumb">\r
     Accueil supports d’investissement /<b> Autres supports d'investissements</b>\r
   </p>\r
   <h2 class="support-header-container__title">Autres supports d’investissements</h2>\r
   <p class="support-header-container__sub-title">Sélectionnez et gérez vous-même<br/>vos supports d’investissements en toute autonomie</p>\r
 </section>\r
-`,Dn=`<section class="contracts-piloted-section-container">\r
+`,$n=`<section class="contracts-piloted-section-container">\r
   <div class="contracts-piloted-container">\r
     <h3 class="contracts-piloted-container__title">\r
       Investissez facilement en déléguant la gestion de votre contrat\r
@@ -1570,7 +1591,7 @@
     </div>\r
   </div>\r
 </section>\r
-`,On=`<section class="contracts-support-section-container">\r
+`,Hn=`<section class="contracts-support-section-container">\r
   <div class="contracts-support-container">\r
     <h3 class="contracts-support-container__title">\r
       Investissez sereinement, <br />\r
@@ -3036,7 +3057,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Fn=`<section class="alta-news-talking-about-container">\r
+`,Jn=`<section class="alta-news-talking-about-container">\r
   <div class="alta-news-talking-about-container__left-container">\r
     <div\r
       class="alta-news-talking-about-container__left-container__news-container"\r
@@ -3073,7 +3094,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Gn=`<section class="webconferences-container">\r
+`,Qn=`<section class="webconferences-container">\r
     <h3>Nos webconférences</h3>\r
     <div class="webconferences-container__cards-container">\r
         <div class="webconferences-container__cards-container__card">\r
@@ -3095,7 +3116,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <a class="button button--secondary button--light-theme button--arrow" href="#">Tous nos replays</a>\r
         </div>\r
     </div>\r
-</section>`,$n=`<section class="press-container">\r
+</section>`,Wn=`<section class="press-container">\r
   <div class="press-container__cards-container">\r
     <div class="press-container__cards-container__card">\r
       <h3>Kit presse</h3>\r
@@ -3136,7 +3157,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Hn=`<section class="experts-voice-container">\r
+`,Xn=`<section class="experts-voice-container">\r
     <h3>Toutes les paroles d’experts Altaprofits et de nos partenaires</h3>\r
     <div\r
       class="experts-voice-container__news-container"\r
@@ -3159,13 +3180,13 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
       </div>\r
     </div>\r
 </section>\r
-`,Jn=`<section class="header-experts-container">\r
+`,Yn=`<section class="header-experts-container">\r
   <p class="header-experts-container__breadcrumb">\r
     Alta News /<b> Paroles d'experts</b>\r
   </p>\r
   <h2 class="header-experts-container__title">Paroles d'experts</h2>\r
 </section>\r
-`,Qn=`<section class="discover-integration-program-container">\r
+`,Zn=`<section class="discover-integration-program-container">\r
     <div class="discover-integration-program-container__background">\r
         \r
     </div>\r
@@ -3189,7 +3210,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <p>Un suivi et un accompagnement quotidien pour une bonne prise en main du poste</p>\r
         </div>\r
     </div>\r
-</section>`,Wn=`<section class="questions-container">\r
+</section>`,Kn=`<section class="questions-container">\r
   <h3>Votre question concerne:</h3>\r
   <div class="accordion-container">\r
     <div class="accordion-container__accordion-btn">\r
@@ -3627,7 +3648,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Xn=`<section class="squad-container">\r
+`,ne=`<section class="squad-container">\r
   <h3>Les équipe Altaprofits :</h3>\r
   <div class="squad-container__cards">\r
     <div class="squad-container__cards__card">\r
@@ -3661,7 +3682,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Yn=`<section class="alta-in-number">\r
+`,ee=`<section class="alta-in-number">\r
     <h3>Altaprofits en chiffres</h3>\r
     <div class="alta-in-number__cards">\r
         <div class="alta-in-number__cards__card">\r
@@ -3682,7 +3703,49 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         </div>\r
     </div>\r
 </section>\r
-`,Kn=[{name:"button",template:nn},{name:"iconButton",template:en},{name:"toggleButton",template:rn},{name:"tab",template:sn},{name:"link",template:tn},{name:"fileLink",template:an},{name:"tag",template:on}],Zn=[{name:"breadcrumb",template:cn},{name:"tabsNavigation",template:ln},{name:"keypointCard",template:dn},{name:"articleCard",template:pn},{name:"awardItem",template:un},{name:"feeCard",template:_n},{name:"managementGuidedCard",template:vn},{name:"managementOthersCard",template:mn}],ne=[{name:"footer",template:gn},{name:"wrapper",template:hn},{name:"homeHeroBanner",template:bn},{name:"promoBanner",template:fn},{name:"companyValueSection",template:wn},{name:"advicesSection",template:xn},{name:"insurancePartnersSection",template:yn},{name:"investmentDisclaimerSection",template:Cn},{name:"awardsSection",template:En},{name:"reviewsSection",template:Ln},{name:"partnerNewsSection",template:qn},{name:"productHeroBanner",template:kn},{name:"productAdvantagesSection",template:Rn},{name:"productManagementSection",template:Pn},{name:"productInsurancePartnerSection",template:An},{name:"productContractualDocumentationSection",template:Sn},{name:"productFeesSection",template:In},{name:"faqRedirectionSection",template:zn},{name:"managementAdvantagesSection",template:Tn},{name:"managementPlusSection",template:Vn},{name:"assetsSupportSection",template:Un},{name:"assetsPilotedSection",template:Bn},{name:"partnerPilotedSection",template:Mn},{name:"headerPilotedSection",template:Nn},{name:"headerSupportSection",template:jn},{name:"contractsPilotedSection",template:Dn},{name:"contractsSupportSection",template:On},{name:"altaNewsTalkingAboutSection",template:Fn},{name:"webconferencesSection",template:Gn},{name:"pressSection",template:$n},{name:"expertsVoiceSection",template:Hn},{name:"headerExpertsVoiceSection",template:Jn},{name:"discoverIntegrationProgramSection",template:Qn},{name:"questionsSection",template:Wn},{name:"squadSection",template:Xn},{name:"altaInNumberSection",template:Yn}],ee=[{name:"components",value:Kn},{name:"patterns",value:Zn},{name:"blocks",value:ne}];ee.forEach(n=>{const e=document.createElement("section");e.classList.add("ads");const t=document.createElement("h3");t.innerText=n.name.toUpperCase(),e.appendChild(t);const o=document.createElement("div");o.classList.add("ads",n.name),e.appendChild(o),n.value.forEach(r=>{const s=document.createElement("div");s.id=r.name,s.classList.add("section","ads");const c=document.createElement("h4");c.innerText=r.name,s.appendChild(c);const h=document.createElement("div");h.innerHTML=r.template,h.classList.add("sub-section","ads"),s.appendChild(h),e.appendChild(s)}),document.querySelector("main.ads").appendChild(e)});const p=document.querySelector(".management-others-card__explainations");if(p){let n=0;const e=p.querySelectorAll(".management-others-card__explaination");for(let t=0;t<e.length;t++){const r=e[t].offsetHeight;r>n&&(n=r)}p.style.setProperty("height",`calc(${n}px + 2*var(--spacing-8))`)}const A=document.querySelectorAll(".management-others-card__link");A&&A.forEach(n=>{let e=n.dataset.name,t=p.querySelector(".management-others-card__explaination[data-name="+e+"]");n.addEventListener("mouseenter",()=>{t.classList.add("active")}),n.addEventListener("mouseleave",()=>{t.classList.remove("active")})});const S={speed:200},l=document.querySelector(".awards-section__content");if(l){const n=l.cloneNode(!0);l.classList.add("primary"),n.classList.add("secondary"),l.parentNode.appendChild(n);const e=l.querySelectorAll(".award-item").length;l.style.setProperty("animation",`awards-section--primary ${e*1e3/S.speed}s linear infinite`),n.style.setProperty("animation",`awards-section--secondary ${e*1e3/S.speed}s linear infinite`)}const re={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},j=document.querySelectorAll(".btns-container__first-choice-container__btn"),P=document.querySelector(".btns-container__second-choice-container"),C=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),D=document.querySelectorAll(".filters-container__btns-container__btn"),se=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),R=document.querySelector(".results-container"),E=document.querySelectorAll(".toggle-button"),te=document.querySelectorAll(".card-container, .grid-row-body"),u=document.querySelector(".cards-display-container"),d=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body");const i={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};j.forEach(n=>n.addEventListener("click",()=>ae(n)));C.forEach(n=>n.addEventListener("click",()=>ie(n)));D.forEach(n=>n.addEventListener("click",()=>oe(n)));E.forEach(n=>n.addEventListener("click",()=>ce()));te.forEach(n=>n.addEventListener("click",()=>O(n)));const ae=n=>{console.log(P),i.secondChoice="",C.forEach(e=>e.classList.remove("active")),j.forEach(e=>e.classList.remove("active")),se.forEach(e=>e.classList.add("hidden")),n.classList.add("active"),i.firstChoice=n.getAttribute("data-attr"),P.classList.remove("hidden"),document.querySelector(`.${n.getAttribute("data-attr")}`).classList.remove("hidden"),L()},ie=n=>{C.forEach(e=>e.classList.remove("active")),i.secondChoice=n.getAttribute("data-attr"),n.classList.add("active"),L()},oe=n=>{i.thirdChoice=n.getAttribute("data-attr"),D.forEach(e=>e.classList.remove("active")),n.classList.add("active"),L()},L=()=>{i.firstChoice!==""&&i.secondChoice!==""?R.classList.remove("hidden"):R.classList.add("hidden"),d.innerHTML="",u.innerHTML="";const n=re[i.firstChoice][i.secondChoice][i.thirdChoice];n.map(e=>u.innerHTML+=`
+`,re=`<section class="history-section">\r
+  <h3>Notre histoire depuis 1999</h3>\r
+  <div class="history-section__cards-section">\r
+    <div class="history-section__cards-section__left-arrow">\r
+      <svg\r
+        class="left-arrow"\r
+        width="14"\r
+        height="25"\r
+        viewBox="0 0 14 25"\r
+        fill="none"\r
+        xmlns="http://www.w3.org/2000/svg"\r
+      >\r
+        <path\r
+          d="M12 2L2.63806 12.4083C2.28092 12.8053 2.29879 13.4129 2.67864 13.7883L12 23"\r
+          stroke="#001329"\r
+          stroke-width="3"\r
+          stroke-linecap="round"\r
+        />\r
+      </svg>\r
+    </div>\r
+\r
+    <div class="history-section__cards-section__cards">\r
+    </div>\r
+\r
+    <div class="history-section__cards-section__right-arrow">\r
+      <svg\r
+        width="14"\r
+        height="25"\r
+        viewBox="0 0 14 25"\r
+        fill="none"\r
+        xmlns="http://www.w3.org/2000/svg"\r
+      >\r
+        <path\r
+          d="M2 23L11.3619 12.5917C11.7191 12.1947 11.7012 11.5871 11.3214 11.2117L2 2"\r
+          stroke="#001329"\r
+          stroke-width="3"\r
+          stroke-linecap="round"\r
+        />\r
+      </svg>\r
+    </div>\r
+  </div>\r
+</section>\r
+`,se=[{name:"button",template:sn},{name:"iconButton",template:tn},{name:"toggleButton",template:an},{name:"tab",template:on},{name:"link",template:cn},{name:"fileLink",template:ln},{name:"tag",template:dn}],te=[{name:"breadcrumb",template:pn},{name:"tabsNavigation",template:un},{name:"keypointCard",template:_n},{name:"articleCard",template:vn},{name:"awardItem",template:mn},{name:"feeCard",template:gn},{name:"managementGuidedCard",template:hn},{name:"managementOthersCard",template:bn}],ae=[{name:"header",template:fn},{name:"footer",template:wn},{name:"wrapper",template:yn},{name:"homeHeroBanner",template:xn},{name:"promoBanner",template:Cn},{name:"companyValueSection",template:En},{name:"advicesSection",template:Ln},{name:"insurancePartnersSection",template:qn},{name:"investmentDisclaimerSection",template:An},{name:"awardsSection",template:kn},{name:"reviewsSection",template:Sn},{name:"partnerNewsSection",template:Pn},{name:"productHeroBanner",template:Rn},{name:"productAdvantagesSection",template:Vn},{name:"productManagementSection",template:Tn},{name:"productInsurancePartnerSection",template:In},{name:"productContractualDocumentationSection",template:zn},{name:"productFeesSection",template:Un},{name:"faqRedirectionSection",template:Bn},{name:"managementAdvantagesSection",template:Mn},{name:"managementPlusSection",template:Nn},{name:"assetsSupportSection",template:jn},{name:"assetsPilotedSection",template:Dn},{name:"partnerPilotedSection",template:Fn},{name:"headerPilotedSection",template:Gn},{name:"headerSupportSection",template:On},{name:"contractsPilotedSection",template:$n},{name:"contractsSupportSection",template:Hn},{name:"altaNewsTalkingAboutSection",template:Jn},{name:"webconferencesSection",template:Qn},{name:"pressSection",template:Wn},{name:"expertsVoiceSection",template:Xn},{name:"headerExpertsVoiceSection",template:Yn},{name:"discoverIntegrationProgramSection",template:Zn},{name:"questionsSection",template:Kn},{name:"squadSection",template:ne},{name:"altaInNumberSection",template:ee},{name:"altaprofitHistorySection",template:re}],ie=[{name:"components",value:se},{name:"patterns",value:te},{name:"blocks",value:ae}];ie.forEach(n=>{const e=document.createElement("section");e.classList.add("ads");const t=document.createElement("h3");t.innerText=n.name.toUpperCase(),e.appendChild(t);const c=document.createElement("div");c.classList.add("ads",n.name),e.appendChild(c),n.value.forEach(r=>{const s=document.createElement("div");s.id=r.name,s.classList.add("section","ads");const l=document.createElement("h4");l.innerText=r.name,s.appendChild(l);const f=document.createElement("div");f.innerHTML=r.template,f.classList.add("sub-section","ads"),s.appendChild(f),e.appendChild(s)}),document.querySelector("main.ads").appendChild(e)});const _=document.querySelector(".management-others-card__explainations");if(_){let n=0;const e=_.querySelectorAll(".management-others-card__explaination");for(let t=0;t<e.length;t++){const r=e[t].offsetHeight;r>n&&(n=r)}_.style.setProperty("height",`calc(${n}px + 2*var(--spacing-8))`)}const P=document.querySelectorAll(".management-others-card__link");P&&P.forEach(n=>{let e=n.dataset.name,t=_.querySelector(".management-others-card__explaination[data-name="+e+"]");n.addEventListener("mouseenter",()=>{t.classList.add("active")}),n.addEventListener("mouseleave",()=>{t.classList.remove("active")})});const R={speed:200},d=document.querySelector(".awards-section__content");if(d){const n=d.cloneNode(!0);d.classList.add("primary"),n.classList.add("secondary"),d.parentNode.appendChild(n);const e=d.querySelectorAll(".award-item").length;d.style.setProperty("animation",`awards-section--primary ${e*1e3/R.speed}s linear infinite`),n.style.setProperty("animation",`awards-section--secondary ${e*1e3/R.speed}s linear infinite`)}const oe={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},F=document.querySelectorAll(".btns-container__first-choice-container__btn"),I=document.querySelector(".btns-container__second-choice-container"),L=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),G=document.querySelectorAll(".filters-container__btns-container__btn"),ce=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),z=document.querySelector(".results-container"),q=document.querySelectorAll(".toggle-button"),le=document.querySelectorAll(".card-container, .grid-row-body"),v=document.querySelector(".cards-display-container"),p=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body");const o={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};F.forEach(n=>n.addEventListener("click",()=>de(n)));L.forEach(n=>n.addEventListener("click",()=>pe(n)));G.forEach(n=>n.addEventListener("click",()=>ue(n)));q.forEach(n=>n.addEventListener("click",()=>_e()));le.forEach(n=>n.addEventListener("click",()=>O(n)));const de=n=>{console.log(I),o.secondChoice="",L.forEach(e=>e.classList.remove("active")),F.forEach(e=>e.classList.remove("active")),ce.forEach(e=>e.classList.add("hidden")),n.classList.add("active"),o.firstChoice=n.getAttribute("data-attr"),I.classList.remove("hidden"),document.querySelector(`.${n.getAttribute("data-attr")}`).classList.remove("hidden"),A()},pe=n=>{L.forEach(e=>e.classList.remove("active")),o.secondChoice=n.getAttribute("data-attr"),n.classList.add("active"),A()},ue=n=>{o.thirdChoice=n.getAttribute("data-attr"),G.forEach(e=>e.classList.remove("active")),n.classList.add("active"),A()},A=()=>{o.firstChoice!==""&&o.secondChoice!==""?z.classList.remove("hidden"):z.classList.add("hidden"),p.innerHTML="",v.innerHTML="";const n=oe[o.firstChoice][o.secondChoice][o.thirdChoice];n.map(e=>v.innerHTML+=`
             <div class="card-container">
               <div class="card-container__card-header">
                 <p class="card-container__card-header__title">${e.title}</p>
@@ -3720,7 +3783,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
                 </svg>
               </div>
             </div>
-    `),d.innerHTML+=`
+    `),p.innerHTML+=`
                 <div class="grid-container">
                   <div class="grid-container__grid-header">
                     <div>
@@ -3753,7 +3816,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
                     </div>
                   </div>
                 </div>
-    `,n.map(e=>d.innerHTML+=`
+    `,n.map(e=>p.innerHTML+=`
                 <div class="grid-row-body">
                   <div class="grid-row-body__grid-profil-item-container">
                     <h3>${e.title}</h3>
@@ -3781,7 +3844,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
                     <p></p>
                   </div>
                 </div>
-    `),document.querySelectorAll(".card-container, .grid-row-body").forEach(e=>e.addEventListener("click",()=>O(e)))},ce=n=>{E.forEach(e=>{e.classList.toggle("toggle-button--active")}),F()},O=n=>{console.log("ok"),F(),document.querySelectorAll(".card-container, .grid-row-body").forEach(e=>e.classList.remove("active")),n.classList.add("active")},F=()=>{E.forEach(n=>{n.classList.contains("btn-parameter1")&&n.classList.contains("toggle-button--active")?u.classList.remove("hidden"):n.classList.contains("btn-parameter1")&&!n.classList.contains("toggle-button--active")&&u.classList.add("hidden"),n.classList.contains("btn-parameter2")&&n.classList.contains("toggle-button--active")?d.classList.remove("hidden"):n.classList.contains("btn-parameter2")&&!n.classList.contains("toggle-button--active")&&d.classList.add("hidden")})},le={assuranceVie:{titresVie:{euro:[{title:"Fonds euros SwissLife",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},digitalViePrime:{euro:[{title:"Suravenir Opportunité 2",percentageRate:"-7.83%",informations:"PPerformances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"},{title:"Suravenir Rendement 2",percentageRate:"-6.83%",informations:"Performances nettes⁽¹⁾;en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},altaprofitsVie:{euro:[{title:"Netissima",percentageRate:"Jusqu'à&nbsp;3.06%",informations:"Performances nettes⁽¹⁾ en 2022 <br />Voir les conditions d'accès",iconUrl:"./assets/logos/generali--fit.svg"},{title:"Eurossima",percentageRate:"1.30%(3)<br/>1.35%(4)",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]},espaceLuxVie:{euro:[{title:"Fonds Général",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]}},capitalisation:{altaprofitsCapitalisation:{euro:[{title:"Netissima",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"},{title:"Eurossima",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]},titreCapi:{euro:[{title:"Fonds euros Swisslife",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},digitalCapiPrime:{euro:[{title:"Suravenir Opportunité 2",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"},{title:"Suravenir Rendement 2",percentageRate:"-5.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]}},planEpargneRetraite:{titrePER:{euro:[{title:"Fonds euros SwissLife spécial PER",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]}}},a={firstChoice:"",secondChoice:"",thirdChoice:""},b=document.querySelectorAll(".support-btns-container__first-choice-container__btn"),I=document.querySelector(".support-btns-container__second-choice-container"),de=document.querySelectorAll(".support-btns-container__second-choice-container__btns-type-second-choice-container"),f=document.querySelector(".btns-third-choice-container"),q=document.querySelectorAll(".support-btns-container__second-choice-container__btns-type-second-choice-container__btn"),g=document.querySelectorAll(".btns-third-choice-container__btn"),w=document.querySelectorAll(".account-unit-container__btns-container__btn"),_=document.querySelector(".euro-fund-container"),v=document.querySelector(".growth-fund-container"),z=document.querySelector(".euro-fund-container__netissima-container"),T=document.querySelector(".growth-container"),G=document.querySelectorAll(".grid-row-body"),V=document.querySelector(".structured-fund-container"),m=document.querySelector(".account-unit-container"),U=document.querySelector(".tunnel-array-container"),B=document.querySelector(".euro-fund-container__cards-container"),pe=document.querySelectorAll(".support-card-container");document.querySelector(".white-card-container");document.querySelector(".array-container");b.forEach(n=>n.addEventListener("click",()=>ue(n)));q.forEach(n=>n.addEventListener("click",()=>_e(n)));g.forEach(n=>n.addEventListener("click",()=>ve(n)));w.forEach(n=>n.addEventListener("click",()=>me(n)));pe.forEach(n=>n.addEventListener("click",()=>$(n)));G.forEach(n=>n.addEventListener("click",()=>ge(n)));const ue=n=>{g.forEach(e=>e.classList.remove("active")),b.forEach(e=>e.classList.remove("active")),_.classList.add("hidden"),m.classList.add("hidden"),v.classList.add("hidden"),f.classList.add("hidden"),n.classList.add("active"),I.classList.remove("hidden"),a.secondChoice="",a.thirdChoice="",q.forEach(e=>e.classList.remove("active")),b.forEach(e=>e.classList.remove("active")),de.forEach(e=>e.classList.add("hidden")),n.classList.add("active"),a.firstChoice=n.getAttribute("data-attr"),I.classList.remove("hidden"),document.querySelector(`.support-btns-container__second-choice-container__btns-type-second-choice-container.${n.getAttribute("data-attr")}`).classList.remove("hidden"),H()},_e=n=>{console.log("test"),g.forEach(e=>e.classList.remove("active")),f.classList.add("hidden"),_.classList.add("hidden"),m.classList.add("hidden"),v.classList.add("hidden"),q.forEach(e=>e.classList.remove("active")),a.secondChoice=n.getAttribute("data-attr"),n.classList.add("active"),f.classList.remove("hidden"),console.log(a),H(),k()},ve=n=>{a.thirdChoice=n.getAttribute("data-attr"),g.forEach(e=>e.classList.remove("active")),n.classList.add("active"),he(n.getAttribute("data-attr")),k()},me=n=>{console.log(w),w.forEach(e=>e.classList.remove("active")),n.classList.add("active"),n.getAttribute("data-attr")!=="structured-funds"?(U.classList.remove("hidden"),V.classList.add("hidden")):(U.classList.add("hidden"),V.classList.remove("hidden"))},$=n=>{console.log("test"),document.querySelectorAll(".support-card-container").forEach(e=>e.classList.remove("active")),n.classList.add("active"),console.log(n),n.getAttribute("data-attr")==="Netissima"?z.classList.remove("hidden"):z.classList.add("hidden"),n.getAttribute("data-attr")==="growth-netissima"?T.classList.remove("hidden"):T.classList.add("hidden")},ge=n=>{G.forEach(e=>e.classList.remove("active")),n.classList.add("active")},H=()=>{a.firstChoice==="assuranceVie"&&a.secondChoice==="altaprofitsVie"||a.firstChoice==="capitalisation"&&a.secondChoice==="altaprofitsCapitalisation"?document.querySelector(".btns-third-choice-container__btn.growth").classList.remove("hidden"):document.querySelector(".btns-third-choice-container__btn.growth").classList.add("hidden"),a.firstChoice!=="planEpargneRetraite"&&a.secondChoice!=="titrePER"?document.querySelector(".btns-third-choice-container__btn.unit").classList.remove("hidden"):document.querySelector(".btns-third-choice-container__btn.unit").classList.add("hidden")},he=n=>{console.log("enter"),n==="euro"?(_.classList.remove("hidden"),k()):_.classList.add("hidden"),n==="growth"?v.classList.remove("hidden"):v.classList.add("hidden"),n==="unit"?m.classList.remove("hidden"):m.classList.add("hidden")},k=()=>{B.innerHTML="";const n=le[a.firstChoice][a.secondChoice][a.thirdChoice];n==null||n.map(e=>B.innerHTML+=`
+    `),document.querySelectorAll(".card-container, .grid-row-body").forEach(e=>e.addEventListener("click",()=>O(e)))},_e=n=>{q.forEach(e=>{e.classList.toggle("toggle-button--active")}),$()},O=n=>{console.log("ok"),$(),document.querySelectorAll(".card-container, .grid-row-body").forEach(e=>e.classList.remove("active")),n.classList.add("active")},$=()=>{q.forEach(n=>{n.classList.contains("btn-parameter1")&&n.classList.contains("toggle-button--active")?v.classList.remove("hidden"):n.classList.contains("btn-parameter1")&&!n.classList.contains("toggle-button--active")&&v.classList.add("hidden"),n.classList.contains("btn-parameter2")&&n.classList.contains("toggle-button--active")?p.classList.remove("hidden"):n.classList.contains("btn-parameter2")&&!n.classList.contains("toggle-button--active")&&p.classList.add("hidden")})},ve={assuranceVie:{titresVie:{euro:[{title:"Fonds euros SwissLife",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},digitalViePrime:{euro:[{title:"Suravenir Opportunité 2",percentageRate:"-7.83%",informations:"PPerformances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"},{title:"Suravenir Rendement 2",percentageRate:"-6.83%",informations:"Performances nettes⁽¹⁾;en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},altaprofitsVie:{euro:[{title:"Netissima",percentageRate:"Jusqu'à&nbsp;3.06%",informations:"Performances nettes⁽¹⁾ en 2022 <br />Voir les conditions d'accès",iconUrl:"./assets/logos/generali--fit.svg"},{title:"Eurossima",percentageRate:"1.30%(3)<br/>1.35%(4)",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]},espaceLuxVie:{euro:[{title:"Fonds Général",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]}},capitalisation:{altaprofitsCapitalisation:{euro:[{title:"Netissima",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"},{title:"Eurossima",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/generali--fit.svg"}]},titreCapi:{euro:[{title:"Fonds euros Swisslife",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]},digitalCapiPrime:{euro:[{title:"Suravenir Opportunité 2",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"},{title:"Suravenir Rendement 2",percentageRate:"-5.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]}},planEpargneRetraite:{titrePER:{euro:[{title:"Fonds euros SwissLife spécial PER",percentageRate:"-7.83%",informations:"Performances nettes⁽¹⁾ en 2022",iconUrl:"./assets/logos/swisslife--fit.svg"}]}}},a={firstChoice:"",secondChoice:"",thirdChoice:""},w=document.querySelectorAll(".support-btns-container__first-choice-container__btn"),T=document.querySelector(".support-btns-container__second-choice-container"),me=document.querySelectorAll(".support-btns-container__second-choice-container__btns-type-second-choice-container"),y=document.querySelector(".btns-third-choice-container"),k=document.querySelectorAll(".support-btns-container__second-choice-container__btns-type-second-choice-container__btn"),b=document.querySelectorAll(".btns-third-choice-container__btn"),x=document.querySelectorAll(".account-unit-container__btns-container__btn"),m=document.querySelector(".euro-fund-container"),g=document.querySelector(".growth-fund-container"),V=document.querySelector(".euro-fund-container__netissima-container"),U=document.querySelector(".growth-container"),H=document.querySelectorAll(".grid-row-body"),B=document.querySelector(".structured-fund-container"),h=document.querySelector(".account-unit-container"),M=document.querySelector(".tunnel-array-container"),N=document.querySelector(".euro-fund-container__cards-container"),ge=document.querySelectorAll(".support-card-container");document.querySelector(".white-card-container");document.querySelector(".array-container");w.forEach(n=>n.addEventListener("click",()=>he(n)));k.forEach(n=>n.addEventListener("click",()=>be(n)));b.forEach(n=>n.addEventListener("click",()=>fe(n)));x.forEach(n=>n.addEventListener("click",()=>we(n)));ge.forEach(n=>n.addEventListener("click",()=>J(n)));H.forEach(n=>n.addEventListener("click",()=>ye(n)));const he=n=>{b.forEach(e=>e.classList.remove("active")),w.forEach(e=>e.classList.remove("active")),m.classList.add("hidden"),h.classList.add("hidden"),g.classList.add("hidden"),y.classList.add("hidden"),n.classList.add("active"),T.classList.remove("hidden"),a.secondChoice="",a.thirdChoice="",k.forEach(e=>e.classList.remove("active")),w.forEach(e=>e.classList.remove("active")),me.forEach(e=>e.classList.add("hidden")),n.classList.add("active"),a.firstChoice=n.getAttribute("data-attr"),T.classList.remove("hidden"),document.querySelector(`.support-btns-container__second-choice-container__btns-type-second-choice-container.${n.getAttribute("data-attr")}`).classList.remove("hidden"),Q()},be=n=>{console.log("test"),b.forEach(e=>e.classList.remove("active")),y.classList.add("hidden"),m.classList.add("hidden"),h.classList.add("hidden"),g.classList.add("hidden"),k.forEach(e=>e.classList.remove("active")),a.secondChoice=n.getAttribute("data-attr"),n.classList.add("active"),y.classList.remove("hidden"),console.log(a),Q(),S()},fe=n=>{a.thirdChoice=n.getAttribute("data-attr"),b.forEach(e=>e.classList.remove("active")),n.classList.add("active"),xe(n.getAttribute("data-attr")),S()},we=n=>{console.log(x),x.forEach(e=>e.classList.remove("active")),n.classList.add("active"),n.getAttribute("data-attr")!=="structured-funds"?(M.classList.remove("hidden"),B.classList.add("hidden")):(M.classList.add("hidden"),B.classList.remove("hidden"))},J=n=>{console.log("test"),document.querySelectorAll(".support-card-container").forEach(e=>e.classList.remove("active")),n.classList.add("active"),console.log(n),n.getAttribute("data-attr")==="Netissima"?V.classList.remove("hidden"):V.classList.add("hidden"),n.getAttribute("data-attr")==="growth-netissima"?U.classList.remove("hidden"):U.classList.add("hidden")},ye=n=>{H.forEach(e=>e.classList.remove("active")),n.classList.add("active")},Q=()=>{a.firstChoice==="assuranceVie"&&a.secondChoice==="altaprofitsVie"||a.firstChoice==="capitalisation"&&a.secondChoice==="altaprofitsCapitalisation"?document.querySelector(".btns-third-choice-container__btn.growth").classList.remove("hidden"):document.querySelector(".btns-third-choice-container__btn.growth").classList.add("hidden"),a.firstChoice!=="planEpargneRetraite"&&a.secondChoice!=="titrePER"?document.querySelector(".btns-third-choice-container__btn.unit").classList.remove("hidden"):document.querySelector(".btns-third-choice-container__btn.unit").classList.add("hidden")},xe=n=>{console.log("enter"),n==="euro"?(m.classList.remove("hidden"),S()):m.classList.add("hidden"),n==="growth"?g.classList.remove("hidden"):g.classList.add("hidden"),n==="unit"?h.classList.remove("hidden"):h.classList.add("hidden")},S=()=>{N.innerHTML="";const n=ve[a.firstChoice][a.secondChoice][a.thirdChoice];n==null||n.map(e=>N.innerHTML+=`
     <div class="support-card-container" data-attr="${e.title}">
       <div class="support-card-container__card-header">
         <p class="support-card-container__card-header__title">${e.title}</p>
@@ -3795,9 +3858,9 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         </svg>
       </div>
     </div>
-  `),document.querySelectorAll(".support-card-container").forEach(e=>e.addEventListener("click",()=>$(e)))},J=[{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"}],Q=document.querySelector(".alta-news-talking-about-container__left-container__pages-navigation__pages-numbers"),be=Math.ceil(J.length/4);Q.innerHTML="";for(let n=1;n<=be;n++)Q.innerHTML+=`
+  `),document.querySelectorAll(".support-card-container").forEach(e=>e.addEventListener("click",()=>J(e)))},W=[{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"22 Juillet 2022",title:"Quelle stratégie pour créer de la performance dans un contexte inflationniste ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/bfm_business.png"},{date:"22 Juillet 2022",title:"Assurance vie : comment profiter des rendements du non coté",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/capital.png"},{date:"22 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/money_vox.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"},{date:"21 Juillet 2022",title:"Assurance vie : peut-on craindre un blocage des retraits ?",description:"“L'année 2022 ne sera pas celle du fonds en euros de l'assurance vie ! Alors que le taux du Livret A sera de 2% au 1er août, peu de fonds à capital... ",logoUrl:"./assets/logos/le_revenu.png"}],X=document.querySelector(".alta-news-talking-about-container__left-container__pages-navigation__pages-numbers"),Ce=Math.ceil(W.length/4);X.innerHTML="";for(let n=1;n<=Ce;n++)X.innerHTML+=`
         <p class='alta-news-talking-about-container__left-container__pages-navigation__pages-numbers__btn ${n===1?"activePage":""}' data-attr="${n}" >${n}</p>
-        `;const x=document.querySelectorAll(".alta-news-talking-about-container__left-container__pages-navigation__pages-numbers__btn");x.forEach(n=>n.addEventListener("click",e=>{x.forEach(t=>t.classList.remove("activePage")),W(e.target.getAttribute("data-attr"))}));const M=document.querySelector(".alta-news-talking-about-container__left-container__news-container");function W(n){x.forEach(e=>{e.getAttribute("data-attr")===n&&e.classList.add("activePage")}),M.innerHTML="",J.slice((n-1)*4,n*4).forEach(e=>M.innerHTML+=`
+        `;const C=document.querySelectorAll(".alta-news-talking-about-container__left-container__pages-navigation__pages-numbers__btn");C.forEach(n=>n.addEventListener("click",e=>{C.forEach(t=>t.classList.remove("activePage")),Y(e.target.getAttribute("data-attr"))}));const j=document.querySelector(".alta-news-talking-about-container__left-container__news-container");function Y(n){C.forEach(e=>{e.getAttribute("data-attr")===n&&e.classList.add("activePage")}),j.innerHTML="",W.slice((n-1)*4,n*4).forEach(e=>j.innerHTML+=`
         <div class="alta-news-talking-about-container__left-container__card">
         <div
         class="alta-news-talking-about-container__left-container__card__logo-container"
@@ -3812,9 +3875,9 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <p>${e.description}</p>
         </div>
     </div>  
-`)}W(1);const X=[{date:"13 novembre 2022",title:"Investissement responsable : quelle est la valeur ajoutée des ETF intégrant les considérations ESG ?",description:"Les stratégies d'investissement intégrant des critères environnementaux, sociaux et de gouvernance dits “ESG” sont devenues incontournables. ",author:"Par <b>Cyrille Chambron</b>, Gérant allocataire chez Amundi",logoUrl:"/assets/images/parole-d-expert.png"},{date:"21 novembre 2022",title:"SCPI : en quoi l’immobilier en région est source d’opportunités ?",description:"Jean-Marie Souclier, Président chez Sogenial Immobilier, nous explique pourquoi les régions françaises CONSTITUENT DES ZONES D’INVESTISSEMENT RECHERCHÉES POUR LES INVESTISSEURS EN QUÊTE DE RENDEMENT ET DE DIVERSIFICATION.",author:"Par <b>Jean-Marie Souclier</b>, Président chez Sogenial",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"}],Y=document.querySelector(".experts-voice-container__pages-navigation__pages-numbers"),fe=Math.ceil(X.length/3);Y.innerHTML="";for(let n=1;n<=fe;n++)Y.innerHTML+=`
+`)}Y(1);const Z=[{date:"13 novembre 2022",title:"Investissement responsable : quelle est la valeur ajoutée des ETF intégrant les considérations ESG ?",description:"Les stratégies d'investissement intégrant des critères environnementaux, sociaux et de gouvernance dits “ESG” sont devenues incontournables. ",author:"Par <b>Cyrille Chambron</b>, Gérant allocataire chez Amundi",logoUrl:"/assets/images/parole-d-expert.png"},{date:"21 novembre 2022",title:"SCPI : en quoi l’immobilier en région est source d’opportunités ?",description:"Jean-Marie Souclier, Président chez Sogenial Immobilier, nous explique pourquoi les régions françaises CONSTITUENT DES ZONES D’INVESTISSEMENT RECHERCHÉES POUR LES INVESTISSEURS EN QUÊTE DE RENDEMENT ET DE DIVERSIFICATION.",author:"Par <b>Jean-Marie Souclier</b>, Président chez Sogenial",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"},{date:"13 décembre 2022",title:"Pourquoi choisir un fonds à échéance pour s’exposer à la classe d’actifs obligataire ?",description:"AVEC LA REMONTÉE DES TAUX, LES RENDEMENTS DES OBLIGATIONS SONT REDEVENUS ATTRACTIFS. POURQUOI CELA CONSTITUE UN ENVIRONNEMENT FAVORABLE POUR LES FONDS À ÉCHÉANCE ?",author:"Par <b>Emmanuel de Sinety</b>, Gérant obligataire chez Sycomore AM",logoUrl:"/assets/images/parole-d-expert.png"}],K=document.querySelector(".experts-voice-container__pages-navigation__pages-numbers"),Ee=Math.ceil(Z.length/3);K.innerHTML="";for(let n=1;n<=Ee;n++)K.innerHTML+=`
         <p class='experts-voice-container__pages-navigation__pages-numbers__btn ${n===1?"activePage":""}' data-attr="${n}" >${n}</p>
-        `;const y=document.querySelectorAll(".experts-voice-container__pages-navigation__pages-numbers__btn");y.forEach(n=>n.addEventListener("click",e=>{y.forEach(t=>t.classList.remove("activePage")),K(e.target.getAttribute("data-attr"))}));const N=document.querySelector(".experts-voice-container__news-container");function K(n){y.forEach(e=>{e.getAttribute("data-attr")===n&&e.classList.add("activePage")}),N.innerHTML="",X.slice((n-1)*3,n*3).forEach(e=>N.innerHTML+=`
+        `;const E=document.querySelectorAll(".experts-voice-container__pages-navigation__pages-numbers__btn");E.forEach(n=>n.addEventListener("click",e=>{E.forEach(t=>t.classList.remove("activePage")),nn(e.target.getAttribute("data-attr"))}));const D=document.querySelector(".experts-voice-container__news-container");function nn(n){E.forEach(e=>{e.getAttribute("data-attr")===n&&e.classList.add("activePage")}),D.innerHTML="",Z.slice((n-1)*3,n*3).forEach(e=>D.innerHTML+=`
         <div class="experts-voice-container__card">
         <div
         class="experts-voice-container__card__logo-container"
@@ -3830,4 +3893,40 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <p>${e.author}</p>
         </div>
     </div>  
-`)}K(1);const we=document.querySelectorAll(".accordion-container__accordion-btn"),xe=document.querySelectorAll(".accordion-container__content__question-container__question");xe.forEach(n=>n.addEventListener("click",Z));we.forEach(n=>n.addEventListener("click",Z));function Z(n){if(this.nextElementSibling.style.maxHeight){this.nextElementSibling.style.maxHeight="",this.className==="accordion-container__content__question-container__question"?(this.lastElementChild.textContent="+",this.nextElementSibling.style.opacity="0",this.parentElement.parentElement.style.maxHeight=`${this.parentElement.parentElement.scrollHeight+500}px`,console.log(this.parentElement.parentElement.style.scrollHeight)):(this.lastElementChild.style.transform="rotate(0deg)",this.style.backgroundColor="",this.style.color="");return}else this.nextElementSibling.style.maxHeight=`${this.nextElementSibling.scrollHeight}px`,this.nextElementSibling.style.opacity="1",this.className==="accordion-container__content__question-container__question"?(this.lastElementChild.textContent="-",setTimeout(()=>{this.parentElement.parentElement.style.maxHeight=`${this.parentElement.parentElement.scrollHeight+500}px`},200),console.log(this.parentElement.parentElement.style.maxHeight)):(this.lastElementChild.style.transform="rotate(-180deg)",console.dir(this),this.style.backgroundColor="#002853",this.style.color="#F7FAFD")}
+`)}nn(1);const Le=document.querySelectorAll(".accordion-container__accordion-btn"),qe=document.querySelectorAll(".accordion-container__content__question-container__question");qe.forEach(n=>n.addEventListener("click",en));Le.forEach(n=>n.addEventListener("click",en));function en(n){if(this.nextElementSibling.style.maxHeight){this.nextElementSibling.style.maxHeight="",this.className==="accordion-container__content__question-container__question"?(this.lastElementChild.textContent="+",this.nextElementSibling.style.opacity="0",this.parentElement.parentElement.style.maxHeight=`${this.parentElement.parentElement.scrollHeight+500}px`,console.log(this.parentElement.parentElement.style.scrollHeight)):(this.lastElementChild.style.transform="rotate(0deg)",this.style.backgroundColor="",this.style.color="");return}else this.nextElementSibling.style.maxHeight=`${this.nextElementSibling.scrollHeight}px`,this.nextElementSibling.style.opacity="1",this.className==="accordion-container__content__question-container__question"?(this.lastElementChild.textContent="-",setTimeout(()=>{this.parentElement.parentElement.style.maxHeight=`${this.parentElement.parentElement.scrollHeight+500}px`},200),console.log(this.parentElement.parentElement.style.maxHeight)):(this.lastElementChild.style.transform="rotate(-180deg)",console.dir(this),this.style.backgroundColor="#002853",this.style.color="#F7FAFD")}const rn=[{year:"1999",description:`Création d’Altaprofits S.A.
+    <b>1er courtier en ligne spécialisé en assurance vie en France</b>`},{year:"2000",description:"Création et développement de sa propre plate-forme technologique"},{year:"2000",description:"Création et développement de son robo-advisor"},{year:"2000",description:"Le 1er contrat d’assurance vie en ligne sans frais supplémentaire"},{year:"2001",description:`Altaprofits reçoit un label ANVAR (Agence Nationale pour la Valorisation de la Recherche
+      devenue Oséo) pour la création du premier « front-office (finance) de gestion de contrats
+      d’assurance vie online » et le développement de son robo-advisor, deux outils qu’ANVAR
+      considère comme les plus avancés <br/> <b>Altaprofits.com</b>`},{year:"2001",description:`Le 1er contrat d’assurance vie en ligne sans frais supplémentaire et le 1er robo-advisor
+    (algorithme d’allocation d’actifs en OPCVM, basé sur la théorie moderne du portefeuille développé par Harry Markowitz, 
+      prix Nobel en 1990, avec William Sharpe et Merton Miller),  sont <b>mis à disposition du grand public</b> <br/> 
+      <b>Altaprofits Vie</b> <br/> <b>Fédération Continentale / Groupe Generali France</b><br/> <b>Asset Allocator</b>`},{year:"2006",description:"1ère Gestion Pilotée <br/> <b>Lazard Frères Gestion</b>"},{year:"2009",description:"Les obligations en direct pour les particuliers dans un contrat d’assurance vie"},{year:"2011",description:"1er contrat d’assurance vie proposant des titres vifs en direct & 1er contrat d’assurance vie multi-poches <br/> <b>Titres@Vie</b> <br/> <b>SwissLife Assurance et Patrimoine</b>"},{year:"2015",description:"1er contrat d’assurance vie 100 % digital<br/>Signature électronique <br/> <b>Digital Vie</b><br/> <b>Suravenir</b>"},{year:"2015",description:"1er contrat d’assurance vie de droit luxembourgeois accessible sur Internet et à tarifs négociés <br/> <b>Generali Espace Lux Vie</b><br/> <b>Generali Luxembourg</b>"},{year:"2020",description:`Naissance d’un acteur majeur en gestion de Patrimoine sur Internet
+    Altaprofits, standard du marché de l’assurance vie en ligne, et Cosevad, spécialisé dans la vente Directe en assurance vie et conseil en gestion de patrimoine, réalisent leur fusion 
+    <br/> <b>Altaprofits</b><br/> <b>Société de Conseil en Gestion de Patrimoine sur Internet</b>
+    `},{year:"2020",description:"1er Plan Épargne Retraite (PER) 100 % numérique <br/> <b>Titres@PER</b> <br/> <b>SwissLife Assurance et Patrimoine</b>"},{year:"2020",description:"Proposition de parts de SCPI de rendement en direct accessibles aux investisseurs particuliers"},{year:"2022",description:"Enrichissement des contrats historiques d’assurance vie et de capitalisation "},{year:"2022",description:" Contrats « nouvelle génération » (accessibilité à un fonds croissance, à des ETF, abaissement du seuil d’accès aux actions européennes du SBF 120 et de l’Euro Stoxx 50)"},{year:"2022",description:"Intégration d’une nouvelle gestion pilotée associant gestion indicielle (ETF) et gestion thématique <br/> <b>Altaprofits Vie & Altaprofits Capitalisation</b><br/> <b>Generali Vie</b><br/> <b>Generali Wealth Solutions</b>"}];rn.reverse();rn.forEach(n=>{document.querySelector(".history-section__cards-section__cards").innerHTML+=`
+    <div class="history-section__cards-section__cards__card">
+      <div class="history-section__cards-section__cards__card__header">
+        <h3>${n.year}</h3>
+        <svg
+          class="right-arrow"
+          width="20"
+          height="19"
+          viewBox="0 0 20 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.9449 12.9688C16.5262 12.9688 19.4294 10.0657 19.4294 6.48442C19.4294 2.90317 16.5262 0 12.9449 0C9.3637 0 6.46052 2.90317 6.46052 6.48442C6.46052 7.82307 6.86616 9.06698 7.56123 10.0999L0.125 16.6781L1.45015 18.1761L8.91963 11.5685C10.0255 12.4453 11.4241 12.9688 12.9449 12.9688Z"
+            fill="#001329"
+          />
+        </svg>
+      </div>
+      <div class="history-section__cards-section__cards__card__body">
+        <p>
+          ${n.description}
+        </p>
+      </div>
+    </div>
+  `});document.querySelector(".history-section__cards-section__cards");const u=document.querySelectorAll(".history-section__cards-section__cards__card"),Ae=document.querySelectorAll(".history-section__cards-section__right-arrow, .history-section__cards-section__left-arrow");u.forEach(n=>n.addEventListener("click",ke));Ae.forEach(n=>n.addEventListener("click",Se));let i=0;function ke(){u.forEach(e=>{e.firstElementChild.style.backgroundColor="",e.firstElementChild.firstElementChild.style.color=""});const n=this.firstElementChild;n.style.backgroundColor="#ff6442",n.firstElementChild.style.color="#fff"}function Se(){let n=0;window.screen.width<1280?n=(u.length-1)*-100:n=(u.length-4)*-100,this.classList.contains("history-section__cards-section__right-arrow")&&i>n?i-=100:this.classList.contains("history-section__cards-section__right-arrow")&&i<=n?i=0:this.classList.contains("history-section__cards-section__left-arrow")&&i<0?i+=100:this.classList.contains("history-section__cards-section__left-arrow")&&i===0&&(i=n),u.forEach(e=>e.style.transform=`translateX(${i}%)`)}
