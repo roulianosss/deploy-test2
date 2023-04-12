@@ -66,22 +66,17 @@
         color: #001329;
         display: flex;
         align-items: center;
-        min-width: 100px;
         max-width: 170px;
       }
-
-     
 
       &__right-text-container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-width: 100px;
         max-width: 170px;
 
         & p {
-          min-width: 240px;
-          transform: translateX(-15px);
+          transform: translateX(-5px);
         }
       }
     }
@@ -98,10 +93,14 @@
   }
 
   .squad-container__different-jobs__graph p {
-    min-width: 100px;
+    max-width: 75px;
     // font-size: 1rem;
   }
   .squad-container__different-jobs__graph p {
-    font-size: 1rem;
+    font-size: 0.75rem;
+  }
+  .squad-container__different-jobs__graph__right-text-container p{
+    max-width: 75px;
+
   }
 }
