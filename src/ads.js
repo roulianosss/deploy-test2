@@ -86,7 +86,7 @@ const patterns = [
 ]
 
 // BLOCKS
-// import header from "./3_blocks/header/template.html?raw"
+import header from "./3_blocks/header/template.html?raw"
 import footer from "./3_blocks/footer/template.html?raw"
 import wrapper from "./3_blocks/wrapper/template.html?raw"
 import homeHeroBanner from "./3_blocks/home-hero-banner/template.html?raw"
@@ -126,6 +126,10 @@ import squadSection from "./3_blocks/squad-section/template.html?raw"
 import altaInNumberSection from "./3_blocks/alta-in-number-section/template.html?raw"
 
 const blocks = [
+    {
+        name: "header",
+        template: header
+    },
     {
         name: "footer",
         template: footer
@@ -300,13 +304,15 @@ categories.forEach((category) => {
     categorySection.appendChild(categoryTitle)
 
     const categoryContainer = document.createElement("div")
-    categoryContainer.classList.add("ads", category.name)
+    categoryContainer.classList.add("ads",
+        category.name)
     categorySection.appendChild(categoryContainer)
 
     category.value.forEach((element) => {
         const elementSection = document.createElement("div")
         elementSection.id = element.name
-        elementSection.classList.add("section", "ads")
+        elementSection.classList.add("section",
+            "ads")
 
         const elementTitle = document.createElement("h4")
         elementTitle.innerText = element.name
@@ -314,12 +320,14 @@ categories.forEach((category) => {
 
         const elementTemplate = document.createElement("div")
         elementTemplate.innerHTML = element.template
-        elementTemplate.classList.add("sub-section", "ads")
+        elementTemplate.classList.add("sub-section",
+            "ads")
 
         elementSection.appendChild(elementTemplate)
 
         categorySection.appendChild(elementSection)
     })
 
-    document.querySelector("main.ads").appendChild(categorySection)
+    document.querySelector("main.ads")
+        .appendChild(categorySection)
 })
