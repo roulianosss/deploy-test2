@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &__cards {
       width: 100%;
@@ -146,7 +147,22 @@
     }
   }
 
+  .discover-our-job__card-section__right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+  }
+  .discover-our-job__card-section__left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+  }
+
+
   .discover-our-job__card-section__right-arrow svg, .discover-our-job__card-section__left-arrow svg {
     margin: 0 5px;
+    z-index: 1;
   }
+
+
 }
