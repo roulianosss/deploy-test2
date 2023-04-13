@@ -125,6 +125,7 @@ import questionsSection from "./3_blocks/questions-section/template.html?raw"
 import squadSection from "./3_blocks/squad-section/template.html?raw"
 import altaInNumberSection from "./3_blocks/alta-in-number-section/template.html?raw"
 import altaprofitHistorySection from "./3_blocks/altaprofit-history-section/template.html?raw"
+import reasonToJoinSection from "./3_blocks/reason-to-join-section/template.html?raw"
 
 const blocks = [
     {
@@ -278,6 +279,10 @@ const blocks = [
     {
         name: "altaprofitHistorySection",
         template: altaprofitHistorySection
+    },
+    {
+        name: "reasonToJoinSection",
+        template: reasonToJoinSection
     }
 ]
 
