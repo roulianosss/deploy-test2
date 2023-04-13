@@ -354,7 +354,7 @@
     transition: background-color var(--motion-duration-medium) ease-out;
 
     &__percentage-rate {
-      font-family: 'Raleway';
+      font-family: "Raleway";
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-3);
       text-align: center;
@@ -556,6 +556,28 @@
   }
 }
 
+.distribution-funds-array-section {
+  width: 100%;
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    gap: 594px;
+    width: 927px;
+    background: #002853;
+    border-radius: 8px;
+
+    & h3 {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 24px;
+      color: #ffffff;
+    }
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -579,7 +601,8 @@
 .active
   p:not(
     .card-container__card-informations__percentage-rate,
-    .card-container__card-informations__card-information-text,.support-card-container__informations__percentage-rate,
+    .card-container__card-informations__card-information-text,
+    .support-card-container__informations__percentage-rate,
     .support-card-container__informations__information-text,
     .grid-row-body__grid-profil-item-container p
   ) {
@@ -594,7 +617,6 @@
     opacity: 1;
   }
 }
-
 
 @media screen and (max-width: 1280px) {
   .btns-container__first-choice-container__btn {

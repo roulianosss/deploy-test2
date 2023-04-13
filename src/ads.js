@@ -126,6 +126,8 @@ import squadSection from "./3_blocks/squad-section/template.html?raw"
 import altaInNumberSection from "./3_blocks/alta-in-number-section/template.html?raw"
 import altaprofitHistorySection from "./3_blocks/altaprofit-history-section/template.html?raw"
 import reasonToJoinSection from "./3_blocks/reason-to-join-section/template.html?raw"
+import discoverOurJobSection from "./3_blocks/discover-our-job-section/template.html?raw"
+import joinTheTeamSection from "./3_blocks/join-the-team-section/template.html?raw"
 
 const blocks = [
     {
@@ -283,7 +285,15 @@ const blocks = [
     {
         name: "reasonToJoinSection",
         template: reasonToJoinSection
-    }
+    },
+    {
+        name: "discoverOurJobSection",
+        template: discoverOurJobSection
+    },
+    {
+        name: "joinTheTeamSection",
+        template: joinTheTeamSection
+    },
 ]
 
 

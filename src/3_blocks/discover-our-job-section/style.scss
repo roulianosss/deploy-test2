@@ -1,0 +1,152 @@
+.discover-our-job {
+  width: 100%;
+  user-select: none;
+
+  & > h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__cards {
+      width: 100%;
+      display: flex;
+      // justify-content: center;
+      overflow: hidden;
+      position: relative;
+
+      &__card {
+        position: relative;
+        min-width: 100%;
+        transition: transform 0.6s ;
+        min-height: 500px;
+
+        &__text-container {
+          
+          padding-left: 248px;
+          padding-top: 75px;
+          position: relative;
+          z-index: 1;
+
+          &__title {
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 40px;
+            color: #001329;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 16px;
+
+            & p {
+              margin-left: 47px;
+              font-family: "Raleway";
+              font-weight: 700;
+              font-size: 20px;
+              color: #001329;
+              transform: translateY(-2px);
+            }
+          }
+
+          &__description {
+            font-family: "Expletus Sans";
+            font-weight: 700;
+            font-size: 30px;
+            color: #001329;
+          }
+        }
+
+        &__profile-container {
+          width: 248px;
+          height: auto;
+          position: absolute;
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%, 0 52%);
+          bottom: -290px;
+          left: 0px;
+          overflow: visible;
+          
+         
+        }
+      }
+
+      &__card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: polygon(9% 0, 100% 0, 100% 56%, 25% 100%, 0 22%);
+          background: linear-gradient(80.32deg, #fdcec4 6.12%, #e8eeff 62.38%);
+          height: 427px;
+          width: 100%;
+          z-index: 0;
+      }
+    }
+
+    & svg {
+      cursor: pointer;
+      margin: 0 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .discover-our-job__card-section__cards__card {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // min-height: 850px;
+  }
+
+  .discover-our-job__card-section__cards__card::before {
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%, 0 52%);
+    min-height: 500px;
+  }
+
+  .discover-our-job__card-section__cards__card__text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding: 60px 20px 0px;
+    // max-height: 300px;
+    // height: 50%;
+
+    & h3 {
+      font-size: 1.25rem;
+    }
+
+     & p {
+      margin-left: 16px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+     }
+  }
+
+  .discover-our-job__card-section__cards__card__text-container__description {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .discover-our-job__card-section__cards__card__profile-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-270px);
+
+    & img {
+      // min-width: 60%;
+      max-width: 200px;
+    }
+  }
+
+  .discover-our-job__card-section__right-arrow svg, .discover-our-job__card-section__left-arrow svg {
+    margin: 0 5px;
+  }
+}
