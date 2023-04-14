@@ -59,7 +59,7 @@
       }
     }
 
-    &__btn:not(.active):hover {
+    &__btn:not(.activeSupportSection):hover {
       background-color: var(--color-primary-90);
     }
   }
@@ -100,7 +100,7 @@
           color: var(--color-neutral-0);
         }
       }
-      &__btn:not(.active):hover {
+      &__btn:not(.activeSupportSection):hover {
         background-color: var(--color-primary-90);
       }
     }
@@ -142,7 +142,7 @@
       white-space: nowrap;
     }
 
-    &:not(.active):hover {
+    &:not(.activeSupportSection):hover {
       background-color: var(--color-primary-90);
     }
   }
@@ -347,7 +347,7 @@
     }
   }
 
-  &:not(.active):hover .support-card-container__card-header, &:not(.active):hover .support-card-container__informations{
+  &:not(.activeSupportSection):hover .support-card-container__card-header, &:not(.activeSupportSection):hover .support-card-container__informations{
     background-color: var(--color-primary-90);
    }
 }
@@ -548,24 +548,24 @@
   cursor: pointer;
   user-select: none;
 
-  &.active .support-card-container__informations {
+  &.activeSupportSection .support-card-container__informations {
     background-color: var(--color-primary-90);
   }
-  &:not(.active):hover .support-card-container__card-header,
-  &:not(.active):hover .support-card-container__informations {
+  &:not(.activeSupportSection):hover .support-card-container__card-header,
+  &:not(.activeSupportSection):hover .support-card-container__informations {
     background-color: var(--color-primary-90);
   }
-  &.active * {
+  &.activeSupportSection * {
     color: var(--color-neutral-0);
   }
-  &.active .support-card-container__card-header {
+  &.activeSupportSection .support-card-container__card-header {
     background-color: var(--color-primary-50);
   }
-  &.active .support-card-container__card-header p {
+  &.activeSupportSection .support-card-container__card-header p {
     color: var(--color-neutral-100);
   }
 
-  &.active .card-informations {
+  &.activeSupportSection .card-informations {
     background-color: var(--color-primary-90);
   }
 
@@ -763,7 +763,7 @@
       user-select: none;
       transition: background-color var(--motion-duration-medium) ease-out;
 
-      &:not(.active):hover {
+      &:not(.activeSupportSection):hover {
         background-color: var(--color-primary-90);
       }
 
@@ -1084,10 +1084,10 @@
       text-align: center;
       min-height: 40px;
     }
-    &.active {
+    &.activeSupportSection {
       background-color: var(--color-primary-90);
     }
-    &.active p {
+    &.activeSupportSection p {
       color: var(--color-neutral-0);
     }
   }
@@ -1444,13 +1444,13 @@
   display: none;
 }
 
-.active {
+.activeSupportSection {
   background: var(--color-primary-50);
   border-radius: var(--border-radius-small);
 }
 
-.active h3,
-.active
+.activeSupportSection h3,
+.activeSupportSection
   p:not(
     .card-container__card-informations__percentage-rate,
     .card-container__card-informations__card-information-text,.support-card-container__informations__percentage-rate,

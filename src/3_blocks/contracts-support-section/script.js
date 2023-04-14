@@ -182,20 +182,20 @@ gridRows.forEach((row) =>
 
 //fonction au clic du premier choix
 const setActiveBtnFirstChoice = (btn) => {
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("active"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btnsFirstChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
   euroFundContainer.classList.add("hidden");
   accountUnitContainer.classList.add('hidden')
   growthFundContainer.classList.add('hidden')
   btnsThirdChoiceContainer.classList.add("hidden");
-  btn.classList.add("active");
+  btn.classList.add("activeSupportSection");
   btnsSecondChoiceContainer.classList.remove("hidden");
   userChoices.secondChoice = "";
   userChoices.thirdChoice = "";
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("active"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btnsFirstChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
   btnsTypeSecondChoiceContainer.forEach((btn) => btn.classList.add("hidden"));
-  btn.classList.add("active");
+  btn.classList.add("activeSupportSection");
   userChoices.firstChoice = btn.getAttribute("data-attr");
   btnsSecondChoiceContainer.classList.remove("hidden");
   document
@@ -207,14 +207,14 @@ const setActiveBtnFirstChoice = (btn) => {
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
   console.log('test')
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
   btnsThirdChoiceContainer.classList.add("hidden");
   euroFundContainer.classList.add("hidden");
   accountUnitContainer.classList.add('hidden')
   growthFundContainer.classList.add('hidden')
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
   userChoices.secondChoice = btn.getAttribute("data-attr");
-  btn.classList.add("active");
+  btn.classList.add("activeSupportSection");
   btnsThirdChoiceContainer.classList.remove("hidden");
   console.log(userChoices);
   displayConditionalThirdChoice();
@@ -224,8 +224,8 @@ const setActiveBtnSecondChoice = (btn) => {
 //fonction au clic du troisième choix
 const setActiveBtnThirdChoice = (btn) => {
   userChoices.thirdChoice = btn.getAttribute("data-attr");
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("active"));
-  btn.classList.add("active");
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btn.classList.add("activeSupportSection");
   displayCategoryContainer(btn.getAttribute("data-attr"));
   displayEuroCards();
 };
@@ -233,8 +233,8 @@ const setActiveBtnThirdChoice = (btn) => {
 //fonction au clic sur les sous catégories de  l' unité de compte
 const setActiveBtnAccountUnit = (btn) => {
   console.log(btnsAccountUnit);
-  btnsAccountUnit.forEach((btn) => btn.classList.remove("active"));
-  btn.classList.add("active");
+  btnsAccountUnit.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btn.classList.add("activeSupportSection");
   if (btn.getAttribute("data-attr") !== "structured-funds") {
     opcContainer.classList.remove("hidden");
     structuredFundsContainer.classList.add("hidden");
@@ -249,8 +249,8 @@ const setActiveCard = (card) => {
   console.log('test')
   document
     .querySelectorAll(".support-card-container")
-    .forEach((card) => card.classList.remove("active"));
-  card.classList.add("active");
+    .forEach((card) => card.classList.remove("activeSupportSection"));
+  card.classList.add("activeSupportSection");
   console.log(card);
   if (card.getAttribute("data-attr") === "Netissima") {
     netissimaContainer.classList.remove("hidden");
@@ -266,8 +266,8 @@ const setActiveCard = (card) => {
 
 //fonction pour afficher la couleur de la ligne sur le tableau au clic
 const setActiveRow = (row) => {
-  gridRows.forEach((row) => row.classList.remove("active"));
-  row.classList.add("active");
+  gridRows.forEach((row) => row.classList.remove("activeSupportSection"));
+  row.classList.add("activeSupportSection");
 };
 
 //affichage des resultat des choix utilisateur
@@ -275,23 +275,23 @@ const displayResult = () => {
   btnsParameters.forEach((btn) => {
     if (
       btn.classList.contains("btn-parameter1") &&
-      btn.classList.contains("active")
+      btn.classList.contains("activeSupportSection")
     ) {
       whiteCardPlaceholder.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter1") &&
-      !btn.classList.contains("active")
+      !btn.classList.contains("activeSupportSection")
     ) {
       whiteCardPlaceholder.classList.add("hidden");
     }
     if (
       btn.classList.contains("btn-parameter2") &&
-      btn.classList.contains("active")
+      btn.classList.contains("activeSupportSection")
     ) {
       arrayPlaceholder.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter2") &&
-      !btn.classList.contains("active")
+      !btn.classList.contains("activeSupportSection")
     ) {
       arrayPlaceholder.classList.add("hidden");
     }

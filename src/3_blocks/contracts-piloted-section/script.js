@@ -388,10 +388,10 @@ allCards.forEach((card) =>
 const setActiveBtnFirstChoice = (btn) => {
   console.log(btnsSecondChoiceContainer);
   userChoices.secondChoice = "";
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("active"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
+  btnsFirstChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
   btnsTypeSecondChoiceContainer.forEach((btn) => btn.classList.add("hidden"));
-  btn.classList.add("active");
+  btn.classList.add("activePilotedSection");
   userChoices.firstChoice = btn.getAttribute("data-attr");
   btnsSecondChoiceContainer.classList.remove("hidden");
   document
@@ -402,17 +402,17 @@ const setActiveBtnFirstChoice = (btn) => {
 
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("active"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
   userChoices.secondChoice = btn.getAttribute("data-attr");
-  btn.classList.add("active");
+  btn.classList.add("activePilotedSection");
   displayCards();
 };
 
 //fonction au clic du troisième choix
 const setActiveBtnThridChoice = (btn) => {
   userChoices.thirdChoice = btn.getAttribute("data-attr");
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("active"));
-  btn.classList.add("active");
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
+  btn.classList.add("activePilotedSection");
   displayCards();
 };
 
@@ -437,37 +437,37 @@ const displayCards = () => {
                 <p class="card-container__card-header__title">${card.title}</p>
                 <div class="card-container__card-header__numbers-rating-container">
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 1 ? "active" : ""
+                    card.srri === 1 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">1</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 2 ? "active" : ""
+                    card.srri === 2 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">2</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 3 ? "active" : ""
+                    card.srri === 3 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">3</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 4 ? "active" : ""
+                    card.srri === 4 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">4</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 5 ? "active" : ""
+                    card.srri === 5 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">5</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 6 ? "active" : ""
+                    card.srri === 6 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">6</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 7 ? "active" : ""
+                    card.srri === 7 ? "activePilotedSection" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">7</p>
                   </div>
@@ -563,7 +563,7 @@ const displayCards = () => {
 //fonction pour passer de l'affichage cards au tableau
 const setActiveBtnParameter = (btn) => {
   btnsParameters.forEach((btn) => {
-    btn.classList.toggle("toggle-button--active");
+    btn.classList.toggle("toggle-button--activePilotedSection");
   });
   displayResult();
 };
@@ -574,8 +574,8 @@ const setActiveCard = (card) => {
   displayResult();
   document
     .querySelectorAll(".card-container, .grid-row-body")
-    .forEach((card) => card.classList.remove("active"));
-  card.classList.add("active");
+    .forEach((card) => card.classList.remove("activePilotedSection"));
+  card.classList.add("activePilotedSection");
 };
 
 //affichage des resultat des choix utilisateur
@@ -583,23 +583,23 @@ const displayResult = () => {
   btnsParameters.forEach((btn) => {
     if (
       btn.classList.contains("btn-parameter1") &&
-      btn.classList.contains("toggle-button--active")
+      btn.classList.contains("toggle-button--activePilotedSection")
     ) {
       cardsContainer.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter1") &&
-      !btn.classList.contains("toggle-button--active")
+      !btn.classList.contains("toggle-button--activePilotedSection")
     ) {
       cardsContainer.classList.add("hidden");
     }
     if (
       btn.classList.contains("btn-parameter2") &&
-      btn.classList.contains("toggle-button--active")
+      btn.classList.contains("toggle-button--activePilotedSection")
     ) {
       arrayContainer.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter2") &&
-      !btn.classList.contains("toggle-button--active")
+      !btn.classList.contains("toggle-button--activePilotedSection")
     ) {
       arrayContainer.classList.add("hidden");
     }

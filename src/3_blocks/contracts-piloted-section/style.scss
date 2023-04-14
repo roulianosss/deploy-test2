@@ -60,7 +60,7 @@
       }
     }
 
-    &__btn:not(.active):hover {
+    &__btn:not(.activePilotedSection):hover {
       background-color: #fef7f5;
     }
   }
@@ -102,7 +102,7 @@
           color: var(--color-neutral-0);
         }
       }
-      &__btn:not(.active):hover {
+      &__btn:not(.activePilotedSection):hover {
         background-color: #fef7f5;
       }
     }
@@ -162,7 +162,7 @@
       }
     }
 
-    &__btn:not(.active):hover {
+    &__btn:not(.activePilotedSection):hover {
       background-color: #fef7f5;
     }
   }
@@ -244,50 +244,50 @@
     transition: background-color var(--motion-duration-medium) ease-out;
   }
 
-  &.active .card-container__card-header {
+  &.activePilotedSection .card-container__card-header {
     background-color: var(--color-primary-50);
   }
-  &.active .card-container__card-header__title {
+  &.activePilotedSection .card-container__card-header__title {
     color: var(--color-primary-90);
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header
     .card-container__card-header__numbers-rating-container__number-rating-container {
     background-color: #ff4c29;
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header
     .card-container__card-header__numbers-rating-container__number-rating-container {
     background-color: var(--color-primary-90);
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header
-    .card-container__card-header__numbers-rating-container__number-rating-container.active
+    .card-container__card-header__numbers-rating-container__number-rating-container.activePilotedSection
     p {
     color: var(--color-primary-50);
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header__numbers-rating-container__number-rating-container
     p {
     color: var(--color-neutral-100);
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header
     .card-container__card-header__numbers-rating-container__number-rating-container {
     background-color: #ff4c29;
   }
-  &.active
+  &.activePilotedSection
     .card-container__card-header
-    .card-container__card-header__numbers-rating-container__number-rating-container.active {
+    .card-container__card-header__numbers-rating-container__number-rating-container.activePilotedSection {
     background-color: var(--color-primary-90);
   }
 
-  &.active .card-container__card-informations {
+  &.activePilotedSection .card-container__card-informations {
     background-color: var(--color-primary-90);
   }
 
-  &:not(.active):hover .card-container__card-header,
-  &:not(.active):hover .card-container__card-informations {
+  &:not(.activePilotedSection):hover .card-container__card-header,
+  &:not(.activePilotedSection):hover .card-container__card-informations {
     background-color: #fef7f5;
   }
 
@@ -439,16 +439,16 @@
     align-items: center;
     justify-content: center;
   }
-  &.active {
+  &.activePilotedSection {
     background: var(--color-primary-90);
     border-radius: 0px;
   }
 
-  &.active * {
+  &.activePilotedSection * {
     color: var(--color-secondary-20);
   }
 
-  &.active
+  &.activePilotedSection
     .grid-row-body__grid-profil-item-container__grid-srri-item-container
     p {
     color: var(--color-neutral-100);
@@ -658,23 +658,23 @@
   display: none;
 }
 
-.active {
+.activePilotedSection {
   background: var(--color-primary-50);
   border-radius: var(--border-radius-small);
 }
 
-.filters-container__parameters-container__btn-parameter.active {
+.filters-container__parameters-container__btn-parameter.activePilotedSection {
   background-color: var(--color-secondary-20);
   color: white;
 }
 
-.btn-parameter.active {
+.btn-parameter.activePilotedSection {
   background-color: var(--color-secondary-20);
   color: white;
 }
 
-.active h3,
-.active
+.activePilotedSection h3,
+.activePilotedSection
   p:not(
     .card-container__card-informations__percentage-rate,
     .card-container__card-informations__card-information-text,
