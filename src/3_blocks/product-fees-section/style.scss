@@ -19,9 +19,6 @@
     justify-content: center;
     flex-wrap: wrap;
     width: fit-content;
-    //
-    //@media screen and {
-    //}
   }
 
   &__secondary {
@@ -32,6 +29,10 @@
     width: 100%;
     max-width: 960px;
     padding: var(--spacing-16);
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .file-link {
