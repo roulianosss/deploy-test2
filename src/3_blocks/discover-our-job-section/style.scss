@@ -15,7 +15,6 @@
     &__cards {
       width: 100%;
       display: flex;
-      // justify-content: center;
       overflow: hidden;
       position: relative;
 
@@ -98,7 +97,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // min-height: 850px;
   }
 
   .discover-our-job__card-section__cards__card::before {
@@ -114,8 +112,6 @@
     align-items: center;
     padding: 0;
     padding: 60px 20px 0px;
-    // max-height: 300px;
-    // height: 50%;
 
     & h3 {
       font-size: 1.25rem;
@@ -142,7 +138,6 @@
     transform: translateY(-270px);
 
     & img {
-      // min-width: 60%;
       max-width: 200px;
     }
   }

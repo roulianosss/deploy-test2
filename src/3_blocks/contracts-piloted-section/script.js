@@ -339,6 +339,26 @@ const cardsContainer = document.querySelector(".cards-display-container");
 const arrayContainer = document.querySelector(".array-display-container");
 const allArrayRows = document.querySelectorAll(".grid-row-body");
 
+const distributionFundsArray = document.querySelector('.distribution-funds-array-section__btn')
+
+distributionFundsArray.addEventListener('click', handleClick)
+
+
+function handleClick() {
+    console.dir(this)
+    if (this.nextElementSibling.style.maxHeight) {
+        
+        console.dir(this.nextElementSibling)
+        this.nextElementSibling.style.maxHeight = ''
+        this.lastElementChild.style.transform = 'rotate(0deg)'
+    } else {
+        const contentHeight = this.nextElementSibling.scrollHeight
+        this.nextElementSibling.style.maxHeight = `${contentHeight}px`
+        this.lastElementChild.style.transform = 'rotate(180deg)'
+        
+    }
+}
+
 //objet qui enregistre les choix de l'utilisateur
 const userChoices = {
   firstChoice: "",
