@@ -1,6 +1,8 @@
 body.ads {
   //padding: var(--spacing-32) var(--spacing-48);
   background-color: var(--color-neutral-70);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 header.ads {
