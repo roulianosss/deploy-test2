@@ -139,7 +139,7 @@ const blocks = [
         template: footer
     },
     {
-        name: "wrapper",
+        name: "wrapper (66/33 - 50/50 - 33/66)",
         template: wrapper
     },
     {
@@ -293,7 +293,7 @@ const blocks = [
     {
         name: "joinTheTeamSection",
         template: joinTheTeamSection
-    },
+    }
 ]
 
 

@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--spacing-32);
+  padding: var(--spacing-24) var(--spacing-64);
+
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16);
+  }
+
+  &__navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
+  }
+
+  &__actions {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-24);
+    align-self: flex-end;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  &__contact > a {
+    width: fit-content;
+  }
+
+}

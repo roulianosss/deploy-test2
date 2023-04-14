@@ -1,33 +1,43 @@
-const managementOthersCardsExplainations = document.querySelector(".management-others-card__explainations")
+const managementOthersCards = document.querySelectorAll(".management-others-card")
 
-if (managementOthersCardsExplainations) {
+if (managementOthersCards) {
     let maxHeight = 0
-    const explanations = managementOthersCardsExplainations.querySelectorAll(".management-others-card__explaination")
+    managementOthersCards.forEach((element) => {
+        const explanations = element.querySelectorAll(".management-others-card__explaination")
 
-    for (let i = 0; i < explanations.length; i++) {
-        const explanation = explanations[i]
-        const explanationHeight = explanation.offsetHeight
-        if (explanationHeight > maxHeight) {
-            maxHeight = explanationHeight
+        for (let i = 0;
+             i < explanations.length;
+             i++) {
+            const explanation = explanations[i]
+            const explanationHeight = explanation.offsetHeight
+            if (explanationHeight > maxHeight) {
+                maxHeight = explanationHeight
+            }
         }
-    }
-    managementOthersCardsExplainations.style.setProperty("height", `calc(${maxHeight}px + 2*var(--spacing-8))`)
-}
 
-const managementOthersCardsLinks = document.querySelectorAll(".management-others-card__link")
+        element.querySelector(".management-others-card__explainations")
+            .style
+            .setProperty(
+                "height",
+                `calc(${maxHeight}px + 2*var(--spacing-8))`
+            )
 
-if (managementOthersCardsLinks) {
-    managementOthersCardsLinks.forEach((managementOthersCardsLink) => {
-            let name = managementOthersCardsLink.dataset.name
-            let explaination = managementOthersCardsExplainations.querySelector(".management-others-card__explaination[data-name=" + name + "]")
+        const links = element.querySelectorAll(".management-others-card__link")
 
-            managementOthersCardsLink.addEventListener("mouseenter", () => {
-                explaination.classList.add("active")
-            })
+        links.forEach((link) => {
+            let name = link.dataset.name
+            let explaination = element.querySelector(".management-others-card__explaination[data-name=" + name + "]")
 
-            managementOthersCardsLink.addEventListener("mouseleave", () => {
-                explaination.classList.remove("active")
-            })
-        }
-    )
+            link.addEventListener("mouseenter",
+                () => {
+                    explaination.classList.add("active")
+                })
+
+            link.addEventListener("mouseleave",
+                () => {
+                    explaination.classList.remove("active")
+                })
+        })
+
+    })
 }
