@@ -76,32 +76,18 @@ const data = [
   {
     year: "2022",
     description: `Intégration d’une nouvelle gestion pilotée associant gestion indicielle (ETF) et gestion thématique <br/> <b>Altaprofits Vie & Altaprofits Capitalisation</b><br/> <b>Generali Vie</b><br/> <b>Generali Wealth Solutions</b>`
-  }
-];
-
+  },
+]
 data.reverse();
+
+const cardsContainer = document.querySelector(
+  ".history-section__cards-section__cards"
+);
 data.forEach((card) => {
-  document.querySelector(
-    ".history-section__cards-section__cards"
-  ).innerHTML += `
+  cardsContainer.innerHTML += `
     <div class="history-section__cards-section__cards__card">
       <div class="history-section__cards-section__cards__card__header">
         <h3>${card.year}</h3>
-        <svg
-          class="right-arrow"
-          width="20"
-          height="19"
-          viewBox="0 0 20 19"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12.9449 12.9688C16.5262 12.9688 19.4294 10.0657 19.4294 6.48442C19.4294 2.90317 16.5262 0 12.9449 0C9.3637 0 6.46052 2.90317 6.46052 6.48442C6.46052 7.82307 6.86616 9.06698 7.56123 10.0999L0.125 16.6781L1.45015 18.1761L8.91963 11.5685C10.0255 12.4453 11.4241 12.9688 12.9449 12.9688Z"
-            fill="#001329"
-          />
-        </svg>
       </div>
       <div class="history-section__cards-section__cards__card__body">
         <p>
@@ -112,9 +98,7 @@ data.forEach((card) => {
   `;
 });
 
-const cardsContainer = document.querySelector(
-  ".history-section__cards-section__cards"
-);
+
 const allCards = document.querySelectorAll(
   ".history-section__cards-section__cards__card"
 );
@@ -122,23 +106,15 @@ const allArrows = document.querySelectorAll(
   ".history-section__cards-section__right-arrow, .history-section__cards-section__left-arrow"
 );
 
-allCards.forEach((card) => card.addEventListener("click", handleCardClick));
 allArrows.forEach((arrow) => arrow.addEventListener("click", handleArrowClick));
 
 let transformValue = 0;
 
-function handleCardClick() {
-  allCards.forEach((card) => {
-    card.firstElementChild.style.backgroundColor = "";
-    card.firstElementChild.firstElementChild.style.color = "";
-  });
-  const cardHeader = this.firstElementChild;
-  cardHeader.style.backgroundColor = "#ff6442";
-  cardHeader.firstElementChild.style.color = "#fff";
-}
+
 
 function handleArrowClick() {
   let limitTransform = 0;
+  console.log(window.screen.width < 1280)
   if (window.screen.width < 1280) {
     limitTransform = (allCards.length - 1) * -100;
   } else {

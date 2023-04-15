@@ -19,8 +19,8 @@
       padding: var(--spacing-16) var(--spacing-16);
       gap: var(--spacing-40);
       width: 50%;
-      background: #ffffff;
-      box-shadow: 12px 12px 60px rgba(0, 19, 41, 0.12);
+      background: var(--color-neutral-100);
+      box-shadow: var(--spacing-12) var(--spacing-12) var(--spacing-64) rgba(0, 19, 41, 0.12);
       border-radius: 6px;
       flex: none;
       order: 0;
@@ -31,7 +31,7 @@
         font-family: var(--font-family-heading);
         font-style: normal;
         font-weight: var(--font-weight-bold);
-        font-size: 36px;
+        font-size: var(--font-size-2);
         text-align: center;
         color: #192542;
         width: 100%;
@@ -44,12 +44,12 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: var(--spacing-24);
 
         &__svg-container {
           // max-width: 30%;
           width: 92px;
-          margin-right: 20px;
+          margin-right: var(--spacing-24);
         }
 
         & svg {
@@ -138,8 +138,8 @@
 
   .press-container__cards-container__card__content {
     min-width: 100%;
-    margin-left: -25px ;
-    margin-top: 30px;
+    margin-left: -var(--spacing-24) ;
+    margin-top: var(--spacing-32);
   }
 
   .press-container__cards-container__card__content__svg-container {
@@ -148,15 +148,15 @@
   }
 
   .press-container__cards-container__card__content__text-container{
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     max-width: 60%;
   }
   .press-container__cards-container__card__content__text-container li{
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     max-width: 100%;
   }
   .press-container__cards-container__card__content__text-container p{
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     max-width: 100%;
   }
 

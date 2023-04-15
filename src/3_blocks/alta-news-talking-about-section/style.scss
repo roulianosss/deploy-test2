@@ -13,6 +13,10 @@
     width: 869px;
     border-radius: var(--border-radius-small);
 
+    &__news-container {
+      min-height: 856px;
+    }
+
     &__card {
       display: flex;
       flex-direction: row;
@@ -29,6 +33,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & img {
+          border-radius: var(--border-radius-small);
+        }
       }
 
       &__informations-container {
@@ -106,8 +114,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px;
-    margin-top: 40px;
+    padding: var(--spacing-40);
+    margin-top: var(--spacing-40);
     gap: var(--spacing-32);
     width: 465px;
     background: #d1e4f3;
@@ -167,7 +175,7 @@
 
 .activePage {
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: var(--border-radius-medium);
 }
 
 @media screen and (max-width: 1280px) {
@@ -195,7 +203,7 @@
   }
 
   .alta-news-talking-about-container__left-container__news-container {
-    max-width: 100%;
+    width: 100%;
   }
 
   .alta-news-talking-about-container__left-container__card__informations-container {

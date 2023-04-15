@@ -3,7 +3,6 @@
   width: 100%;
   &__left-container {
     width: 75%;
-    height: 710px;
     font-family: var(--font-family-heading);
     text-align: center;
     background-color: var(--color-neutral-100);
@@ -15,7 +14,7 @@
       margin-top: var(--spacing-80);
       font-family: var(--font-family-heading);
       font-weight: var(--font-weight-bold);
-      font-size: var(--font-size-2);
+      font-size: clamp(var(--font-size-4), 5vw, var(--font-size-3));
       color: var(--color-neutral-0);
       text-align: center;
       white-space: nowrap;
@@ -27,7 +26,6 @@
       font-size: var(--font-size-medium);
       text-align: center;
       color: var(--color-neutral-0);
-      width: 600px;
     }
 
     &__icons-container {
@@ -71,10 +69,9 @@
 
     &__title {
       margin-top: var(--spacing-80);
-      width: 280px;
       font-family: var(--font-family-heading);
       font-weight: var(--font-weight-bold);
-      font-size: var(--font-size-2);
+      font-size: clamp(var(--font-size-4), 5vw, var(--font-size-3));
       text-align: center;
       color: var(--color-neutral-100);
       margin-bottom: var(--spacing-64);
@@ -86,8 +83,7 @@
       justify-content: center;
       align-items: center;
       gap: var(--spacing-24);
-      width: 300px;
-      height: 468px;
+      padding: 0 var(--spacing-64) var(--spacing-80);
 
       &__item {
         color: var(--color-neutral-100);
@@ -95,6 +91,40 @@
         font-size: var(--font-size-medium);
         list-style: disc;
         width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    & {
+      flex-direction: column;
+    }
+
+    &__left-container {
+      width: 100%;
+
+      &__title {
+        margin-top: var(--spacing-40);
+      }
+
+      &__icons-container {
+        flex-direction: column;
+        align-items: center;
+        margin: var(--spacing-16) 0;
+        gap: var(--spacing-16);
+      }
+    }
+
+    &__right-container {
+      width: 100%;
+      
+      &__title {
+        margin-top: var(--spacing-64);
+      }
+      
+      &__items-container {
+        padding: 0 var(--spacing-64) var(--spacing-80);
+
       }
     }
   }

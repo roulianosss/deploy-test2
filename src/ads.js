@@ -48,6 +48,7 @@ import awardItem from "./2_patterns/award-item/template.html?raw"
 import feeCard from "./2_patterns/fee-card/template.html?raw"
 import managementGuidedCard from "./2_patterns/management-guided-card/template.html?raw"
 import managementOthersCard from "./2_patterns/management-others-card/template.html?raw"
+import itemCard from "./2_patterns/item-card/template.html?raw"
 
 
 const patterns = [
@@ -66,6 +67,10 @@ const patterns = [
     {
         name: "articleCard",
         template: articleCard
+    },
+    {
+        name: "itemCard",
+        template: itemCard
     },
     {
         name: "awardItem",

@@ -24,13 +24,12 @@
     margin-bottom: var(--spacing-40);
 
     &__logo-container {
-      border-radius: var(--border-radius-small);
-      
       display: flex;
       justify-content: center;
       align-items: center;
-
+      
       & img {
+        border-radius: var(--border-radius-small);
         max-height: 200px;
       }
     }
@@ -110,7 +109,7 @@
 
 .activePage {
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: var(--border-radius-medium);
 }
 
 @media screen and (max-width: 1280px) {

@@ -182,20 +182,18 @@ gridRows.forEach((row) =>
 
 //fonction au clic du premier choix
 const setActiveBtnFirstChoice = (btn) => {
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btnsFirstChoice.forEach((btn) => btn.classList.remove("support-btns-container__first-choice-container__btn--active"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("support-btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("btns-third-choice-container__btn--active"));
   euroFundContainer.classList.add("hidden");
   accountUnitContainer.classList.add('hidden')
   growthFundContainer.classList.add('hidden')
   btnsThirdChoiceContainer.classList.add("hidden");
-  btn.classList.add("activeSupportSection");
+  btn.classList.add("support-btns-container__first-choice-container__btn--active");
   btnsSecondChoiceContainer.classList.remove("hidden");
+  btnsTypeSecondChoiceContainer.forEach((btn) => btn.classList.add("hidden"));
   userChoices.secondChoice = "";
   userChoices.thirdChoice = "";
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
-  btnsTypeSecondChoiceContainer.forEach((btn) => btn.classList.add("hidden"));
-  btn.classList.add("activeSupportSection");
   userChoices.firstChoice = btn.getAttribute("data-attr");
   btnsSecondChoiceContainer.classList.remove("hidden");
   document
@@ -207,14 +205,14 @@ const setActiveBtnFirstChoice = (btn) => {
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
   console.log('test')
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("btns-third-choice-container__btn--active"));
   btnsThirdChoiceContainer.classList.add("hidden");
   euroFundContainer.classList.add("hidden");
   accountUnitContainer.classList.add('hidden')
   growthFundContainer.classList.add('hidden')
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("support-btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
   userChoices.secondChoice = btn.getAttribute("data-attr");
-  btn.classList.add("activeSupportSection");
+  btn.classList.add("support-btns-container__second-choice-container__btns-type-second-choice-container__btn--active");
   btnsThirdChoiceContainer.classList.remove("hidden");
   console.log(userChoices);
   displayConditionalThirdChoice();
@@ -224,8 +222,8 @@ const setActiveBtnSecondChoice = (btn) => {
 //fonction au clic du troisième choix
 const setActiveBtnThirdChoice = (btn) => {
   userChoices.thirdChoice = btn.getAttribute("data-attr");
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("activeSupportSection"));
-  btn.classList.add("activeSupportSection");
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("btns-third-choice-container__btn--active"));
+  btn.classList.add("btns-third-choice-container__btn--active");
   displayCategoryContainer(btn.getAttribute("data-attr"));
   displayEuroCards();
 };
@@ -233,8 +231,8 @@ const setActiveBtnThirdChoice = (btn) => {
 //fonction au clic sur les sous catégories de  l' unité de compte
 const setActiveBtnAccountUnit = (btn) => {
   console.log(btnsAccountUnit);
-  btnsAccountUnit.forEach((btn) => btn.classList.remove("activeSupportSection"));
-  btn.classList.add("activeSupportSection");
+  btnsAccountUnit.forEach((btn) => btn.classList.remove("account-unit-container__btns-container__btn--active"));
+  btn.classList.add("account-unit-container__btns-container__btn--active");
   if (btn.getAttribute("data-attr") !== "structured-funds") {
     opcContainer.classList.remove("hidden");
     structuredFundsContainer.classList.add("hidden");
@@ -249,9 +247,8 @@ const setActiveCard = (card) => {
   console.log('test')
   document
     .querySelectorAll(".support-card-container")
-    .forEach((card) => card.classList.remove("activeSupportSection"));
-  card.classList.add("activeSupportSection");
-  console.log(card);
+    .forEach((card) => card.classList.remove("support-card-container--active"));
+  card.classList.add("support-card-container--active");
   if (card.getAttribute("data-attr") === "Netissima") {
     netissimaContainer.classList.remove("hidden");
   } else {
@@ -262,40 +259,6 @@ const setActiveCard = (card) => {
   } else {
     netissimaGrowthContainer.classList.add("hidden");
   }
-};
-
-//fonction pour afficher la couleur de la ligne sur le tableau au clic
-const setActiveRow = (row) => {
-  gridRows.forEach((row) => row.classList.remove("activeSupportSection"));
-  row.classList.add("activeSupportSection");
-};
-
-//affichage des resultat des choix utilisateur
-const displayResult = () => {
-  btnsParameters.forEach((btn) => {
-    if (
-      btn.classList.contains("btn-parameter1") &&
-      btn.classList.contains("activeSupportSection")
-    ) {
-      whiteCardPlaceholder.classList.remove("hidden");
-    } else if (
-      btn.classList.contains("btn-parameter1") &&
-      !btn.classList.contains("activeSupportSection")
-    ) {
-      whiteCardPlaceholder.classList.add("hidden");
-    }
-    if (
-      btn.classList.contains("btn-parameter2") &&
-      btn.classList.contains("activeSupportSection")
-    ) {
-      arrayPlaceholder.classList.remove("hidden");
-    } else if (
-      btn.classList.contains("btn-parameter2") &&
-      !btn.classList.contains("activeSupportSection")
-    ) {
-      arrayPlaceholder.classList.add("hidden");
-    }
-  });
 };
 
 //affiche les bouton disponible selon les choix utilisateur

@@ -229,7 +229,7 @@
 //      height: 48px;
 //      @include layouts.column(center, center, 0);
 //      background-color: colors.$secondary_70;
-//      border-radius: 8px;
+//      border-radius: var(--border-radius-small);
 //
 //      @media (max-width: 768px) {
 //        top: spacing.$spacing_8;

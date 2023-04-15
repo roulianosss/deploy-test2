@@ -28,7 +28,7 @@
   }
 
   &--small {
-    padding: 10px 16px;
+    padding: var(--spacing-12) 16px;
     gap: var(--spacing-12);
     font-size: var(--font-size-small);
   }

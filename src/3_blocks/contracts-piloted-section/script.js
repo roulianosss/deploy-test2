@@ -339,25 +339,25 @@ const cardsContainer = document.querySelector(".cards-display-container");
 const arrayContainer = document.querySelector(".array-display-container");
 const allArrayRows = document.querySelectorAll(".grid-row-body");
 
-// const distributionFundsArray = document.querySelector('.distribution-funds-array-section__btn')
+const distributionFundsArray = document.querySelector('.distribution-funds-array-section__btn')
 
-// distributionFundsArray.addEventListener('click', handleClick)
+distributionFundsArray.addEventListener('click', handleClick)
 
 
-// function handleClick() {
-//     console.dir(this)
-//     if (this.nextElementSibling.style.maxHeight) {
+function handleClick() {
+    console.dir(this)
+    if (this.nextElementSibling.style.maxHeight) {
         
-//         console.dir(this.nextElementSibling)
-//         this.nextElementSibling.style.maxHeight = ''
-//         this.lastElementChild.style.transform = 'rotate(0deg)'
-//     } else {
-//         const contentHeight = this.nextElementSibling.scrollHeight
-//         this.nextElementSibling.style.maxHeight = `${contentHeight}px`
-//         this.lastElementChild.style.transform = 'rotate(180deg)'
+        console.dir(this.nextElementSibling)
+        this.nextElementSibling.style.maxHeight = ''
+        this.lastElementChild.style.transform = 'rotate(0deg)'
+    } else {
+        const contentHeight = this.nextElementSibling.scrollHeight
+        this.nextElementSibling.style.maxHeight = `${contentHeight}px`
+        this.lastElementChild.style.transform = 'rotate(180deg)'
         
-//     }
-// }
+    }
+}
 
 //objet qui enregistre les choix de l'utilisateur
 const userChoices = {
@@ -388,10 +388,10 @@ allCards.forEach((card) =>
 const setActiveBtnFirstChoice = (btn) => {
   console.log(btnsSecondChoiceContainer);
   userChoices.secondChoice = "";
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
-  btnsFirstChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
+  btnsFirstChoice.forEach((btn) => btn.classList.remove("btns-container__first-choice-container__btn--active"));
   btnsTypeSecondChoiceContainer.forEach((btn) => btn.classList.add("hidden"));
-  btn.classList.add("activePilotedSection");
+  btn.classList.add("btns-container__first-choice-container__btn--active");
   userChoices.firstChoice = btn.getAttribute("data-attr");
   btnsSecondChoiceContainer.classList.remove("hidden");
   document
@@ -402,17 +402,18 @@ const setActiveBtnFirstChoice = (btn) => {
 
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
-  btnsSecondChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
+  console.log('ok')
+  btnsSecondChoice.forEach((btn) => btn.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
   userChoices.secondChoice = btn.getAttribute("data-attr");
-  btn.classList.add("activePilotedSection");
+  btn.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active");
   displayCards();
 };
 
 //fonction au clic du troisième choix
 const setActiveBtnThridChoice = (btn) => {
   userChoices.thirdChoice = btn.getAttribute("data-attr");
-  btnsThirdChoice.forEach((btn) => btn.classList.remove("activePilotedSection"));
-  btn.classList.add("activePilotedSection");
+  btnsThirdChoice.forEach((btn) => btn.classList.remove("filters-container__btns-container__btn--active"));
+  btn.classList.add("filters-container__btns-container__btn--active");
   displayCards();
 };
 
@@ -437,37 +438,37 @@ const displayCards = () => {
                 <p class="card-container__card-header__title">${card.title}</p>
                 <div class="card-container__card-header__numbers-rating-container">
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 1 ? "activePilotedSection" : ""
+                    card.srri === 1 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">1</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 2 ? "activePilotedSection" : ""
+                    card.srri === 2 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">2</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 3 ? "activePilotedSection" : ""
+                    card.srri === 3 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">3</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 4 ? "activePilotedSection" : ""
+                    card.srri === 4 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">4</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 5 ? "activePilotedSection" : ""
+                    card.srri === 5 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">5</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 6 ? "activePilotedSection" : ""
+                    card.srri === 6 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">6</p>
                   </div>
                   <div class="card-container__card-header__numbers-rating-container__number-rating-container ${
-                    card.srri === 7 ? "activePilotedSection" : ""
+                    card.srri === 7 ? "card-container__card-header__numbers-rating-container__number-rating-container--active" : ""
                   }">
                     <p class="card-container__card-header__numbers-rating-container__number-rating-container__number-rating">7</p>
                   </div>
@@ -563,7 +564,7 @@ const displayCards = () => {
 //fonction pour passer de l'affichage cards au tableau
 const setActiveBtnParameter = (btn) => {
   btnsParameters.forEach((btn) => {
-    btn.classList.toggle("toggle-button--activePilotedSection");
+    btn.classList.toggle("toggle-button--active");
   });
   displayResult();
 };
@@ -574,8 +575,8 @@ const setActiveCard = (card) => {
   displayResult();
   document
     .querySelectorAll(".card-container, .grid-row-body")
-    .forEach((card) => card.classList.remove("activePilotedSection"));
-  card.classList.add("activePilotedSection");
+    .forEach((card) => card.classList.remove("card-container--active"));
+  card.classList.add("card-container--active");
 };
 
 //affichage des resultat des choix utilisateur
@@ -583,23 +584,23 @@ const displayResult = () => {
   btnsParameters.forEach((btn) => {
     if (
       btn.classList.contains("btn-parameter1") &&
-      btn.classList.contains("toggle-button--activePilotedSection")
+      btn.classList.contains("toggle-button--active")
     ) {
       cardsContainer.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter1") &&
-      !btn.classList.contains("toggle-button--activePilotedSection")
+      !btn.classList.contains("toggle-button--active")
     ) {
       cardsContainer.classList.add("hidden");
     }
     if (
       btn.classList.contains("btn-parameter2") &&
-      btn.classList.contains("toggle-button--activePilotedSection")
+      btn.classList.contains("toggle-button--active")
     ) {
       arrayContainer.classList.remove("hidden");
     } else if (
       btn.classList.contains("btn-parameter2") &&
-      !btn.classList.contains("toggle-button--activePilotedSection")
+      !btn.classList.contains("toggle-button--active")
     ) {
       arrayContainer.classList.add("hidden");
     }
