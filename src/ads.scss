@@ -1,6 +1,8 @@
 body.ads {
   //padding: var(--spacing-32) var(--spacing-48);
   background-color: var(--color-neutral-70);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 header.ads {
@@ -22,6 +24,7 @@ section.ads {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-32);
+
 
   > h3 {
     color: var(--color-secondary-50);
@@ -51,7 +54,12 @@ section.ads {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: var(--color-neutral-100);
-  border-radius: var(--border-radius-medium);
   padding: var(--spacing-32);
   gap: var(--spacing-32);
+}
+
+.blocks.ads {
+  .sub-section.ads {
+    padding: 0;
+  }
 }
