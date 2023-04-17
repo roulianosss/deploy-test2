@@ -318,6 +318,7 @@
   user-select: none;
   opacity: 0;
   animation: fade-in forwards var(--motion-duration-medium);
+  overflow: hidden;
 
   &--active .card-container__card-header {
     background-color: var(--color-primary-50);
