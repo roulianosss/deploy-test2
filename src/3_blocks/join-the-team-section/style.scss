@@ -1,12 +1,14 @@
 .join-the-team-section {
   background-color: #d1e4f3;
   padding: var(--spacing-80) 109px;
+  padding: var(--spacing-32);
 
   & > h3 {
     margin-bottom: var(--spacing-80);
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1);
+    font-size: clamp(var(--font-size-large), 5vw, var(--font-size-1));
     text-align: center;
     color: var(--color-neutral-0);
   }
@@ -69,10 +71,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .join-the-team-section {
-    padding: var(--spacing-16);
-  }
-
   .join-the-team-section__offer-container__offer-btn h3 {
     font-size: var(--font-size-medium);
   }

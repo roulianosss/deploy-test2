@@ -34,6 +34,7 @@
       width: 100%;
       justify-content: space-around;
       margin-top: var(--spacing-128);
+      gap: 16px;
 
       &__icon {
         display: flex;
@@ -108,10 +109,9 @@
       }
 
       &__icons-container {
-        display: block;
         flex-direction: column;
         margin: var(--spacing-16) 0;
-        gap: var(--spacing-16);
+        gap: var(--spacing-32);
       }
     }
 

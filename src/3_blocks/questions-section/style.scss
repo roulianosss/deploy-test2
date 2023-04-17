@@ -1,15 +1,17 @@
 .questions-container {
   width: 100%;
+  padding: var(--spacing-32);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  & + h3 {
+  
+  & > h3 {
     margin-top: 73px;
     margin-bottom: 51px;
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-1);
+    font-size: clamp(var(--font-size-large), 5vw, var(--font-size-1));
     color: var(--color-neutral-0);
   }
 }
@@ -57,7 +59,7 @@
         user-select: none;
         display: flex;
         justify-content: space-between;
-        padding-bottom: var(--spacing-12);
+        // padding-bottom: var(--spacing-12);
         border-bottom: 2px solid #6b6b6b;
         cursor: pointer;
 
@@ -73,7 +75,7 @@
 
       &__response {
         margin: 0 0 0 0;
-        margin: var(--spacing-16) 0 var(--spacing-64);
+        margin: var(--spacing-16) 0 var(--spacing-40);
         font-size: var(--font-size-medium);
         padding: 0 var(--spacing-12) ;
         max-height: 0px;

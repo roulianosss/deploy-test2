@@ -1,5 +1,6 @@
 .discover-our-job {
   width: 100%;
+  padding: var(--spacing-32);
   user-select: none;
   display: flex;
   flex-direction: column;
@@ -10,7 +11,7 @@
     margin-bottom: var(--spacing-40);
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-1);
+    font-size: clamp(var(--font-size-large), 5vw, var(--font-size-1));
     text-align: center;
     color: var(--color-neutral-0);
   }
