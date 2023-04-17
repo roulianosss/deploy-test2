@@ -115,7 +115,7 @@ import managementAdvantagesSection from "./3_blocks/management-advantages-sectio
 import managementPlusSection from "./3_blocks/management-plus-section/template.html?raw"
 import assetsSupportSection from "./3_blocks/assets-support-section/template.html?raw"
 import assetsPilotedSection from "./3_blocks/assets-piloted-section/template.html?raw"
-import partnerPilotedSection from "./3_blocks/partner-piloted-section/template.html?raw"
+import managementGuidedPartnersSection from "./3_blocks/management-guided-partners-section/template.html?raw"
 import headerPilotedSection from "./3_blocks/header-piloted-section/template.html?raw"
 import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
 import contractsPilotedSection from "./3_blocks/contracts-piloted-section/template.html?raw"
@@ -229,8 +229,8 @@ const blocks = [
         template: assetsPilotedSection
     },
     {
-        name: "partnerPilotedSection",
-        template: partnerPilotedSection
+        name: "managementGuidedPartnersSection",
+        template: managementGuidedPartnersSection
     },
     {
         name: "headerPilotedSection",
