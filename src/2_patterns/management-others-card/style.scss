@@ -21,7 +21,7 @@
     display: flex;
     gap: var(--spacing-16);
     flex-wrap: wrap;
-    padding: var(--spacing-16) 0;
+    padding: var(--spacing-16) 0 0;
   }
 
   &__link {
@@ -43,19 +43,19 @@
 
   &__explainations {
     position: relative;
-    padding: var(--spacing-8) 0;
   }
 
   &__explaination {
     position: absolute;
     padding-bottom: var(--spacing-16);
     opacity: 0;
-    transition: var(--motion-duration-short) var(--motion-easing-standard);
+    transition: 100ms var(--motion-easing-standard);
     transform: translateY(-33%);
 
     &.active {
       opacity: 1;
       transform: translateY(0);
+      transition: var(--motion-duration-short) var(--motion-easing-standard);
     }
 
     &, > * {
