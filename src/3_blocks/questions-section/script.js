@@ -23,7 +23,6 @@ function handleClick(e) {
       this.parentElement.parentElement.style.maxHeight = `${
         this.parentElement.parentElement.scrollHeight + 500
       }px`;
-      console.log(this.parentElement.parentElement.style.scrollHeight);
     } else {
       this.lastElementChild.style.transform = "rotate(0deg)";
       this.style.backgroundColor = "";
@@ -44,7 +43,6 @@ function handleClick(e) {
           this.parentElement.parentElement.scrollHeight + 500
         }px`;
       }, 200);
-      console.log(this.parentElement.parentElement.style.maxHeight);
     } else {
       this.lastElementChild.style.transform = "rotate(-180deg)";
 

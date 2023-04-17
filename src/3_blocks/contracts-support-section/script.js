@@ -204,7 +204,6 @@ const setActiveBtnFirstChoice = (btn) => {
 
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
-  console.log('test')
   btnsThirdChoice.forEach((btn) => btn.classList.remove("btns-third-choice-container__btn--active"));
   btnsThirdChoiceContainer.classList.add("hidden");
   euroFundContainer.classList.add("hidden");
@@ -214,7 +213,6 @@ const setActiveBtnSecondChoice = (btn) => {
   userChoices.secondChoice = btn.getAttribute("data-attr");
   btn.classList.add("support-btns-container__second-choice-container__btns-type-second-choice-container__btn--active");
   btnsThirdChoiceContainer.classList.remove("hidden");
-  console.log(userChoices);
   displayConditionalThirdChoice();
   displayEuroCards();
 };
@@ -230,7 +228,6 @@ const setActiveBtnThirdChoice = (btn) => {
 
 //fonction au clic sur les sous catégories de  l' unité de compte
 const setActiveBtnAccountUnit = (btn) => {
-  console.log(btnsAccountUnit);
   btnsAccountUnit.forEach((btn) => btn.classList.remove("account-unit-container__btns-container__btn--active"));
   btn.classList.add("account-unit-container__btns-container__btn--active");
   if (btn.getAttribute("data-attr") !== "structured-funds") {
@@ -244,7 +241,6 @@ const setActiveBtnAccountUnit = (btn) => {
 
 //fonction pour afficher la card cliqué
 const setActiveCard = (card) => {
-  console.log('test')
   document
     .querySelectorAll(".support-card-container")
     .forEach((card) => card.classList.remove("support-card-container--active"));
@@ -287,7 +283,6 @@ const displayConditionalThirdChoice = () => {
 
 //affiche le resultat selon les categories (euro, croissance, unité de compte)
 const displayCategoryContainer = (attribute) => {
-  console.log("enter");
   if (attribute === "euro") {
     euroFundContainer.classList.remove("hidden");
     displayEuroCards();

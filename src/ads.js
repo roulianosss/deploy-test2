@@ -133,6 +133,7 @@ import altaprofitHistorySection from "./3_blocks/altaprofit-history-section/temp
 import reasonToJoinSection from "./3_blocks/reason-to-join-section/template.html?raw"
 import discoverOurJobSection from "./3_blocks/discover-our-job-section/template.html?raw"
 import joinTheTeamSection from "./3_blocks/join-the-team-section/template.html?raw"
+import pilotedGraphSection from "./3_blocks/piloted-graph-section/template.html?raw"
 
 const blocks = [
     {
@@ -298,7 +299,11 @@ const blocks = [
     {
         name: "joinTheTeamSection",
         template: joinTheTeamSection
-    }
+    },
+    {
+        name: "pilotedGraphSection",
+        template: pilotedGraphSection
+    },
 ]
 
 

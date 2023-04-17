@@ -386,7 +386,6 @@ allCards.forEach((card) =>
 
 //fonction au clic du premier choix
 const setActiveBtnFirstChoice = (btn) => {
-  console.log(btnsSecondChoiceContainer);
   userChoices.secondChoice = "";
   btnsSecondChoice.forEach((btn) => btn.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
   btnsFirstChoice.forEach((btn) => btn.classList.remove("btns-container__first-choice-container__btn--active"));
@@ -402,7 +401,6 @@ const setActiveBtnFirstChoice = (btn) => {
 
 //fonction au clic du deuxieme choix
 const setActiveBtnSecondChoice = (btn) => {
-  console.log('ok')
   btnsSecondChoice.forEach((btn) => btn.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"));
   userChoices.secondChoice = btn.getAttribute("data-attr");
   btn.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active");
@@ -571,7 +569,6 @@ const setActiveBtnParameter = (btn) => {
 
 //fonction pour afficher la card cliqué
 const setActiveCard = (card) => {
-  console.log("ok");
   displayResult();
   document
     .querySelectorAll(".card-container, .grid-row-body")

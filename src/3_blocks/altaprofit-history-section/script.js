@@ -114,7 +114,6 @@ let transformValue = 0;
 
 function handleArrowClick() {
   let limitTransform = 0;
-  console.log(window.screen.width < 1280)
   if (window.screen.width < 1280) {
     limitTransform = (allCards.length - 1) * -100;
   } else {
