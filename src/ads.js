@@ -327,16 +327,12 @@ const categories = [
 categories.forEach((category) => {
 
     const categorySection = document.createElement("section")
-    categorySection.classList.add("ads")
+    categorySection.classList.add("ads",
+        category.name)
 
     const categoryTitle = document.createElement("h3")
     categoryTitle.innerText = category.name.toUpperCase()
     categorySection.appendChild(categoryTitle)
-
-    const categoryContainer = document.createElement("div")
-    categoryContainer.classList.add("ads",
-        category.name)
-    categorySection.appendChild(categoryContainer)
 
     category.value.forEach((element) => {
         const elementSection = document.createElement("div")

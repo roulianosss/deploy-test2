@@ -19,7 +19,7 @@ if (managementOthersCards) {
             .style
             .setProperty(
                 "height",
-                `calc(${maxHeight}px + 2*var(--spacing-8))`
+                `calc(${maxHeight}px + var(--spacing-8))`
             )
 
         const links = element.querySelectorAll(".management-others-card__link")
