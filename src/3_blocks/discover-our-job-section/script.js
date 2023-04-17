@@ -22,9 +22,6 @@ const data = [
   },
 ];
 
-console.log(document.querySelector(
-  ".discover-our-job__card-section__cards"
-))
 
 // data.reverse();
 data.forEach((card) => {
@@ -68,7 +65,6 @@ let transformValue = 0;
 function handleArrowClick() {
   let limitTransform = 0;
     limitTransform = (allCards.length - 1) * -100;
-  console.log(transformValue , limitTransform, allCards.length)
   if (
     this.classList.contains("discover-our-job__card-section__right-arrow") &&
     transformValue > limitTransform
