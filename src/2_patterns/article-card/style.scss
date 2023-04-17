@@ -8,6 +8,12 @@
   height: fit-content;
   flex-wrap: wrap;
 
+  &:hover {
+    #{$self}__title .link {
+      background-size: 100% 2px;
+    }
+  }
+
   &__image {
     width: 300px;
     height: 200px;
@@ -23,12 +29,15 @@
   }
 
   &__title {
-    width: fit-content;
-    background-size: 0% 2px;
-    transition: background-size var(--motion-duration-short) var(--motion-easing-standard);
+    .link {
+      display: inline;
+      width: fit-content;
+      background-size: 0% 2px;
+      transition: background-size var(--motion-duration-medium) var(--motion-easing-standard);
 
-    &:hover {
-      background-size: 100% 2px;
+      &:hover {
+        background-size: 100% 2px;
+      }
     }
   }
 
