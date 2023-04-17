@@ -22,6 +22,17 @@
     gap: var(--spacing-8);
   }
 
+  &__title {
+    width: fit-content;
+    background-size: 0% 2px;
+    transition: background-size var(--motion-duration-short) var(--motion-easing-standard);
+
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
+
+
   &__date {
     font-size: var(--font-size-tiny);
     color: var(--color-secondary-20);
