@@ -303,7 +303,7 @@ const blocks = [
     {
         name: "pilotedGraphSection",
         template: pilotedGraphSection
-    },
+    }
 ]
 
 
