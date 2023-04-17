@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: var(--spacing-32);
+
   & h3 {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-2);
+    font-size: clamp(var(--font-size-large), 5vw, var(--font-size-1));
     text-align: center;
     color: rgb(25, 37, 66);
     width: 100%;

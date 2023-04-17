@@ -1,5 +1,6 @@
 .contracts-piloted-section-container {
   width: 100%;
+  padding: var(--spacing-32);
 }
 
 .contracts-piloted-container {
@@ -13,7 +14,7 @@
   &__title {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-2);
+    font-size: clamp(var(--font-size-medium), 5vw, var(--font-size-1));
     text-align: center;
     color: var(--color-neutral-0);
   }

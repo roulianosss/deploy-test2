@@ -1,5 +1,6 @@
 .alta-news-talking-about-container {
   width: 100%;
+  padding: var(--spacing-32);
   display: flex;
   justify-content: center;
   background-image: url("/assets/images/background-alta-news-talking-about.png");
@@ -115,7 +116,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding: var(--spacing-40);
-    margin-top: var(--spacing-40);
     gap: var(--spacing-32);
     width: 465px;
     background: #d1e4f3;
