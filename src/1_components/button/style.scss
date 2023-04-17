@@ -11,14 +11,16 @@
   height: fit-content;
   transition: background-color, color var(--motion-duration-short) var(--motion-easing-standard);
   border: none;
+  border-style: solid;
+  border-width: var(--border-size-medium);
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-bold);
   line-height: 120%;
-  border-style: solid;
-  border-width: var(--border-size-medium);
+  text-align: center;
+
 
   &--arrow {
     &::after {

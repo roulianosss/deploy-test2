@@ -17,11 +17,20 @@
     background: var(--gradient-light-blue-down);
 
     .socials {
+
+      &__title {
+        text-align: center;
+      }
+
       &__content {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: var(--spacing-32);
+
+        @media screen and (max-width: 768px) {
+          gap: 4vw
+        }
       }
 
       &__item {
@@ -36,11 +45,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+    }
+
+
     .navigation {
       &__project {
         width: 30%;
         background-color: var(--color-secondary-70);
         padding: var(--spacing-32) 4vw var(--spacing-64) 6vw;
+
+        @media screen and (max-width: 1280px) {
+          width: 100%;
+        }
 
         a.link {
           color: var(--color-secondary-20);
@@ -56,6 +74,22 @@
         padding: var(--spacing-32) 8vw var(--spacing-64) 4vw;
         background: var(--color-secondary-20);
         color: var(--color-neutral-100);
+
+        @media screen and (max-width: 1280px) {
+          width: 100%;
+          justify-content: flex-start;
+          gap: var(--spacing-64);
+          padding: var(--spacing-32) 4vw var(--spacing-64) 6vw;
+        }
+
+        @media screen and (max-width: 1080px) {
+          gap: 4vw;
+        }
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          gap: var(--spacing-32);
+        }
 
         a.link {
           color: var(--color-secondary-70);
@@ -73,6 +107,10 @@
       display: flex;
       flex-direction: column;
       gap: var(--spacing-16);
+
+      @media screen and (max-width: 768px) {
+        gap: var(--spacing-8);
+      }
 
       &__title {
         font-size: var(--font-size-small);
@@ -142,6 +180,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: var(--spacing-8);
     padding: var(--spacing-24);
     background-color: var(--color-neutral-0);
@@ -149,6 +188,11 @@
     font-size: var(--font-size-tiny);
 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: var(--spacing-16);
+    }
 
     a.link {
       color: var(--color-secondary-100);
@@ -159,6 +203,10 @@
         width: 4px;
         height: 1px;
         background-color: var(--color-neutral-100);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
