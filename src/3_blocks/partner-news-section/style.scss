@@ -34,6 +34,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: var(--spacing-32);
   }
 
   @media screen and (max-width: 480px) {

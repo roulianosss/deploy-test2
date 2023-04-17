@@ -71,6 +71,7 @@
 
   &--horizontal {
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: var(--spacing-16);
     max-width: 600px;
   }
