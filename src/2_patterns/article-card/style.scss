@@ -7,6 +7,7 @@
   max-width: 320px;
   height: fit-content;
   flex-wrap: wrap;
+  padding-bottom: var(--spacing-16);
 
   &:hover {
     #{$self}__title .link {
@@ -28,7 +29,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
-    padding-bottom: var(--spacing-16);
   }
 
   &__title {
@@ -51,6 +51,11 @@
 
   &__excerpt {
     font-size: var(--font-size-small);
+  }
+
+  &__author {
+    font-size: var(--font-size-small);
+    margin-top: auto;
   }
 
   &__tags {
@@ -80,6 +85,26 @@
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: var(--spacing-8);
+      max-width: 300px;
+    }
+  }
+
+  &--large {
+    max-width: 768px;
+
+    @media screen and (max-width: 1080px) {
+
+      #{$self}__image {
+        height: 180px;
+        max-width: 480px;
+      }
+
+      flex-direction: column;
+      gap: var(--spacing-8);
+      max-width: 480px;
+    }
+
+    @media screen and (max-width: 768px) {
       max-width: 300px;
     }
   }
