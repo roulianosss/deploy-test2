@@ -113,8 +113,8 @@ import productFeesSection from "./3_blocks/product-fees-section/template.html?ra
 import faqRedirectionSection from "./3_blocks/faq-redirection-section/template.html?raw"
 import managementAdvantagesSection from "./3_blocks/management-advantages-section/template.html?raw"
 import managementPlusSection from "./3_blocks/management-plus-section/template.html?raw"
-import assetsSupportSection from "./3_blocks/assets-support-section/template.html?raw"
-import assetsPilotedSection from "./3_blocks/assets-piloted-section/template.html?raw"
+import managementOthersOverviewSection from "./3_blocks/management-others-overview-section/template.html?raw"
+import managementGuidedOverviewSection from "./3_blocks/management-guided-overview-section/template.html?raw"
 import managementGuidedPartnersSection from "./3_blocks/management-guided-partners-section/template.html?raw"
 import headerPilotedSection from "./3_blocks/header-piloted-section/template.html?raw"
 import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
@@ -221,12 +221,12 @@ const blocks = [
         template: managementPlusSection
     },
     {
-        name: "assetsSupportSection",
-        template: assetsSupportSection
+        name: "managementOthersOverviewSection",
+        template: managementOthersOverviewSection
     },
     {
-        name: "assetsPilotedSection",
-        template: assetsPilotedSection
+        name: "managementGuidedOverviewSection",
+        template: managementGuidedOverviewSection
     },
     {
         name: "managementGuidedPartnersSection",
