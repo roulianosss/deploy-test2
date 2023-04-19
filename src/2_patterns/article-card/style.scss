@@ -15,8 +15,10 @@
   }
 
   &__image {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3/2;
     object-fit: cover;
     background-color: var(--color-neutral-70);
     border-radius: var(--border-radius-small);
@@ -74,5 +76,11 @@
     flex-wrap: nowrap;
     gap: var(--spacing-16);
     max-width: 600px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: var(--spacing-8);
+      max-width: 300px;
+    }
   }
 }
