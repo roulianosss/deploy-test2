@@ -103,7 +103,7 @@ import investmentDisclaimerSection from "./3_blocks/investment-disclaimer-sectio
 import awardsSection from "./3_blocks/awards-section/template.html?raw"
 import reviewsSection from "./3_blocks/reviews-section/template.html?raw"
 import partnerNewsSection from "./3_blocks/partner-news-section/template.html?raw"
-import productHeroBanner from "./3_blocks/product-hero-banner/template.html?raw"
+import heroBanner from "./3_blocks/hero-banner/template.html?raw"
 import productInsurancePartnerSection from "./3_blocks/product-insurance-partner-section/template.html?raw"
 import productContractualDocumentationSection
     from "./3_blocks/product-contractual-documentation-section/template.html?raw"
@@ -116,15 +116,12 @@ import managementPlusSection from "./3_blocks/management-plus-section/template.h
 import managementOthersOverviewSection from "./3_blocks/management-others-overview-section/template.html?raw"
 import managementGuidedOverviewSection from "./3_blocks/management-guided-overview-section/template.html?raw"
 import managementGuidedPartnersSection from "./3_blocks/management-guided-partners-section/template.html?raw"
-import headerPilotedSection from "./3_blocks/header-piloted-section/template.html?raw"
-import headerSupportSection from "./3_blocks/header-support-section/template.html?raw"
 import contractsPilotedSection from "./3_blocks/contracts-piloted-section/template.html?raw"
 import contractsSupportSection from "./3_blocks/contracts-support-section/template.html?raw"
 import altaNewsTalkingAboutSection from "./3_blocks/alta-news-talking-about-section/template.html?raw"
 import webconferencesSection from "./3_blocks/webconferences-section/template.html?raw"
 import pressSection from "./3_blocks/press-section/template.html?raw"
 import expertsVoiceSection from "./3_blocks/experts-voice-section/template.html?raw"
-import headerExpertsVoiceSection from "./3_blocks/header-experts-voice-section/template.html?raw"
 import discoverIntegrationProgramSection from "./3_blocks/discover-integration-program-section/template.html?raw"
 import questionsSection from "./3_blocks/questions-section/template.html?raw"
 import squadSection from "./3_blocks/squad-section/template.html?raw"
@@ -185,8 +182,8 @@ const blocks = [
         template: partnerNewsSection
     },
     {
-        name: "productHeroBanner",
-        template: productHeroBanner
+        name: "heroBanner (Default, Catchline, Product)",
+        template: heroBanner
     },
     {
         name: "productAdvantagesSection",
@@ -233,14 +230,6 @@ const blocks = [
         template: managementGuidedPartnersSection
     },
     {
-        name: "headerPilotedSection",
-        template: headerPilotedSection
-    },
-    {
-        name: "headerSupportSection",
-        template: headerSupportSection
-    },
-    {
         name: "contractsPilotedSection",
         template: contractsPilotedSection
     },
@@ -263,10 +252,6 @@ const blocks = [
     {
         name: "expertsVoiceSection",
         template: expertsVoiceSection
-    },
-    {
-        name: "headerExpertsVoiceSection",
-        template: headerExpertsVoiceSection
     },
     {
         name: "discoverIntegrationProgramSection",
