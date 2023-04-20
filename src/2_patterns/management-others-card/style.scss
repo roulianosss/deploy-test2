@@ -49,7 +49,7 @@
     position: absolute;
     padding-bottom: var(--spacing-16);
     opacity: 0;
-    transition: 100ms var(--motion-easing-standard);
+    transition: var(--motion-duration-instant) var(--motion-easing-standard);
     transform: translateY(-33%);
 
     &.active {
