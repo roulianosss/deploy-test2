@@ -30,9 +30,9 @@
   }
 
   &--small {
-    padding: var(--spacing-12) 16px;
+    padding: var(--spacing-12) var(--spacing-16);
     gap: var(--spacing-12);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-tiny);
   }
 
   &--primary {

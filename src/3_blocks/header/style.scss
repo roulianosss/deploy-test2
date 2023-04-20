@@ -1,4 +1,5 @@
 .header {
+  z-index: 999;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -68,13 +69,24 @@
 
       &.active {
         display: flex;
+      }
 
+      &__column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-32);
       }
 
       &__links {
         display: flex;
         flex-direction: column;
         gap: var(--spacing-16);
+
+        &--row {
+          display: flex;
+          flex-direction: row;
+          gap: var(--spacing-24);
+        }
       }
 
       &__link {
