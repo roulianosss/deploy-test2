@@ -1,4 +1,5 @@
 .expand-menu-card {
+  $self: &;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,6 +22,22 @@
   &__description {
     font-size: var(--font-size-tiny);
     max-width: 360px;
+  }
+
+  &--logo {
+    align-items: center;
+
+    #{$self}__content {
+      max-width: 160px;
+    }
+  }
+
+  &--primary {
+    transition: var(--motion-duration-short) var(--motion-easing-standard);
+
+    &:hover {
+      background-color: var(--color-primary-80);
+    }
   }
 
   &--secondary {
