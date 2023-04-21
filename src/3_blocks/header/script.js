@@ -1,17 +1,20 @@
-if (document.querySelector('.header')) {
+const header = document.querySelector('.header');
+
+if (header) {
 
   const menuItems = document.querySelectorAll('.menu__item');
   const headerMenu = document.querySelector('.header__menu');
   const headerOverlay = document.querySelector('.header__overlay');
 
   function init() {
-    placeMenuItems(menuItems);
+    positionMenuItems(menuItems);
     displayExpandMenuItems(menuItems);
     handleOverlayClick();
   }
 
   window.addEventListener('resize', () => {
-    placeMenuItems(menuItems);
+    console.log('resizz');
+    positionMenuItems(menuItems);
   });
 
   init();
@@ -57,18 +60,30 @@ if (document.querySelector('.header')) {
     }
   }
 
-  function getElementRightPosition(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.right;
+  function getElementLeftPosition(element) {
+    const eleRect = element.getBoundingClientRect();
+    const targetRect = header.getBoundingClientRect();
+    return eleRect.left - targetRect.left;
   }
 
-  function placeMenuItems(menuItems) {
+  function getElementRightPosition(element) {
+    const eleRect = element.getBoundingClientRect();
+    const targetRect = header.getBoundingClientRect();
+    return eleRect.right - targetRect.left;
+  }
+
+  function positionMenuItems(menuItems) {
+    const headerPadding = parseInt(window.getComputedStyle(header).getPropertyValue('padding-left'), 10);
+    const headerMenuPadding = parseInt(window.getComputedStyle(headerMenu).getPropertyValue('padding-left'), 10);
 
     menuItems.forEach((menuItem) => {
       const expandMenuItem = menuItem.querySelector('.expand-menu');
 
-      if (getElementRightPosition(expandMenuItem) >
-          getElementRightPosition(headerMenu)) {
+      if (menuItem.classList.contains('menu__item--full')) {
+        const expandLeftPosition = getElementLeftPosition(menuItem);
+        expandMenuItem.style.left = `${headerPadding + headerMenuPadding - expandLeftPosition}px`;
+      }
+      else if ((header.offsetWidth - getElementRightPosition(expandMenuItem)) < headerPadding) {
         menuItem.classList.add('menu__item--right');
         menuItem.classList.remove('menu__item--left');
       }

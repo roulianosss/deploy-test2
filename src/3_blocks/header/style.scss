@@ -97,19 +97,30 @@
       &__item {
         position: relative;
 
-        &--full, &--left {
+        &--full, &--left, &--right {
           position: unset;
+        }
 
+        &--left {
           .expand-menu {
             left: 0;
           }
         }
 
         &--right {
-          position: unset;
-
           .expand-menu {
             right: 0;
+          }
+        }
+
+        &--full {
+          .expand-menu {
+            right: 0;
+
+            &__content {
+              width: 100%;
+              left: 0;
+            }
           }
         }
 
@@ -192,6 +203,7 @@
       &__content {
         opacity: 0;
         display: flex;
+        gap: var(--spacing-32);
         width: max-content;
         padding: var(--spacing-24) var(--spacing-64) var(--spacing-32) var(--spacing-32);
         background-color: var(--color-neutral-100);
@@ -210,15 +222,21 @@
       &__sub-content {
         position: relative;
 
-
         .sub-item {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: var(--spacing-16);
-          padding: var(--spacing-16) var(--spacing-32) var(--spacing-24);
+          gap: var(--spacing-32);
+          padding: var(--spacing-8) var(--spacing-16);
 
-          &__links {
+          &__cards {
+            display: flex;
+            gap: var(--spacing-16);
+            flex-wrap: wrap;
+            max-width: 1280px;
+          }
+
+          &__buttons {
             display: flex;
             gap: var(--spacing-16);
           }
