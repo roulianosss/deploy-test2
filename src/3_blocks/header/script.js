@@ -2,10 +2,12 @@ if (document.querySelector('.header')) {
 
   const menuItems = document.querySelectorAll('.menu__item');
   const headerMenu = document.querySelector('.header__menu');
+  const headerOverlay = document.querySelector('.header__overlay');
 
   function init() {
     placeMenuItems(menuItems);
     displayExpandMenuItems(menuItems);
+    handleOverlayClick();
   }
 
   window.addEventListener('resize', () => {
@@ -16,22 +18,43 @@ if (document.querySelector('.header')) {
 
   function displayExpandMenuItems(menuItems) {
     menuItems.forEach((menuItem) => {
-      menuItem.addEventListener('click', (e) => {
+      menuItem.querySelector('.menu__name').addEventListener('click', (e) => {
         e.preventDefault();
-        removeCurrentItemClass();
-        addItemClass(menuItem);
+        toogleMenuItem(menuItem);
       });
     });
   }
 
-  function removeCurrentItemClass() {
-    menuItems.forEach((menuItem) => {
-      menuItem.classList.remove('active');
+  function handleOverlayClick() {
+    headerOverlay.addEventListener('click', () => {
+      closeMenu();
     });
   }
 
-  function addItemClass(menuItem) {
-    menuItem.classList.add('active');
+  function closeMenu() {
+    const currentMenuItem = document.querySelector('.menu__item.active');
+
+    if (currentMenuItem) {
+      currentMenuItem.classList.remove('active');
+      headerOverlay.classList.remove('active');
+    }
+  }
+
+  function toogleMenuItem(menuItem) {
+    const currentMenuItem = document.querySelector('.menu__item.active');
+
+    if (currentMenuItem === menuItem) {
+      menuItem.classList.remove('active');
+      headerOverlay.classList.remove('active');
+    }
+    else if (currentMenuItem) {
+      currentMenuItem.classList.remove('active');
+      menuItem.classList.add('active');
+    }
+    else {
+      menuItem.classList.add('active');
+      headerOverlay.classList.add('active');
+    }
   }
 
   function getElementRightPosition(element) {
@@ -48,7 +71,8 @@ if (document.querySelector('.header')) {
           getElementRightPosition(headerMenu)) {
         menuItem.classList.add('menu__item--right');
         menuItem.classList.remove('menu__item--left');
-      } else {
+      }
+      else {
         menuItem.classList.remove('menu__item--right');
         if (menuItem.getAttribute('data-position') === 'left') {
           menuItem.classList.add('menu__item--left');
