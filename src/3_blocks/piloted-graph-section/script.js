@@ -44,13 +44,26 @@ if (document.querySelector(".piloted-graph-section")) {
         ]
     ]
 
+    const element = document.querySelector('.piloted-graph-section__btns-container');
+    // @todo debug pour affichage correct sur design system
+    // const data = JSON.parse(element.getAttribute('data-content'));
     const graphContainer = document.querySelector(
         ".piloted-graph-section__graph-container"
     )
+    //element.innerHTML = '';
+    //data[0].forEach((donnee, i) => {
+    //    let active = donnee['active'] == 1 ? 'piloted-graph-section__btns-container__btn--active' : '';
+    //    element.innerHTML += '<div class="piloted-graph-section__btns-container__btn '+active+'" data-attr="'+i+'">'+donnee['titre']+'</div>';
+    //});
+
     const allGraphBtns = document.querySelectorAll(
         ".piloted-graph-section__btns-container__btn"
     )
-
+    /*
+      allGraphBtns.forEach((btn, index) => {
+        btn.innerHTML = data[0][index]['titre'];
+      });
+    */
     allGraphBtns.forEach((btn) => btn.addEventListener("click",
         handleClick))
 
@@ -74,11 +87,11 @@ if (document.querySelector(".piloted-graph-section")) {
             graphContainer.innerHTML += `
     <div
       class="piloted-graph-section__graph-container__bar-container"
-      
+
     >
       <div
         class="piloted-graph-section__graph-container__bar-container__bar-graph piloted-graph-section__graph-container__bar-container__bar-graph--${index}"
-        
+
       >
         ${graphBar.percentage}%
       </div>
@@ -135,7 +148,7 @@ if (document.querySelector(".piloted-graph-section")) {
         graphContainer.innerHTML += `
     <div
       class="piloted-graph-section__graph-container__bar-container"
-      
+
     >
       <div
         class="piloted-graph-section__graph-container__bar-container__bar-graph"
