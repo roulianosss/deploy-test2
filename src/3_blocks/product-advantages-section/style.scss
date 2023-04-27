@@ -27,5 +27,10 @@
     max-width: var(--breakpoint-tablet-large);
   }
 
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-32);
+  }
 
 }
