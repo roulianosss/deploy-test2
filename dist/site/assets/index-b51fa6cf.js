@@ -1330,8 +1330,8 @@
         </div>\r
     </div>\r
     <ul class="product-advantages-section__links">\r
-        <a class="button button--primary" href="#">Faire une simulation</a>\r
-        <a class="button button--secondary button--light-theme" href="#">Demander conseil</a>\r
+        <li><a class="button button--primary" href="#">Faire une simulation</a></li>\r
+        <li><a class="button button--secondary button--light-theme" href="#">Demander conseil</a></li>\r
     </ul>\r
 </section>`,gn=`<section class="product-fees-section">\r
     <h2 class="product-fees-section__title">Optimisez vos rendements avec des frais réduits</h2>\r
