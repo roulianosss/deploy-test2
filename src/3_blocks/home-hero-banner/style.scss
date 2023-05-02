@@ -6,6 +6,10 @@
 
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    height: 60vh;
+  }
+
   .owl-controls {
     display: none;
   }
@@ -19,6 +23,18 @@
     padding: var(--spacing-64) var(--spacing-96);
     width: 100%;
     height: 50vh;
+
+    @media screen and (max-width: 1280px) {
+      padding: var(--spacing-80) var(--spacing-64);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: var(--spacing-64) var(--spacing-40);
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: var(--spacing-64) var(--spacing-24);
+    }
   }
 
   &__image {
@@ -39,6 +55,21 @@
     gap: var(--spacing-32);
   }
 
+  &__title {
+    @media screen and (max-width: 1024px) {
+      font-size: 3.6vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: clamp(var(--font-size-4), 6vw, var(--font-size-2));
+
+      br {
+        content: " ";
+        display: none;
+      }
+    }
+  }
+
   &__navigation {
     position: absolute;
     left: 0;
@@ -51,14 +82,8 @@
     justify-content: flex-start;
     gap: var(--spacing-16);
     width: 100%;
-  }
 
-  @media screen and (max-width: 1280px) {
-    &__slide {
-      padding: var(--spacing-80) var(--spacing-64);
-    }
-
-    &__navigation {
+    @media screen and (max-width: 1280px) {
       padding: var(--spacing-32) var(--spacing-64);
 
       .tab {
@@ -67,35 +92,13 @@
         }
       }
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    height: 60vh;
-
-    &__slide {
-      padding: var(--spacing-64) var(--spacing-40);
-    }
-
-    &__title {
-      font-size: var(--font-size-3);
-    }
-
-    &__navigation {
+    @media screen and (max-width: 768px) {
       flex-wrap: wrap;
       padding: var(--spacing-32) var(--spacing-40);
     }
-  }
 
-  @media screen and (max-width: 480px) {
-    &__slide {
-      padding: var(--spacing-64) var(--spacing-24);
-    }
-
-    &__title {
-      font-size: var(--font-size-4);
-    }
-
-    &__navigation {
+    @media screen and (max-width: 480px) {
       padding: var(--spacing-32) var(--spacing-24);
     }
   }

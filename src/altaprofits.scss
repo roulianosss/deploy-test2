@@ -113,6 +113,8 @@ TOKENS
   --font-size-number-1: 8rem;
 
   --font-weight-light: 300;
+  --font-weight-medium: 400;
+  --font-weight-default: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
@@ -120,6 +122,7 @@ TOKENS
   /*
   MOTION
   */
+  --motion-duration-instant: 0.1s;
   --motion-duration-short: 0.3s;
   --motion-duration-medium: 0.6s;
   --motion-duration-long: 1.2s;

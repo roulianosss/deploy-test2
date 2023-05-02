@@ -1,150 +1,67 @@
-.experts-voice-container {
-  width: 100%;
+.experts-voice-section {
   display: flex;
-  justify-content: center;
-  background-image: url("/assets/images/background-alta-news-talking-about.png");
-  gap: var(--spacing-40);
   flex-direction: column;
-  align-items: flex-end;
-  padding: var(--spacing-32);
-  border-radius: var(--border-radius-small);
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-48);
+  padding: var(--spacing-64) var(--spacing-16);
 
-  & h3 {
-    width: 100%;
-    text-align: center;
-    font-size: clamp(var(--font-size-medium), 5vw, var(--font-size-1));
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    padding: var(--spacing-48) var(--spacing-16);
+    gap: var(--spacing-48);
   }
 
-  &__card {
+  &__header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: var(--spacing-16);
-    gap: var(--spacing-40);
-    width: 100%;
-    margin-bottom: var(--spacing-40);
-
-    &__logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      & img {
-        border-radius: var(--border-radius-small);
-        max-height: 200px;
-      }
-    }
-
-    &__informations-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px;
-      gap: var(--spacing-16);
-      max-width: 100%;
-
-      & p:first-of-type {
-        font-family: var(--font-family-body);
-        font-size: var(--font-size-medium);
-        color: var(--color-secondary-20);
-        text-align: left;
-      }
-      
-      & h3 {
-        text-align: left;
-        width: 502px;
-        font-family: var(--font-family-heading);
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-large);
-        color: var(--color-neutral-0);
-        width: 100%;
-        cursor: pointer;
-      }
-
-      &__underline {
-        color: var(--color-secondary-20);
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size var(--motion-duration-short)
-          var(--motion-easing-standard);
-      }
-
-      & h3:hover &__underline {
-        background-size: 100% 2px;
-      }
-      
-      & p:nth-last-of-type(2) {
-        text-align: left;
-        width: 502px;
-        font-family: var(--font-family-body);
-        font-size: var(--font-size-medium);
-        width: 100%;
-        color: #0666ac;
-      }
-    }
-  }
-
-  &__pages-navigation {
-    display: flex;
-    width: 103px;
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-small);
-    text-align: center;
-    color: var(--color-neutral-0);
-    width: 100%;
-    justify-content: center;
-
-    &__pages-numbers {
-      display: flex;
-      gap: var(--spacing-4);
-
-      &__btn {
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.activePage {
-  text-decoration: underline;
-  font-weight: var(--border-radius-medium);
-}
-
-@media screen and (max-width: 1280px) {
-  .experts-voice-container {
     flex-direction: column;
+    gap: var(--spacing-24);
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: var(--spacing-16);
-    & {
-      width: 100%;
-      align-items: center;
+  }
 
-      &__card {
-        width: 100%;
-        flex-direction: column;
-      }
+  &__title {
+    text-align: center;
+    max-width: 32ch;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(3, 216px);
+    grid-gap: var(--spacing-32);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: var(--spacing-32);
+
+    @media screen and (max-width: 1080px) {
+      grid-template-rows: repeat(3, 460px);
     }
   }
 
-  .experts-voice-container__card {
-    max-width: 100%;
-    text-overflow: wrap;
-    white-space: normal;
+  &__navigation {
+    display: flex;
+    gap: var(--spacing-16);
+    align-items: center;
+    justify-content: center;
   }
 
-  .experts-voice-container__news-container {
-    max-width: 100%;
+  &__pagination {
+    display: flex;
+    gap: var(--spacing-16);
+    align-items: center;
+    justify-content: center;
   }
 
-  .experts-voice-container__card__informations-container {
-    max-width: 100%;
-  }
+  &__page {
+    cursor: pointer;
 
-  .experts-voice-container__card__informations-container {
+    &.active {
+      font-weight: var(--font-weight-bold);
+      text-decoration: underline;
+      cursor: auto;
+    }
   }
 }
