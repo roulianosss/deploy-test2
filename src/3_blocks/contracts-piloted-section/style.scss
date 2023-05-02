@@ -629,7 +629,7 @@
 }
 
 .distribution-funds-array-section {
-  width: 100%;
+  width: 927px;
   display: flex;
   flex-direction: column;
   user-select: none;
@@ -669,10 +669,10 @@
     transition: max-height var(--motion-duration-medium) var(--motion-easing-standard);
 
     &__array-container {
-      padding: var(--spacing-24);
+      padding-top: var(--spacing-24);
       display: flex;
       flex-direction: column;
-      width: 800px;
+      width: 100%;
 
       &__item {
         width: 100%;
@@ -689,23 +689,29 @@
           & h4,
           & p {
             font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-5);
+            font-family: var(--font-family-body);
+            font-size: 18px;
             color: var(--color-neutral-100);
           }
         }
 
         &--content {
-          background: var(--color-neutral-70)
+          background: var(--color-neutral-70);
 
           & h4 {
             font-family: var(--font-family-body);
             font-weight: var(--font-weight-bold);
             font-size: var(--font-size-medium);
             text-decoration-line: underline;
+            text-decoration-thickness: 1px;
           }
-
+          
           & > p {
             font-size: var(--font-size-medium);
+          }
+          
+          & span {
+            text-decoration-line: underline;
           }
 
           & div p {
