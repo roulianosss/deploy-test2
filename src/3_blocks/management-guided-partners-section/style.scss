@@ -3,10 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-48);
+  gap: var(--spacing-32);
   padding: var(--spacing-64) var(--spacing-24);
   width: 100%;
   background-color: var(--color-secondary-70);
+
+  @media screen and (max-width: 480px) {
+    padding: var(--spacing-48) var(--spacing-16);
+  }
 
   &__header {
     display: flex;
@@ -30,30 +34,20 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap: var(--spacing-24);
-    padding: var(--spacing-16) 0 var(--spacing-32);
-  }
 
-  &__logo.logo {
-    height: 96px;
-    width: auto;
-    object-fit: contain;
-    object-position: center;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    &__content {
+    @media screen and (max-width: 768px) {
       flex-direction: column;
     }
   }
 
-  @media screen and (max-width: 480px) {
+  &__logo.logo {
+    height: 180px;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
 
-    padding: var(--spacing-48) var(--spacing-16);
-
-    &__logo.logo {
-      height: 64px;
+    @media screen and (max-width: 480px) {
+      height: 128px;
     }
   }
 }
