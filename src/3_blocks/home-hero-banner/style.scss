@@ -10,6 +10,10 @@
     height: 60vh;
   }
 
+  @media screen and (max-width: 480px) {
+    height: 50vh;
+  }
+
   .owl-controls {
     display: none;
   }
@@ -20,6 +24,7 @@
   }
 
   &__slide {
+    display: flex;
     padding: var(--spacing-64) var(--spacing-96);
     width: 100%;
     height: 50vh;
@@ -53,6 +58,10 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-32);
+
+    @media screen and (max-width: 480px) {
+      justify-content: flex-end;
+    }
   }
 
   &__title {
@@ -99,7 +108,7 @@
     }
 
     @media screen and (max-width: 480px) {
-      padding: var(--spacing-32) var(--spacing-24);
+      display: none;
     }
   }
 }
