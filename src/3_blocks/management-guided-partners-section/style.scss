@@ -34,6 +34,8 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    gap: var(--spacing-24);
+    padding: var(--spacing-16) 0 var(--spacing-32);
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -43,11 +45,5 @@
   &__logo.logo {
     height: 128px;
     width: auto;
-    object-fit: contain;
-    object-position: center;
-
-    @media screen and (max-width: 480px) {
-      height: 128px;
-    }
   }
 }
