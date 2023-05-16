@@ -87,7 +87,7 @@
         margin-top: var(--spacing-16);
         font-family: var(--font-family-body);
         font-weight: var(--font-weight-semibold);
-        font-size: clamp(var(--font-size-medium), 3vw, var(--font-size-5));
+        font-size: 13px;//clamp(var(--font-size-medium), 3vw, var(--font-size-5))
         text-align: center;
         color: var(--color-neutral-0);
         display: flex;

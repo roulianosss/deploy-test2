@@ -221,7 +221,12 @@
 
       &__sub-content {
         position: relative;
-
+        &__hidden {
+          display:none;
+        }
+        .visible{
+          display:block;
+        }
         .sub-item {
           display: flex;
           flex-direction: column;
@@ -266,6 +271,10 @@
         width: fit-content;
         font-size: var(--font-size-small);
         font-weight: var(--font-weight-default);
+        &.active{
+          color: var(--color-primary-50);
+          text-decoration:underline;
+        }
       }
     }
   }
