@@ -33,31 +33,23 @@
     width: 100%;
 
     @media screen and (max-width: 768px) {
-      gap: 0;
-    }
-
-    @media screen and (max-width: 768px) {
       flex-direction: column;
       height: fit-content;
-      gap: 0;
+      gap: var(--spacing-16);
     }
   }
 
   &__logo_container {
-    width: 24%;
-    height: 16vw;
-    max-height: 20vw;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-16);
   }
 
   &__logo.logo {
     width: 100%;
     height: 100%;
     max-width: 200px;
-    object-fit: contain;
 
     @media screen and (max-width: 1024px) {
       width: 20vw;
