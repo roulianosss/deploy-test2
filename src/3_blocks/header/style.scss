@@ -1,7 +1,7 @@
 .header {
   $header: &;
-  position: relative;
-  z-index: 999;
+  position: fixed;
+  z-index: 998;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -221,12 +221,15 @@
 
       &__sub-content {
         position: relative;
+
         &__hidden {
-          display:none;
+          display: none;
         }
-        .visible{
-          display:block;
+
+        .visible {
+          display: block;
         }
+
         .sub-item {
           display: flex;
           flex-direction: column;
@@ -271,9 +274,10 @@
         width: fit-content;
         font-size: var(--font-size-small);
         font-weight: var(--font-weight-default);
-        &.active{
+
+        &.active {
           color: var(--color-primary-50);
-          text-decoration:underline;
+          text-decoration: underline;
         }
       }
     }

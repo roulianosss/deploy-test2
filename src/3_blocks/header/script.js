@@ -3,7 +3,7 @@ const header = document.querySelector('.header');
 if (header) {
 
   const menuItems = document.querySelectorAll('.menu__item');
-  const managementSubMenus = document.querySelectorAll(".expand-menu__sub-menu");
+  const managementSubMenus = document.querySelectorAll('.expand-menu__sub-menu');
   //const subMenuItems = document.querySelectorAll('.expand-menu__sub-menu > .link');
   const headerMenu = document.querySelector('.header__menu');
   const headerOverlay = document.querySelector('.header__overlay');
@@ -16,7 +16,6 @@ if (header) {
   }
 
   window.addEventListener('resize', () => {
-    console.log('resizz');
     positionMenuItems(menuItems);
   });
 
@@ -31,35 +30,35 @@ if (header) {
     });
   }
 
-/*
-  function displayExpandSubMenuItems(submenuItems) {
-    console.log(submenuItems);
-    submenuItems.forEach((submenuItem) => {
-      console.log(submenuItem);
-      submenuItem.addEventListener('click', (e) => {
-        e.preventDefault();
-        toogleSubmenuItem(submenuItem);
-      });
-    });
-  }*/
+  /*
+   function displayExpandSubMenuItems(submenuItems) {
+   console.log(submenuItems);
+   submenuItems.forEach((submenuItem) => {
+   console.log(submenuItem);
+   submenuItem.addEventListener('click', (e) => {
+   e.preventDefault();
+   toogleSubmenuItem(submenuItem);
+   });
+   });
+   }*/
 
   if (managementSubMenus) {
     managementSubMenus.forEach((element) => {
-      const subMenus = element.querySelectorAll(".link--arrow")
+      const subMenus = element.querySelectorAll('.link--arrow');
       subMenus.forEach((link) => {
-        let name = link.dataset.name
-        let submenus = element.querySelector(".link--arrow[data-name=" + name + "]")
+        let name = link.dataset.name;
+        let submenus = element.querySelector('.link--arrow[data-name=' + name + ']');
 
-        link.addEventListener("click",
+        link.addEventListener('click',
             () => {
-              element.querySelector(".link--arrow").classList.remove('active');
+              element.querySelector('.link--arrow').classList.remove('active');
               link.classList.remove('active');
               submenus.classList.add('active');
-              $(".expand-menu__sub-item").classList.remove('visible');
-              $(".expand-menu__sub-item[data-name=" + name + "]").classList.add('visible');
-            })
-      })
-    })
+              $('.expand-menu__sub-item').classList.remove('visible');
+              $('.expand-menu__sub-item[data-name=' + name + ']').classList.add('visible');
+            });
+      });
+    });
   }
 
   function handleOverlayClick() {
@@ -93,24 +92,25 @@ if (header) {
       headerOverlay.classList.add('active');
     }
   }
-/*
-  function toogleSubmenuItem(submenuItem) {
-    console.log(submenuItem);
-    const currentSubmenuItem = document.querySelector('.menu__item.active');
 
-    if (currentSubmenuItem === submenuItem) {
-      submenuItem.classList.remove('visible');
-      headerOverlay.classList.remove('visible');
-    }
-    else if (currentSubmenuItem) {
-      currentSubmenuItem.classList.remove('visible');
-      submenuItem.classList.add('visible');
-    }
-    else {
-      submenuItem.classList.add('visible');
-      headerOverlay.classList.add('visible');
-    }
-  }*/
+  /*
+   function toogleSubmenuItem(submenuItem) {
+   console.log(submenuItem);
+   const currentSubmenuItem = document.querySelector('.menu__item.active');
+
+   if (currentSubmenuItem === submenuItem) {
+   submenuItem.classList.remove('visible');
+   headerOverlay.classList.remove('visible');
+   }
+   else if (currentSubmenuItem) {
+   currentSubmenuItem.classList.remove('visible');
+   submenuItem.classList.add('visible');
+   }
+   else {
+   submenuItem.classList.add('visible');
+   headerOverlay.classList.add('visible');
+   }
+   }*/
   function getElementLeftPosition(element) {
     const eleRect = element.getBoundingClientRect();
     const targetRect = header.getBoundingClientRect();
