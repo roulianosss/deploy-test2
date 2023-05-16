@@ -8,6 +8,7 @@ import feeCard from './fee-card/template.html?raw';
 import managementGuidedCard from './management-guided-card/template.html?raw';
 import managementOthersCard from './management-others-card/template.html?raw';
 import itemCard from './item-card/template.html?raw';
+import toggleText from './toggle-text/template.html?raw';
 
 const patterns = [
   {
@@ -49,6 +50,10 @@ const patterns = [
   {
     name: 'managementOthersCard',
     template: managementOthersCard,
+  },
+  {
+    name: 'toggleText',
+    template: toggleText,
   },
 ];
 

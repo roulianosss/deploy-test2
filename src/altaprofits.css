@@ -206,6 +206,8 @@ LOGO
 .logo {
   width: 128px;
   height: 128px;
+  object-fit: contain;
+  object-position: center;
   --current-color-1: var(--color-neutral-0); }
 
 /*# sourceMappingURL=altaprofits.css.map */

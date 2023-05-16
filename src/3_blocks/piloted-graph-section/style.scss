@@ -69,6 +69,7 @@
       justify-content: flex-end;
       
       &__bar-graph {
+        border-radius: var(--border-radius-small);
         height: 100%;
         background-color: #ffefeb;
         color: var(--color-neutral-0);
