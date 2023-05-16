@@ -278,6 +278,7 @@ LOGO
  */
 
 .logo {
+  padding: var(--spacing-16);
   width: 128px;
   height: 128px;
   object-fit: contain;
