@@ -28,14 +28,14 @@
 </div>\r
 \r
 \r
-`,T=`<a class="icon-button icon-button--light-theme" href="#">\r
+`,j=`<a class="icon-button icon-button--light-theme" href="#">\r
     <i class="icon-button__icon fa-solid fa-arrow-up-long"></i>\r
 </a>\r
 \r
 <a class="icon-button icon-button--dark-theme" href="#">\r
     <i class="icon-button__icon fa-solid fa-arrow-up-long"></i>\r
 </a>\r
-`,j=`<button class="toggle-button toggle-button--primary">\r
+`,T=`<button class="toggle-button toggle-button--primary">\r
     <span class="toggle-button__text">ToggleButton</span>\r
 </button>\r
 <button class="toggle-button toggle-button--primary toggle-button--active">\r
@@ -90,7 +90,7 @@
     <span class="tab__text">Tab</span>\r
 </button>`,M=`<a class="link" href="#">Link</a>\r
 \r
-<a class="link link--arrow" href="#">Link</a>`,F='<a class="file-link" href="#">FileLink</a>',B='<span class="tag">Tag</span>',U=[{name:"button",template:V},{name:"iconButton",template:T},{name:"toggleButton",template:j},{name:"tab",template:I},{name:"link",template:M},{name:"fileLink",template:F},{name:"tag",template:B}],G=`<div class="breadcrumb">\r
+<a class="link link--arrow" href="#">Link</a>`,F='<a class="file-link" href="#">FileLink</a>',B='<span class="tag">Tag</span>',U=[{name:"button",template:V},{name:"iconButton",template:j},{name:"toggleButton",template:T},{name:"tab",template:I},{name:"link",template:M},{name:"fileLink",template:F},{name:"tag",template:B}],G=`<div class="breadcrumb">\r
     <a class="link" href="#">Notre offre</a>\r
     <span class="breadcrumb__separator">/</span>\r
     <a class="link" href="#">Assurance vie</a>\r
@@ -293,8 +293,8 @@
         <p class="management-guided-card__description">Déléguez la gestion de votre épargne à l’assureur qui\r
             prend conseil auprès d’une société de gestion d’actifs</p>\r
         <div class="management-guided-card__logos">\r
-            <img alt="" class="logo" src="/assets/logos/generali_ws.png">\r
-            <img alt="" class="logo" src="/assets/logos/lazard_freres_gestion.png">\r
+            <img alt="" class="logo" src="/assets/logos/generali_ws--fit.png">\r
+            <img alt="" class="logo" src="/assets/logos/lazard_freres_gestion--fit.png">\r
         </div>\r
     </div>\r
     <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrir la gestion pilotée</a>\r
@@ -423,232 +423,232 @@
     \r
   </div>\r
 </section>\r
-`,X=[{name:"breadcrumb",template:G},{name:"tabsNavigation",template:D},{name:"expandMenuCard",template:N},{name:"keypointCard",template:O},{name:"articleCard",template:Y},{name:"itemCard",template:W},{name:"awardItem",template:H},{name:"feeCard",template:Z},{name:"managementGuidedCard",template:J},{name:"managementOthersCard",template:Q},{name:"toggleText",template:K}],nn=`<!--    NE PAS INCLURE-->\r
-<div class="screen ads">\r
-    <!--    NE PAS INCLURE-->\r
-    <header class="header">\r
-        <div class="header__overlay"></div>\r
-        <div class="header__mask"></div>\r
-        <a class="header__logo">\r
-            <img alt="Altaprofits" src="/assets/logos/altaprofits__header.svg">\r
-        </a>\r
-        <div class="header__navigation">\r
-            <div class="header__actions">\r
-                <div class="header__searchbar"></div>\r
-                <a class="button button--primary button--small" href="#">Souscrire en ligne</a>\r
-                <a class="button button--secondary button--light-theme button--small" href="#">Mon Espace Client</a>\r
-                <div class="header__contact">\r
-                    <a class="link --tiny" href="#">01 44 77 12 14</a>\r
-                    <a class="link --tiny --semibold" href="#">Être contacté</a>\r
+`,X=[{name:"breadcrumb",template:G},{name:"tabsNavigation",template:D},{name:"expandMenuCard",template:N},{name:"keypointCard",template:O},{name:"articleCard",template:Y},{name:"itemCard",template:W},{name:"awardItem",template:H},{name:"feeCard",template:Z},{name:"managementGuidedCard",template:J},{name:"managementOthersCard",template:Q},{name:"toggleText",template:K}],nn=`<header class="header">\r
+    <div class="header__overlay"></div>\r
+    <div class="header__mask"></div>\r
+    <a class="header__logo">\r
+        <img alt="Altaprofits" src="/assets/logos/altaprofits__header.svg">\r
+    </a>\r
+    <div class="header__navigation">\r
+        <div class="header__actions">\r
+            <div class="header__searchbar"></div>\r
+            <a class="button button--primary button--small" href="#">Souscrire en ligne</a>\r
+            <a class="button button--secondary button--light-theme button--small" href="#">Mon Espace Client</a>\r
+            <div class="header__contact">\r
+                <a class="link --tiny" href="#">01 44 77 12 14</a>\r
+                <a class="link --tiny --semibold" href="#">Être contacté</a>\r
+            </div>\r
+        </div>\r
+        <nav class="header__menu menu">\r
+            <div class="menu__item menu__item--full">\r
+                <a class="menu__name" href="javascript:">Notre offre</a>\r
+                <div class="expand-menu">\r
+                    <div class="expand-menu__bar"></div>\r
+                    <div class="expand-menu__content">\r
+                        <div class="expand-menu__sub-menu">\r
+                            <a class="link link--arrow" data-name="submenu-1" href="javascript:">ASSURANCE VIE</a>\r
+                            <a class="link link--arrow" data-name="submenu-2" href="javascript:">RETRAITE</a>\r
+                            <a class="link link--arrow" data-name="submenu-3" href="javascript:">SCPI</a>\r
+                            <a class="link link--arrow" data-name="submenu-4" href="javascript:">AUTRES</a>\r
+                        </div>\r
+                        <div class="expand-menu__sub-content" data-name="subcontent-1">\r
+                            <div class="expand-menu__sub-item sub-item">\r
+                                <div class="sub-item__cards">\r
+                                    <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
+                                       href="#">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Altaprofits Vie</p>\r
+                                            <p class="expand-menu-card__description">En un clic le meilleur de\r
+                                                l’assurance vie</p>\r
+                                        </div>\r
+                                        <svg class="logo">\r
+                                            <use href="/assets/logos/generali.svg#logo"></use>\r
+                                        </svg>\r
+                                    </a>\r
+                                    <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
+                                       href="#">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Digital Vie Prime</p>\r
+                                            <p class="expand-menu-card__description">Un contrat ciblant les critères\r
+                                                environnementaux et sociaux</p>\r
+                                        </div>\r
+                                        <svg class="logo">\r
+                                            <use href="/assets/logos/suravenir.svg#logo"></use>\r
+                                        </svg>\r
+                                    </a>\r
+                                    <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
+                                       href="#">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Titres@Vie</p>\r
+                                            <p class="expand-menu-card__description">Un contrat pour les experts</p>\r
+                                        </div>\r
+                                        <svg class="logo">\r
+                                            <use href="/assets/logos/swisslife.svg#logo"></use>\r
+                                        </svg>\r
+                                    </a>\r
+                                    <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
+                                       href="#">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Generali Espace Lux Vie France</p>\r
+                                            <p class="expand-menu-card__description">Un contrat pour diversifier\r
+                                                géographiquement votre patrimoine</p>\r
+                                        </div>\r
+                                        <svg class="logo">\r
+                                            <use href="/assets/logos/generali.svg#logo"></use>\r
+                                        </svg>\r
+                                    </a>\r
+                                </div>\r
+                                <div class="sub-item__buttons">\r
+                                    <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
+                                        le guide de l’assurance vie</a>\r
+                                    <a class="button button--primary button--small" href="#">Faire une\r
+                                        simulation</a>\r
+                                </div>\r
+                            </div>\r
+                        </div>\r
+                        <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-2">\r
+                            <div class="expand-menu__sub-item sub-item">\r
+                                <div class="sub-item__cards">\r
+                                    <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
+                                       href="#">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Titres@PER</p>\r
+                                            <p class="expand-menu-card__description">En un clic le meilleur du PER</p>\r
+                                        </div>\r
+                                        <svg class="logo">\r
+                                            <use href="/assets/logos/swisslife.svg#logo"></use>\r
+                                        </svg>\r
+                                    </a>\r
+                                </div>\r
+                                <div class="sub-item__buttons">\r
+                                    <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
+                                        le guide de l’épargne retraite</a>\r
+                                    <a class="button button--primary button--small" href="#">Faire une\r
+                                        simulation</a>\r
+                                </div>\r
+                            </div>\r
+                        </div>\r
+                        <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-3">\r
+                            <div class="expand-menu__sub-item sub-item">\r
+                                <div class="sub-item__cards">\r
+                                    <div class="expand-menu-card expand-menu-card--button">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Les atouts de la SCPI</p>\r
+                                            <p class="expand-menu-card__description">Au travers d’une SCPI, vous\r
+                                                investissez directement en immobilier, qu’il soit résidentiel ou\r
+                                                d’entreprises, en France comme en Europe.</p>\r
+                                        </div>\r
+                                        <a class="button button--secondary button--light-theme button--small button--arrow"\r
+                                           href="#">En savoir plus</a>\r
+                                    </div>\r
+                                    <div class="expand-menu-card expand-menu-card--button">\r
+                                        <div class="expand-menu-card__content">\r
+                                            <p class="expand-menu-card__title">Notre sélection de SCPI</p>\r
+                                            <p class="expand-menu-card__description">Une solution simple et accessible\r
+                                                pour diversifier son patrimoine immobilier.</p>\r
+                                        </div>\r
+                                        <a class="button button--secondary button--light-theme button--small button--arrow"\r
+                                           href="#">En savoir plus</a>\r
+                                    </div>\r
+                                </div>\r
+                                <div class="sub-item__buttons">\r
+                                    <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
+                                        le guide des SCPI</a>\r
+                                    <a class="button button--primary button--small" href="#">Souscrire avec un\r
+                                        conseiller</a>\r
+                                </div>\r
+                            </div>\r
+                        </div>\r
+                        <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-4">\r
+                            subcontent-4\r
+                        </div>\r
+                    </div>\r
                 </div>\r
             </div>\r
-            <nav class="header__menu menu">\r
-                <div class="menu__item menu__item--full">\r
-                    <a class="menu__name" href="javascript:">Notre offre</a>\r
-                    <div class="expand-menu">\r
-                        <div class="expand-menu__bar"></div>\r
-                        <div class="expand-menu__content">\r
-                            <div class="expand-menu__sub-menu">\r
-                                <a class="link link--arrow" href="javascript:" data-name="submenu-1">ASSURANCE VIE</a>\r
-                                <a class="link link--arrow" href="javascript:" data-name="submenu-2">RETRAITE</a>\r
-                                <a class="link link--arrow" href="javascript:" data-name="submenu-3">SCPI</a>\r
-                                <a class="link link--arrow" href="javascript:" data-name="submenu-4">AUTRES</a>\r
-                            </div>\r
-                            <div class="expand-menu__sub-content" data-name="subcontent-1">\r
-                                <div class="expand-menu__sub-item sub-item">\r
-                                    <div class="sub-item__cards">\r
-                                        <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
-                                           href="#">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Altaprofits Vie</p>\r
-                                                <p class="expand-menu-card__description">En un clic le meilleur de\r
-                                                    l’assurance vie</p>\r
-                                            </div>\r
-                                            <svg class="logo">\r
-                                                <use href="/assets/logos/generali.svg#logo"></use>\r
-                                            </svg>\r
-                                        </a>\r
-                                        <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
-                                           href="#">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Digital Vie Prime</p>\r
-                                                <p class="expand-menu-card__description">Un contrat ciblant les critères\r
-                                                    environnementaux et sociaux</p>\r
-                                            </div>\r
-                                            <svg class="logo">\r
-                                                <use href="/assets/logos/suravenir.svg#logo"></use>\r
-                                            </svg>\r
-                                        </a>\r
-                                        <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
-                                           href="#">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Titres@Vie</p>\r
-                                                <p class="expand-menu-card__description">Un contrat pour les experts</p>\r
-                                            </div>\r
-                                            <svg class="logo">\r
-                                                <use href="/assets/logos/swisslife.svg#logo"></use>\r
-                                            </svg>\r
-                                        </a>\r
-                                        <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
-                                           href="#">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Generali Espace Lux Vie France</p>\r
-                                                <p class="expand-menu-card__description">Un contrat pour diversifier\r
-                                                    géographiquement votre patrimoine</p>\r
-                                            </div>\r
-                                            <svg class="logo">\r
-                                                <use href="/assets/logos/generali.svg#logo"></use>\r
-                                            </svg>\r
-                                        </a>\r
+            <div class="menu__item menu__item--left" data-position="left">\r
+                <a class="menu__name" href="javascript:">Supports d’investissement</a>\r
+                <div class="expand-menu">\r
+                    <div class="expand-menu__bar"></div>\r
+                    <div class="expand-menu__content">\r
+                        <div class="expand-menu__column">\r
+                            <h5 class="expand-menu__title">Découvrez nos types de gestion</h5>\r
+                            <div class="expand-menu__links expand-menu__links--row">\r
+                                <div class="expand-menu-card expand-menu-card--secondary">\r
+                                    <div class="expand-menu-card__content">\r
+                                        <p class="expand-menu-card__title">Gestion pilotée</p>\r
+                                        <p class="expand-menu-card__description">Vous déléguez la gestion de votre\r
+                                            contrat à\r
+                                            un\r
+                                            assureur qui lui-même bénéficie des conseils d’une société de gestion.\r
+                                            Vous\r
+                                            définissez votre profil investisseur et l’assureur procède aux\r
+                                            investissements.</p>\r
                                     </div>\r
-                                    <div class="sub-item__buttons">\r
-                                        <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
-                                            le guide de l’assurance vie</a>\r
-                                        <a class="button button--primary button--small" href="#">Faire une\r
-                                            simulation</a>\r
-                                    </div>\r
+                                    <a class="button button--secondary button--light-theme button--small button--arrow"\r
+                                       href="#">Choisir la gestion pilotée</a>\r
                                 </div>\r
-                            </div>\r
-                            <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-2">\r
-                                <div class="expand-menu__sub-item sub-item">\r
-                                    <div class="sub-item__cards">\r
-                                        <a class="expand-menu-card expand-menu-card--logo expand-menu-card--primary"\r
-                                           href="#">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Titres@PER</p>\r
-                                                <p class="expand-menu-card__description">En un clic le meilleur du PER</p>\r
-                                            </div>\r
-                                            <svg class="logo">\r
-                                                <use href="/assets/logos/swisslife.svg#logo"></use>\r
-                                            </svg>\r
-                                        </a>\r
+                                <div class="expand-menu-card">\r
+                                    <div class="expand-menu-card__content">\r
+                                        <p class="expand-menu-card__title">Autres supports</p>\r
+                                        <p class="expand-menu-card__description">Vous gérez en toute autonomie votre\r
+                                            contrat\r
+                                            et choisissez les supports\r
+                                            d’investissement qui le composent.</p>\r
                                     </div>\r
-                                    <div class="sub-item__buttons">\r
-                                        <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
-                                            le guide de l’épargne retraite</a>\r
-                                        <a class="button button--primary button--small" href="#">Faire une\r
-                                            simulation</a>\r
-                                    </div>\r
-                                </div>\r
-                            </div>\r
-                            <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-3">\r
-                                <div class="expand-menu__sub-item sub-item">\r
-                                    <div class="sub-item__cards">\r
-                                        <div class="expand-menu-card expand-menu-card--button">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Les atouts de la SCPI</p>\r
-                                                <p class="expand-menu-card__description">Au travers d’une SCPI, vous investissez directement en immobilier, qu’il soit résidentiel ou d’entreprises, en France comme en Europe.</p>\r
-                                            </div>\r
-                                            <a class="button button--secondary button--light-theme button--small button--arrow" href="#">En savoir plus</a>\r
-                                        </div>\r
-                                        <div class="expand-menu-card expand-menu-card--button">\r
-                                            <div class="expand-menu-card__content">\r
-                                                <p class="expand-menu-card__title">Notre sélection de SCPI</p>\r
-                                                <p class="expand-menu-card__description">Une solution simple et accessible pour diversifier son patrimoine immobilier.</p>\r
-                                            </div>\r
-                                            <a class="button button--secondary button--light-theme button--small button--arrow" href="#">En savoir plus</a>\r
-                                        </div>\r
-                                    </div>\r
-                                    <div class="sub-item__buttons">\r
-                                        <a class="button button--secondary button--light-theme button--small" href="#">Voir\r
-                                            le guide des SCPI</a>\r
-                                        <a class="button button--primary button--small" href="#">Souscrire avec un conseiller</a>\r
-                                    </div>\r
-                                </div>\r
-                            </div>\r
-                            <div class="expand-menu__sub-content expand-menu__sub-content__hidden" data-name="subcontent-4">\r
-                              subcontent-4\r
-                            </div>\r
-                        </div>\r
-                    </div>\r
-                </div>\r
-                <div class="menu__item menu__item--left" data-position="left">\r
-                    <a class="menu__name" href="javascript:">Supports d’investissement</a>\r
-                    <div class="expand-menu">\r
-                        <div class="expand-menu__bar"></div>\r
-                        <div class="expand-menu__content">\r
-                            <div class="expand-menu__column">\r
-                                <h5 class="expand-menu__title">Découvrez nos types de gestion</h5>\r
-                                <div class="expand-menu__links expand-menu__links--row">\r
-                                    <div class="expand-menu-card expand-menu-card--secondary">\r
-                                        <div class="expand-menu-card__content">\r
-                                            <p class="expand-menu-card__title">Gestion pilotée</p>\r
-                                            <p class="expand-menu-card__description">Vous déléguez la gestion de votre\r
-                                                contrat à\r
-                                                un\r
-                                                assureur qui lui-même bénéficie des conseils d’une société de gestion.\r
-                                                Vous\r
-                                                définissez votre profil investisseur et l’assureur procède aux\r
-                                                investissements.</p>\r
-                                        </div>\r
-                                        <a class="button button--secondary button--light-theme button--small button--arrow"\r
-                                           href="#">Choisir la gestion pilotée</a>\r
-                                    </div>\r
-                                    <div class="expand-menu-card">\r
-                                        <div class="expand-menu-card__content">\r
-                                            <p class="expand-menu-card__title">Autres supports</p>\r
-                                            <p class="expand-menu-card__description">Vous gérez en toute autonomie votre\r
-                                                contrat\r
-                                                et choisissez les supports\r
-                                                d’investissement qui le composent.</p>\r
-                                        </div>\r
-                                        <a class="button button--secondary button--light-theme button--small button--arrow"\r
-                                           href="#">Choisir vos supports d’investissement</a>\r
-                                    </div>\r
+                                    <a class="button button--secondary button--light-theme button--small button--arrow"\r
+                                       href="#">Choisir vos supports d’investissement</a>\r
                                 </div>\r
                             </div>\r
                         </div>\r
                     </div>\r
                 </div>\r
-                <div class="menu__item">\r
-                    <a class="menu__name" href="javascript:">L’épargne et vous</a>\r
-                    <div class="expand-menu">\r
-                        <div class="expand-menu__bar"></div>\r
-                        <div class="expand-menu__content">\r
-                            <div class="expand-menu__links">\r
-                                <a class="expand-menu__link link" href="#">Guide de l'épargne</a>\r
-                                <a class="expand-menu__link link" href="#">Conseils d’épargne</a>\r
-                                <a class="expand-menu__link link" href="#">FAQ</a>\r
-                                <a class="expand-menu__link link" href="#">Lexique</a>\r
-                            </div>\r
+            </div>\r
+            <div class="menu__item">\r
+                <a class="menu__name" href="javascript:">L’épargne et vous</a>\r
+                <div class="expand-menu">\r
+                    <div class="expand-menu__bar"></div>\r
+                    <div class="expand-menu__content">\r
+                        <div class="expand-menu__links">\r
+                            <a class="expand-menu__link link" href="#">Guide de l'épargne</a>\r
+                            <a class="expand-menu__link link" href="#">Conseils d’épargne</a>\r
+                            <a class="expand-menu__link link" href="#">FAQ</a>\r
+                            <a class="expand-menu__link link" href="#">Lexique</a>\r
                         </div>\r
                     </div>\r
                 </div>\r
-                <div class="menu__item">\r
-                    <a class="menu__name" href="javascript:">Alta News</a>\r
-                    <div class="expand-menu">\r
-                        <div class="expand-menu__bar"></div>\r
-                        <div class="expand-menu__content">\r
-                            <div class="expand-menu__links">\r
-                                <a class="expand-menu__link link" href="#">Actualités financières</a>\r
-                                <a class="expand-menu__link link" href="#">Paroles d'experts</a>\r
-                                <a class="expand-menu__link link" href="#">On parle de nous</a>\r
-                            </div>\r
+            </div>\r
+            <div class="menu__item">\r
+                <a class="menu__name" href="javascript:">Alta News</a>\r
+                <div class="expand-menu">\r
+                    <div class="expand-menu__bar"></div>\r
+                    <div class="expand-menu__content">\r
+                        <div class="expand-menu__links">\r
+                            <a class="expand-menu__link link" href="#">Actualités financières</a>\r
+                            <a class="expand-menu__link link" href="#">Paroles d'experts</a>\r
+                            <a class="expand-menu__link link" href="#">On parle de nous</a>\r
                         </div>\r
                     </div>\r
                 </div>\r
-                <div class="menu__item">\r
-                    <a class="menu__name" href="javascript:">Nous connaître</a>\r
+            </div>\r
+            <div class="menu__item">\r
+                <a class="menu__name" href="javascript:">Nous connaître</a>\r
 \r
-                    <div class="expand-menu">\r
-                        <div class="expand-menu__bar"></div>\r
-                        <div class="expand-menu__content">\r
-                            <div class="expand-menu__links">\r
-                                <a class="expand-menu__link link" href="#">Qui sommes-nous ?</a>\r
-                                <a class="expand-menu__link link" href="#">Nos engagements durables</a>\r
-                                <a class="expand-menu__link link" href="#">Nous rejoindre</a>\r
-                                <a class="expand-menu__link link" href="#">Nos partenaires</a>\r
-                                <a class="expand-menu__link link" href="#">Contactez-nous</a>\r
-                            </div>\r
+                <div class="expand-menu">\r
+                    <div class="expand-menu__bar"></div>\r
+                    <div class="expand-menu__content">\r
+                        <div class="expand-menu__links">\r
+                            <a class="expand-menu__link link" href="#">Qui sommes-nous ?</a>\r
+                            <a class="expand-menu__link link" href="#">Nos engagements durables</a>\r
+                            <a class="expand-menu__link link" href="#">Nous rejoindre</a>\r
+                            <a class="expand-menu__link link" href="#">Nos partenaires</a>\r
+                            <a class="expand-menu__link link" href="#">Contactez-nous</a>\r
                         </div>\r
                     </div>\r
                 </div>\r
-            </nav>\r
-        </div>\r
-    </header>\r
-    <!--    NE PAS INCLURE-->\r
-</div>\r
-<!--    NE PAS INCLURE-->`,en=`<footer class="footer">\r
+            </div>\r
+        </nav>\r
+    </div>\r
+</header>`,en=`<footer class="footer">\r
     <div class="footer__socials socials">\r
         <h5 class="socials__title">Retrouvez nous sur les réseaux sociaux</h5>\r
         <div class="socials__content">\r
@@ -1338,8 +1338,8 @@
                 <p class="management-guided-card__description">Déléguez la gestion de votre épargne à l’assureur qui\r
                     prend conseil auprès d’une société de gestion d’actifs</p>\r
                 <div class="management-guided-card__logos">\r
-                    <img alt="" class="logo" src="/assets/logos/generali_ws.png">\r
-                    <img alt="" class="logo" src="/assets/logos/lazard_freres_gestion.png">\r
+                    <img alt="" class="logo" src="/assets/logos/generali_ws--fit.png">\r
+                    <img alt="" class="logo" src="/assets/logos/lazard_freres_gestion--fit.png">\r
                 </div>\r
             </div>\r
             <a class="button button--secondary button--light-theme button--arrow" href="#">Découvrir la gestion\r
@@ -1683,10 +1683,10 @@
             d’une société de gestion d’actifs</p>\r
     </div>\r
     <div class="management-guided-partners-section__content">\r
-        <img alt="" class="management-guided-partners-section__logo logo" src="/assets/logos/amundi_am.png">\r
-        <img alt="" class="management-guided-partners-section__logo logo" src="/assets/logos/generali_ws.png">\r
+        <img alt="" class="management-guided-partners-section__logo logo" src="/assets/logos/amundi_am--fit.png">\r
+        <img alt="" class="management-guided-partners-section__logo logo" src="/assets/logos/generali_ws--fit.png">\r
         <img alt="" class="management-guided-partners-section__logo logo"\r
-             src="/assets/logos/lazard_freres_gestion.png">\r
+             src="/assets/logos/lazard_freres_gestion--fit.png">\r
     </div>\r
 </section>`,qn=`<section class="contracts-piloted-section-container">\r
   <div class="contracts-piloted-container">\r
@@ -3614,26 +3614,44 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,An=`<section class="webconferences-container">\r
+`,An=`<section class="webconferences-section">\r
     <h3>Nos webconférences</h3>\r
-    <div class="webconferences-container__cards-container">\r
-        <div class="webconferences-container__cards-container__card">\r
-            <div class="webconferences-container__cards-container__card__img"></div>\r
-            <div class="webconferences-container__cards-container__card__text-container">\r
-                <p>8 septembre 2022</p>\r
-                <h3>Web conférence sur le Private Equity</h3>\r
-                <p>Rendez vous le 08 septembre à 16h pour une webconférence dirigée par XXX.</p>\r
-            </div>\r
-            <a class="button button--secondary button--light-theme button--arrow" href="#">Inscrivez-vous</a>\r
+    <div class="webconferences-section__content wrapper wrapper--50-50">\r
+        <div class="webconferences-section__column">\r
+            <a class="article-card article-card--horizontal" href="#">\r
+                <img class="article-card__image" src="/assets/images/article_default.jpg">\r
+                <div class="article-card__content">\r
+                    <p class="article-card__date">Diffusé le <span>8/08/2022</span></p>\r
+                    <div class="article-card__title">\r
+                        <h5 class="link">Web conférence sur le Private Equity</h5>\r
+                    </div>\r
+                    <p class="article-card__excerpt">Rendez vous le 08 septembre à 16h pour une webconférence dirigée\r
+                        par XXX</p>\r
+                </div>\r
+            </a>\r
+            <a class="button button--secondary button--light-theme button--arrow webconferences-section__button"\r
+               href="#">Inscrivez-vous</a>\r
         </div>\r
-        <div class="webconferences-container__cards-container__card">\r
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/btafgDz0MOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\r
-            <div class="webconferences-container__cards-container__card__text-container">\r
-                <p>8 septembre 2022</p>\r
-                <h3>Web conférence sur le Private Equity</h3>\r
-                <p>Pour en parler, Alexis Filisetti, Responsable Relations Partenaires chez Generali Investments AM et Louis Deforges, Responsable Clientèle Professionnelle chez Isatis Capital.</p>\r
-            </div>\r
-            <a class="button button--secondary button--light-theme button--arrow" href="#">Tous nos replays</a>\r
+        <div class="webconferences-section__column">\r
+            <a class="article-card article-card--horizontal" href="#">\r
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\r
+                        allowfullscreen\r
+                        class="article-card__image" frameborder="0"\r
+                        height="200" src="https://www.youtube.com/embed/btafgDz0MOc"\r
+                        title="YouTube video player"\r
+                        width="300"></iframe>\r
+                <div class="article-card__content">\r
+                    <p class="article-card__date">Diffusé le <span>8/08/2022</span></p>\r
+                    <div class="article-card__title">\r
+                        <h5 class="link">Web conférence sur le Private Equity</h5>\r
+                    </div>\r
+                    <p class="article-card__excerpt">Pour en parler, Alexis Filisetti, Responsable Relations Partenaires\r
+                        chez Generali Investments AM et Louis Deforges, Responsable Clientèle Professionnelle chez\r
+                        Isatis Capital.</p>\r
+                </div>\r
+            </a>\r
+            <a class="button button--secondary button--light-theme button--arrow webconferences-section__button"\r
+               href="#">Tous nos replays</a>\r
         </div>\r
     </div>\r
 </section>`,Pn=`<section class="press-container">\r
@@ -4176,7 +4194,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Tn=`<section class="alta-in-number">\r
+`,jn=`<section class="alta-in-number">\r
     <h3>Altaprofits en chiffres</h3>\r
     <div class="alta-in-number__cards">\r
         <div class="alta-in-number__cards__card">\r
@@ -4197,7 +4215,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         </div>\r
     </div>\r
 </section>\r
-`,jn=`<section class="history-section">\r
+`,Tn=`<section class="history-section">\r
   <h3>Notre histoire depuis 1999</h3>\r
   <div class="history-section__cards-section">\r
     <div class="history-section__cards-section__left-arrow">\r
@@ -4665,7 +4683,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     >Découvrir la gestion pilotée</a\r
   >\r
 </section>\r
-`,Un=[{name:"header",template:nn},{name:"footer",template:en},{name:"wrapper (66/33) (50/50) (33/66)",template:rn},{name:"homeHeroBanner",template:tn},{name:"promoBanner",template:sn},{name:"companyValueSection",template:an},{name:"advicesSection",template:on},{name:"insurancePartnersSection",template:cn},{name:"investmentDisclaimerSection",template:ln},{name:"awardsSection",template:dn},{name:"reviewsSection",template:pn},{name:"partnerNewsSection",template:un},{name:"heroBanner (Default, Catchline, Product)",template:_n},{name:"productAdvantagesSection",template:hn},{name:"productManagementSection",template:gn},{name:"productInsurancePartnerSection",template:vn},{name:"productContractualDocumentationSection",template:mn},{name:"productFeesSection",template:bn},{name:"faqRedirectionSection",template:fn},{name:"managementAdvantagesSection",template:wn},{name:"managementPlusSection",template:yn},{name:"managementOthersOverviewSection",template:xn},{name:"managementGuidedOverviewSection",template:Ln},{name:"managementGuidedPartnersSection",template:Cn},{name:"contractsPilotedSection",template:qn},{name:"contractsSupportSection",template:kn},{name:"altaNewsTalkingAboutSection",template:En},{name:"webconferencesSection",template:An},{name:"pressSection",template:Pn},{name:"expertsVoiceSection",template:Sn},{name:"discoverIntegrationProgramSection",template:zn},{name:"questionsSection",template:Rn},{name:"squadSection",template:Vn},{name:"altaInNumberSection",template:Tn},{name:"altaprofitHistorySection",template:jn},{name:"reasonToJoinSection",template:In},{name:"discoverOurJobSection",template:Mn},{name:"joinTheTeamSection",template:Fn},{name:"pilotedGraphSection",template:Bn}],Gn=[{name:"components",value:U},{name:"patterns",value:X},{name:"blocks",value:Un}];Gn.forEach(l=>{const e=document.createElement("section");e.classList.add("ads",l.name);const d=document.createElement("h3");d.innerText=l.name.toUpperCase(),e.appendChild(d),l.value.forEach(i=>{const n=document.createElement("div");n.id=i.name,n.classList.add("section","ads");const c=document.createElement("h4");c.innerText=i.name,n.appendChild(c);const r=document.createElement("div");r.innerHTML=i.template,r.classList.add("sub-section","ads"),n.appendChild(r),e.appendChild(n)}),document.querySelector("main.ads").appendChild(e)});const S=document.querySelectorAll(".management-others-card");if(S){let l=0;S.forEach(e=>{const d=e.querySelectorAll(".management-others-card__explaination");for(let n=0;n<d.length;n++){const r=d[n].offsetHeight;r>l&&(l=r)}e.querySelector(".management-others-card__explainations").style.setProperty("height",`calc(${l}px + var(--spacing-8))`),e.querySelectorAll(".management-others-card__link").forEach(n=>{let c=n.dataset.name,r=e.querySelector(".management-others-card__explaination[data-name="+c+"]");n.addEventListener("mouseenter",()=>{r.classList.add("active")}),n.addEventListener("mouseleave",()=>{r.classList.remove("active")})})})}const C=document.querySelector(".header");if(C){let n=function(){w(l),c(l),r()},c=function(u){u.forEach(p=>{p.querySelector(".menu__name").addEventListener("click",b=>{b.preventDefault(),_(p)})})},r=function(){i.addEventListener("click",()=>{s()})},s=function(){const u=document.querySelector(".menu__item.active");u&&(u.classList.remove("active"),i.classList.remove("active"))},_=function(u){const p=document.querySelector(".menu__item.active");p===u?(u.classList.remove("active"),i.classList.remove("active")):p?(p.classList.remove("active"),u.classList.add("active")):(u.classList.add("active"),i.classList.add("active"))},m=function(u){const p=u.getBoundingClientRect(),b=C.getBoundingClientRect();return p.left-b.left},h=function(u){const p=u.getBoundingClientRect(),b=C.getBoundingClientRect();return p.right-b.left},w=function(u){const p=parseInt(window.getComputedStyle(C).getPropertyValue("padding-left"),10),b=parseInt(window.getComputedStyle(d).getPropertyValue("padding-left"),10);u.forEach(g=>{const y=g.querySelector(".expand-menu");if(g.classList.contains("menu__item--full")){const x=m(g);y.style.left=`${p+b-x}px`}else C.offsetWidth-h(y)<p?(g.classList.add("menu__item--right"),g.classList.remove("menu__item--left")):(g.classList.remove("menu__item--right"),g.getAttribute("data-position")==="left"&&g.classList.add("menu__item--left"))})};var init=n,displayExpandMenuItems=c,handleOverlayClick=r,closeMenu=s,toogleMenuItem=_,getElementLeftPosition=m,getElementRightPosition=h,positionMenuItems=w;const l=document.querySelectorAll(".menu__item"),e=document.querySelectorAll(".expand-menu__sub-menu"),d=document.querySelector(".header__menu"),i=document.querySelector(".header__overlay");window.addEventListener("resize",()=>{console.log("resizz"),w(l)}),n(),e&&e.forEach(u=>{u.querySelectorAll(".link--arrow").forEach(b=>{let g=b.dataset.name,y=u.querySelector(".link--arrow[data-name="+g+"]");b.addEventListener("click",()=>{u.querySelector(".link--arrow").classList.remove("active"),b.classList.remove("active"),y.classList.add("active"),$(".expand-menu__sub-item").classList.remove("visible"),$(".expand-menu__sub-item[data-name="+g+"]").classList.add("visible")})})})}const z={speed:200},R=document.querySelectorAll(".awards-section");R&&R.forEach(l=>{const e=l.querySelector(".awards-section__content"),d=e.cloneNode(!0);e.classList.add("primary"),d.classList.add("secondary"),e.parentNode.appendChild(d);const i=e.querySelectorAll(".award-item").length;e.style.setProperty("animation",`awards-section--primary ${i*1e3/z.speed}s linear infinite`),d.style.setProperty("animation",`awards-section--secondary ${i*1e3/z.speed}s linear infinite`)});if(document.querySelector(".contracts-piloted-section-container")){let u=function(){if(console.dir(this),this.nextElementSibling.style.maxHeight)console.dir(this.nextElementSibling),this.nextElementSibling.style.maxHeight="",this.lastElementChild.style.transform="rotate(0deg)";else{const a=this.nextElementSibling.scrollHeight;this.nextElementSibling.style.maxHeight=`${a}px`,this.lastElementChild.style.transform="rotate(180deg)"}};var handleClick=u;const l={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:8,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},e=document.querySelectorAll(".btns-container__first-choice-container__btn"),d=document.querySelector(".btns-container__second-choice-container"),i=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),n=document.querySelectorAll(".filters-container__btns-container__btn"),c=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),r=document.querySelector(".results-container"),s=document.querySelectorAll(".toggle-button"),_=document.querySelectorAll(".card-container, .grid-row-body"),m=document.querySelector(".cards-display-container"),h=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body"),document.querySelector(".distribution-funds-array-section__btn").addEventListener("click",u);const p={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};e.forEach(a=>a.addEventListener("click",()=>b(a))),i.forEach(a=>a.addEventListener("click",()=>g(a))),n.forEach(a=>a.addEventListener("click",()=>y(a))),s.forEach(a=>a.addEventListener("click",()=>A())),_.forEach(a=>a.addEventListener("click",()=>k(a)));const b=a=>{p.secondChoice="",i.forEach(t=>t.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),e.forEach(t=>t.classList.remove("btns-container__first-choice-container__btn--active")),c.forEach(t=>t.classList.add("hidden")),a.classList.add("btns-container__first-choice-container__btn--active"),p.firstChoice=a.getAttribute("data-attr"),d.classList.remove("hidden"),document.querySelector(`.${a.getAttribute("data-attr")}`).classList.remove("hidden"),x()},g=a=>{i.forEach(t=>t.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),p.secondChoice=a.getAttribute("data-attr"),a.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"),x()},y=a=>{p.thirdChoice=a.getAttribute("data-attr"),n.forEach(t=>t.classList.remove("filters-container__btns-container__btn--active")),a.classList.add("filters-container__btns-container__btn--active"),x()},x=()=>{p.firstChoice!==""&&p.secondChoice!==""?r.classList.remove("hidden"):r.classList.add("hidden"),h.innerHTML="",m.innerHTML="";const a=l[p.firstChoice][p.secondChoice][p.thirdChoice];a.map(t=>m.innerHTML+=`
+`,Un=[{name:"header",template:nn},{name:"footer",template:en},{name:"wrapper (66/33) (50/50) (33/66)",template:rn},{name:"homeHeroBanner",template:tn},{name:"promoBanner",template:sn},{name:"companyValueSection",template:an},{name:"advicesSection",template:on},{name:"insurancePartnersSection",template:cn},{name:"investmentDisclaimerSection",template:ln},{name:"awardsSection",template:dn},{name:"reviewsSection",template:pn},{name:"partnerNewsSection",template:un},{name:"heroBanner (Default, Catchline, Product)",template:_n},{name:"productAdvantagesSection",template:hn},{name:"productManagementSection",template:gn},{name:"productInsurancePartnerSection",template:vn},{name:"productContractualDocumentationSection",template:mn},{name:"productFeesSection",template:bn},{name:"faqRedirectionSection",template:fn},{name:"managementAdvantagesSection",template:wn},{name:"managementPlusSection",template:yn},{name:"managementOthersOverviewSection",template:xn},{name:"managementGuidedOverviewSection",template:Ln},{name:"managementGuidedPartnersSection",template:Cn},{name:"contractsPilotedSection",template:qn},{name:"contractsSupportSection",template:kn},{name:"altaNewsTalkingAboutSection",template:En},{name:"webconferencesSection",template:An},{name:"pressSection",template:Pn},{name:"expertsVoiceSection",template:Sn},{name:"discoverIntegrationProgramSection",template:zn},{name:"questionsSection",template:Rn},{name:"squadSection",template:Vn},{name:"altaInNumberSection",template:jn},{name:"altaprofitHistorySection",template:Tn},{name:"reasonToJoinSection",template:In},{name:"discoverOurJobSection",template:Mn},{name:"joinTheTeamSection",template:Fn},{name:"pilotedGraphSection",template:Bn}],Gn=[{name:"components",value:U},{name:"patterns",value:X},{name:"blocks",value:Un}];Gn.forEach(l=>{const e=document.createElement("section");e.classList.add("ads",l.name);const d=document.createElement("h3");d.innerText=l.name.toUpperCase(),e.appendChild(d),l.value.forEach(i=>{const n=document.createElement("div");n.id=i.name,n.classList.add("section","ads");const c=document.createElement("h4");c.innerText=i.name,n.appendChild(c);const r=document.createElement("div");r.innerHTML=i.template,r.classList.add("sub-section","ads"),n.appendChild(r),e.appendChild(n)}),document.querySelector("main.ads").appendChild(e)});const S=document.querySelectorAll(".management-others-card");if(S){let l=0;S.forEach(e=>{const d=e.querySelectorAll(".management-others-card__explaination");for(let n=0;n<d.length;n++){const r=d[n].offsetHeight;r>l&&(l=r)}e.querySelector(".management-others-card__explainations").style.setProperty("height",`calc(${l}px + var(--spacing-8))`),e.querySelectorAll(".management-others-card__link").forEach(n=>{let c=n.dataset.name,r=e.querySelector(".management-others-card__explaination[data-name="+c+"]");n.addEventListener("mouseenter",()=>{r.classList.add("active")}),n.addEventListener("mouseleave",()=>{r.classList.remove("active")})})})}const C=document.querySelector(".header");if(C){let n=function(){w(l),c(l),r()},c=function(u){u.forEach(p=>{p.querySelector(".menu__name").addEventListener("click",b=>{b.preventDefault(),_(p)})})},r=function(){i.addEventListener("click",()=>{s()})},s=function(){const u=document.querySelector(".menu__item.active");u&&(u.classList.remove("active"),i.classList.remove("active"))},_=function(u){const p=document.querySelector(".menu__item.active");p===u?(u.classList.remove("active"),i.classList.remove("active")):p?(p.classList.remove("active"),u.classList.add("active")):(u.classList.add("active"),i.classList.add("active"))},m=function(u){const p=u.getBoundingClientRect(),b=C.getBoundingClientRect();return p.left-b.left},h=function(u){const p=u.getBoundingClientRect(),b=C.getBoundingClientRect();return p.right-b.left},w=function(u){const p=parseInt(window.getComputedStyle(C).getPropertyValue("padding-left"),10),b=parseInt(window.getComputedStyle(d).getPropertyValue("padding-left"),10);u.forEach(g=>{const y=g.querySelector(".expand-menu");if(g.classList.contains("menu__item--full")){const x=m(g);y.style.left=`${p+b-x}px`}else C.offsetWidth-h(y)<p?(g.classList.add("menu__item--right"),g.classList.remove("menu__item--left")):(g.classList.remove("menu__item--right"),g.getAttribute("data-position")==="left"&&g.classList.add("menu__item--left"))})};var init=n,displayExpandMenuItems=c,handleOverlayClick=r,closeMenu=s,toogleMenuItem=_,getElementLeftPosition=m,getElementRightPosition=h,positionMenuItems=w;const l=document.querySelectorAll(".menu__item"),e=document.querySelectorAll(".expand-menu__sub-menu"),d=document.querySelector(".header__menu"),i=document.querySelector(".header__overlay");window.addEventListener("resize",()=>{w(l)}),n(),e&&e.forEach(u=>{u.querySelectorAll(".link--arrow").forEach(b=>{let g=b.dataset.name,y=u.querySelector(".link--arrow[data-name="+g+"]");b.addEventListener("click",()=>{u.querySelector(".link--arrow").classList.remove("active"),b.classList.remove("active"),y.classList.add("active"),$(".expand-menu__sub-item").classList.remove("visible"),$(".expand-menu__sub-item[data-name="+g+"]").classList.add("visible")})})})}const z={speed:200},R=document.querySelectorAll(".awards-section");R&&R.forEach(l=>{const e=l.querySelector(".awards-section__content"),d=e.cloneNode(!0);e.classList.add("primary"),d.classList.add("secondary"),e.parentNode.appendChild(d);const i=e.querySelectorAll(".award-item").length;e.style.setProperty("animation",`awards-section--primary ${i*1e3/z.speed}s linear infinite`),d.style.setProperty("animation",`awards-section--secondary ${i*1e3/z.speed}s linear infinite`)});if(document.querySelector(".contracts-piloted-section-container")){let u=function(){if(console.dir(this),this.nextElementSibling.style.maxHeight)console.dir(this.nextElementSibling),this.nextElementSibling.style.maxHeight="",this.lastElementChild.style.transform="rotate(0deg)";else{const a=this.nextElementSibling.scrollHeight;this.nextElementSibling.style.maxHeight=`${a}px`,this.lastElementChild.style.transform="rotate(180deg)"}};var handleClick=u;const l={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:8,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},e=document.querySelectorAll(".btns-container__first-choice-container__btn"),d=document.querySelector(".btns-container__second-choice-container"),i=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),n=document.querySelectorAll(".filters-container__btns-container__btn"),c=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),r=document.querySelector(".results-container"),s=document.querySelectorAll(".toggle-button"),_=document.querySelectorAll(".card-container, .grid-row-body"),m=document.querySelector(".cards-display-container"),h=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body"),document.querySelector(".distribution-funds-array-section__btn").addEventListener("click",u);const p={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};e.forEach(a=>a.addEventListener("click",()=>b(a))),i.forEach(a=>a.addEventListener("click",()=>g(a))),n.forEach(a=>a.addEventListener("click",()=>y(a))),s.forEach(a=>a.addEventListener("click",()=>A())),_.forEach(a=>a.addEventListener("click",()=>k(a)));const b=a=>{p.secondChoice="",i.forEach(t=>t.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),e.forEach(t=>t.classList.remove("btns-container__first-choice-container__btn--active")),c.forEach(t=>t.classList.add("hidden")),a.classList.add("btns-container__first-choice-container__btn--active"),p.firstChoice=a.getAttribute("data-attr"),d.classList.remove("hidden"),document.querySelector(`.${a.getAttribute("data-attr")}`).classList.remove("hidden"),x()},g=a=>{i.forEach(t=>t.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),p.secondChoice=a.getAttribute("data-attr"),a.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"),x()},y=a=>{p.thirdChoice=a.getAttribute("data-attr"),n.forEach(t=>t.classList.remove("filters-container__btns-container__btn--active")),a.classList.add("filters-container__btns-container__btn--active"),x()},x=()=>{p.firstChoice!==""&&p.secondChoice!==""?r.classList.remove("hidden"):r.classList.add("hidden"),h.innerHTML="",m.innerHTML="";const a=l[p.firstChoice][p.secondChoice][p.thirdChoice];a.map(t=>m.innerHTML+=`
             <div class="card-container">
               <div class="card-container__card-header">
                 <p class="card-container__card-header__title">${t.title}</p>
