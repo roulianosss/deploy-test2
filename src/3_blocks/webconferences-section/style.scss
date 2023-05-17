@@ -26,7 +26,11 @@
     padding: var(--spacing-16);
   }
 
-  &__button {
+  .article-card {
+    align-self: center;
+  }
+
+  .button {
     align-self: flex-end;
   }
 
