@@ -162,6 +162,10 @@ a {
   color: inherit;
 }
 
+.main {
+  margin-top: 144px;
+}
+
 
 /*
 TYPOGRAPHY
@@ -284,4 +288,15 @@ LOGO
   object-fit: contain;
   object-position: center;
   --current-color-1: var(--color-neutral-0);
+}
+
+
+/*
+BACKOFFICE
+ */
+
+.toolbar-fixed {
+  .header {
+    padding-top: 79px;
+  }
 }
