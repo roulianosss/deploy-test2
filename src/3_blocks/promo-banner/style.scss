@@ -4,6 +4,33 @@
   justify-content: center;
   padding: var(--spacing-48);
   width: 100%;
+  position: relative;
+
+  @media screen and (max-width: 480px) {
+    padding: var(--spacing-48) var(--spacing-16);
+    gap: var(--spacing-16);
+  }
+
+  .owl-controls {
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: var(--spacing-48);
+    width: 100%;
+    height: fit-content;
+
+    @media screen and (max-width: 480px) {
+      padding: var(--spacing-48) var(--spacing-16);
+    }
+
+    .owl-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 
   .owl-item {
     display: flex;
@@ -24,10 +51,5 @@
     height: auto;
     object-fit: cover;
     object-position: center;
-  }
-
-  @media screen and (max-width: 480px) {
-    padding: var(--spacing-48) var(--spacing-16);
-    gap: var(--spacing-16);
   }
 }
