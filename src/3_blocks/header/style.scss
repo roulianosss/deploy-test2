@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 998;
+  z-index: 2;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   gap: var(--spacing-32);
   padding: var(--spacing-24) var(--spacing-64);
   background-color: var(--color-neutral-100);
-  box-shadow: 0px 4px 20px rgba(11, 16, 21, 0.04);
+  box-shadow: 0 4px 20px rgba(11, 16, 21, 0.04);
 
   @media screen and (max-width: 1280px) {
     padding: var(--spacing-24) var(--spacing-32);
