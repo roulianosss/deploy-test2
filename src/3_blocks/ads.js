@@ -29,6 +29,7 @@ import altaNewsTalkingAboutSection from './alta-news-talking-about-section/templ
 import webconferencesSection from './webconferences-section/template.html?raw';
 import pressSection from './press-section/template.html?raw';
 import kitPressSection from './kit-press-section/template.html?raw';
+import contactPressSection from './contact-press-section/template.html?raw';
 import expertsVoiceSection from './experts-voice-section/template.html?raw';
 import discoverIntegrationProgramSection from './discover-integration-program-section/template.html?raw';
 import questionsSection from './questions-section/template.html?raw';
@@ -161,6 +162,9 @@ const blocks = [
   {
     name: 'kitPressSection',
     template: kitPressSection,
+  }, {
+    name: 'contactPressSection',
+    template: contactPressSection,
   },
   {
     name: 'pressSection',
