@@ -34,7 +34,6 @@
   &__title {
     .link {
       display: inline;
-      width: fit-content;
       background-size: 0% 2px;
       transition: background-size var(--motion-duration-medium) var(--motion-easing-standard);
 
