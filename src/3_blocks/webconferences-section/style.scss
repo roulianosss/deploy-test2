@@ -22,7 +22,8 @@
   &__column {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: fit-content !important;
+    gap: var(--spacing-24);
     padding: var(--spacing-16);
   }
 
