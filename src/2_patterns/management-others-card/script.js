@@ -14,11 +14,12 @@ if (managementOthersCards) {
         maxHeight = explanationHeight;
       }
     }
-
-    element.querySelector('.management-others-card__explainations').style.setProperty(
-        'height',
-        `calc(${maxHeight}px + var(--spacing-8))`,
-    );
+    if(maxHeight>0){
+      element.querySelector('.management-others-card__explainations').style.setProperty(
+          'height',
+          `calc(${maxHeight}px + var(--spacing-8))`,
+      );
+    }
 
     const links = element.querySelectorAll('.management-others-card__link');
 
@@ -37,4 +38,14 @@ if (managementOthersCards) {
           });
     });
   });
+
+  const managementGuidedCards = document.querySelectorAll('.management-guided-card');
+  if(managementGuidedCards.length && managementOthersCards.length
+      && managementGuidedCards[0].offsetWidth != managementOthersCards[0].offsetWidth  ){
+    if(managementGuidedCards[0].offsetHeight > managementOthersCards[0].offsetHeight){
+      managementOthersCards[0].style.height = (managementGuidedCards[0].offsetHeight-15)+"px";
+    }else{
+      managementGuidedCards[0].style.height = (managementOthersCards[0].offsetHeight+15)+"px";
+    }
+  }
 }
