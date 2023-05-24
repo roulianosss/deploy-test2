@@ -1319,7 +1319,19 @@
             d’innovation mais aussi son implantation historique dans l'Hexagone en font un acteur incontournable.\r
             C’est notamment le 1er assureur sur le marché Internet de l’épargne.</p>\r
     </div>\r
-</section>`,mn=`<section class="product-contractual-documentation-section">\r
+</section>`,mn=`<section class="since-partner-section">\r
+    <div class="since-partner-section__content">\r
+        <div class="since-partner-section__image_container">\r
+            <img src="/assets/images/since.png" alt=""/>\r
+        </div>\r
+        <div class="since-partner-section__description">\r
+            <h3 class="since-partner-section__title">Depuis plus de 20 ans, nous sélectionnons, pour vous, des\r
+                partenaires rigoureux et performants</h3>\r
+            <p class="since-partner-section__description">Nous nous engageons à vous proposer des produits et services\r
+                conçus avec nos partenaires assureurs et sociétés de gestion d'actifs de renom.</p>\r
+        </div>\r
+    </div>\r
+</section>`,gn=`<section class="product-contractual-documentation-section">\r
     <h3 class="product-contractual-documentation-section__title">Documentation contractuelle du contrat <span\r
             class="product-contractual-documentation-section__name">Altaprofits Vie</span>\r
     </h3>\r
@@ -1329,7 +1341,7 @@
         <a class="file-link" href="#">Liste des supports financiers</a>\r
         <a class="file-link" href="#">Performances de la gestion pilotée</a>\r
     </div>\r
-</section>`,gn=`<section class="product-management-section">\r
+</section>`,hn=`<section class="product-management-section">\r
     <h2 class="product-management-section__title">Choisissez le mode de gestion de votre contrat</h2>\r
     <div class="product-management-section__content product-management-section__content--two">\r
         <div class="management-guided-card">\r
@@ -1379,7 +1391,7 @@
                 d’investissement</a>\r
         </div>\r
     </div>\r
-</section>`,hn=`<section class="product-advantages-section">\r
+</section>`,bn=`<section class="product-advantages-section">\r
     <h2 class="product-advantages-section__title">Les atouts <span class="product-advantages-section__name">Altaprofits Vie</span>\r
     </h2>\r
     <div class="product-advantages-section__content">\r
@@ -1437,7 +1449,7 @@
         <li><a class="button button--primary" href="#">Faire une simulation</a></li>\r
         <li><a class="button button--secondary button--light-theme" href="#">Demander conseil</a></li>\r
     </ul>\r
-</section>`,bn=`<section class="product-fees-section">\r
+</section>`,fn=`<section class="product-fees-section">\r
     <h2 class="product-fees-section__title">Optimisez vos rendements avec des frais réduits</h2>\r
     <div class="product-fees-section__content">\r
         <div class="fee-card fee-card--highlight">\r
@@ -1495,10 +1507,10 @@
         <a class="file-link" href="#">Pour plus de transparence, consultez l'annexe des frais du contrat Altaprofits\r
             Vie</a>\r
     </div>\r
-</section>`,fn=`<section class="faq-redirection-section">\r
+</section>`,wn=`<section class="faq-redirection-section">\r
     <h3 class="faq-redirection-section__title">Vos questions les plus fréquentes</h3>\r
     <a class="button button--secondary button--dark-theme button--arrow" href="#">Consulter la FAQ</a>\r
-</section>`,wn=`<section class="management-advantages-section">\r
+</section>`,yn=`<section class="management-advantages-section">\r
     <div class="management-advantages-section__header">\r
         <h2 class="management-advantages-section__title">Composez votre portefeuille</h2>\r
         <p class="management-advantages-section__subtitle">Si vous souhaiter gérer vous même en toute autonomie votre\r
@@ -1533,7 +1545,7 @@
             </div>\r
         </div>\r
     </div>\r
-</section>`,yn=`<section class="management-plus-section">\r
+</section>`,xn=`<section class="management-plus-section">\r
     <h3 class="management-plus-section__title">Les + Altaprofits</h3>\r
     <div class="management-plus-section__content">\r
         <ul>\r
@@ -1554,7 +1566,7 @@
         </ul>\r
     </div>\r
 </section>\r
-`,xn=`<div class="management-others-overview-section wrapper wrapper--66-33">\r
+`,Ln=`<div class="management-others-overview-section wrapper wrapper--66-33">\r
     <section class="management-advantages-section">\r
         <div class="management-advantages-section__header">\r
             <h2 class="management-advantages-section__title">Composez votre portefeuille</h2>\r
@@ -1615,7 +1627,7 @@
             </ul>\r
         </div>\r
     </section>\r
-</div>`,Ln=`<div class="management-guided-overview-section wrapper wrapper--66-33">\r
+</div>`,Cn=`<div class="management-guided-overview-section wrapper wrapper--66-33">\r
     <section class="management-advantages-section">\r
         <div class="management-advantages-section__header">\r
             <h2 class="management-advantages-section__title">Confiez-nous la gestion de votre contrat</h2>\r
@@ -1675,7 +1687,7 @@
         </div>\r
     </section>\r
 \r
-</div>`,Cn=`<section class="management-guided-partners-section">\r
+</div>`,qn=`<section class="management-guided-partners-section">\r
     <div class="management-guided-partners-section__header">\r
         <h3 class="management-guided-partners-section__title">Nos partenaires de gestion pilotée</h3>\r
         <p class="management-guided-partners-section__subtitle">\r
@@ -1688,7 +1700,7 @@
         <img alt="" class="management-guided-partners-section__logo logo"\r
              src="/assets/logos/lazard_freres_gestion--fit.png">\r
     </div>\r
-</section>`,qn=`<section class="contracts-piloted-section-container">\r
+</section>`,kn=`<section class="contracts-piloted-section-container">\r
   <div class="contracts-piloted-container">\r
     <h3 class="contracts-piloted-container__title">\r
       Investissez facilement en déléguant la gestion de votre contrat\r
@@ -2065,7 +2077,7 @@
     <a class="button button--primary" href="#">Souscrire en ligne</a>\r
   </div>\r
 </section>\r
-`,kn=`<section class="contracts-support-section-container">\r
+`,En=`<section class="contracts-support-section-container">\r
   <div class="contracts-support-container">\r
     <h3 class="contracts-support-container__title">\r
       Investissez sereinement, <br />\r
@@ -3577,7 +3589,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,En=`<section class="alta-news-talking-about-container">\r
+`,An=`<section class="alta-news-talking-about-container">\r
   <div class="alta-news-talking-about-container__left-container">\r
     <div\r
       class="alta-news-talking-about-container__left-container__news-container"\r
@@ -3614,7 +3626,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,An=`<section class="webconferences-section">\r
+`,Pn=`<section class="webconferences-section">\r
     <h3>Nos webconférences</h3>\r
     <div class="webconferences-section__content wrapper wrapper--50-50">\r
         <div class="webconferences-section__column">\r
@@ -3654,7 +3666,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
                href="#">Tous nos replays</a>\r
         </div>\r
     </div>\r
-</section>`,Pn=`<div class="press-section wrapper wrapper--50-50">\r
+</section>`,Sn=`<div class="press-section wrapper wrapper--50-50">\r
     <section class="kit-press-section">\r
         <h3>Kit presse</h3>\r
         <div class="kit-press-section__content">\r
@@ -3688,7 +3700,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             </div>\r
         </div>\r
     </section>\r
-</div>`,Sn=`<section class="kit-press-section">\r
+</div>`,zn=`<section class="kit-press-section">\r
     <h3>Kit presse</h3>\r
     <div class="kit-press-section__content">\r
         <div class="kit-press-section__row">\r
@@ -3706,7 +3718,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         </div>\r
         <a class="button button--secondary button--light-theme button--arrow" href="#">Télécharger le kit</a>\r
     </div>\r
-</section>`,zn=`<section class="contact-press-section">\r
+</section>`,Rn=`<section class="contact-press-section">\r
     <h3>Contact presse</h3>\r
     <div class="contact-press-section__content">\r
         <div class="contact-press-section__row">\r
@@ -3718,7 +3730,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             </div>\r
         </div>\r
     </div>\r
-</section>`,Rn=`<section class="experts-voice-section">\r
+</section>`,Vn=`<section class="experts-voice-section">\r
     <div class="experts-voice-section__header">\r
         <h2 class="experts-voice-section__title">Toutes les paroles d’experts Altaprofits et de nos partenaires</h2>\r
     </div>\r
@@ -3729,7 +3741,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         <div class="experts-voice-section__next">></div>\r
     </div>\r
 </section>\r
-`,Vn=`<section class="discover-integration-program-container">\r
+`,Tn=`<section class="discover-integration-program-container">\r
     <div class="discover-integration-program-container__background">\r
         \r
     </div>\r
@@ -3753,7 +3765,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <p>Un suivi et un accompagnement quotidien pour une bonne prise en main du poste</p>\r
         </div>\r
     </div>\r
-</section>`,Tn=`<section class="questions-container">\r
+</section>`,jn=`<section class="questions-container">\r
   <h3>Votre question concerne:</h3>\r
   <div class="accordion-container">\r
     <div class="accordion-container__accordion-btn">\r
@@ -4183,7 +4195,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,jn=`<section class="squad-container">\r
+`,In=`<section class="squad-container">\r
   <h3>Les équipe Altaprofits :</h3>\r
   <div class="squad-container__cards">\r
     <div class="squad-container__cards__card">\r
@@ -4217,7 +4229,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,In=`<section class="alta-in-number">\r
+`,Mn=`<section class="alta-in-number">\r
     <h3>Altaprofits en chiffres</h3>\r
     <div class="alta-in-number__cards">\r
         <div class="alta-in-number__cards__card">\r
@@ -4238,7 +4250,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
         </div>\r
     </div>\r
 </section>\r
-`,Mn=`<section class="history-section">\r
+`,Fn=`<section class="history-section">\r
   <h3>Notre histoire depuis 1999</h3>\r
   <div class="history-section__cards-section">\r
     <div class="history-section__cards-section__left-arrow">\r
@@ -4280,7 +4292,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Fn=`<section class="reason-to-join-section">\r
+`,Bn=`<section class="reason-to-join-section">\r
   <div class="reason-to-join-section__header">\r
       <div class="reason-to-join-section__header__text-container">\r
           <h3>5 bonnes raisons de nous rejoindre</h3>\r
@@ -4313,7 +4325,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Bn=`<section class="discover-our-job">\r
+`,Un=`<section class="discover-our-job">\r
   <h3>Découvrez nos métiers</h3>\r
   <div class="discover-our-job__card-section">\r
     <div class="discover-our-job__card-section__left-arrow">\r
@@ -4355,7 +4367,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Un=`<section class="join-the-team-section">\r
+`,Gn=`<section class="join-the-team-section">\r
   <h3>Rejoindre la Team Altaprofits</h3>\r
   <div class="join-the-team-section__offer-container">\r
     <div class="join-the-team-section__offer-container__offer-btn">\r
@@ -4631,7 +4643,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     </div>\r
   </div>\r
 </section>\r
-`,Gn=`<section class="piloted-graph-section">\r
+`,Dn=`<section class="piloted-graph-section">\r
   <h2>Investissez sereinement,<br />choisissez la gestion pilotée</h2>\r
   <p>Découvrez les performances cumulées selon le profil :</p>\r
   <div class="piloted-graph-section__btns-container" data-content="[[{\\r\\n  \\"titre\\": \\"SUR 3 ANS\\",\\r\\n  \\"percentage\\": 3.3,\\r\\n  \\"description\\": \\"Prudent\\"\\r\\n}, {\\r\\n  \\"titre\\": \\"SUR 5 ANS\\",\\r\\n  \\"active\\": 1,\\r\\n  \\"percentage\\": 8.4,\\r\\n  \\"description\\": \\"Equilibré\\"\\r\\n}, {\\r\\n  \\"titre\\": \\"DEPUIS L\\'ORIGINE\\",\\r\\n  \\"percentage\\": 11.9,\\r\\n  \\"description\\": \\"Dynamique\\"\\r\\n}], [{\\r\\n  \\"percentage\\": 5.3,\\r\\n  \\"description\\": \\"Prudent\\"\\r\\n}, {\\r\\n  \\"percentage\\": 9.4,\\r\\n  \\"description\\": \\"Equilibré\\"\\r\\n}, {\\r\\n  \\"percentage\\": 15.8,\\r\\n  \\"description\\": \\"Dynamique\\"\\r\\n}], [{\\r\\n  \\"percentage\\": 7.3,\\r\\n  \\"description\\": \\"Prudent\\"\\r\\n}, {\\r\\n  \\"percentage\\": 10.4,\\r\\n  \\"description\\": \\"Equilibré\\"\\r\\n}, {\\r\\n  \\"percentage\\": 16.9,\\r\\n  \\"description\\": \\"Dynamique\\"\\r\\n}]]">\r
@@ -4706,7 +4718,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
     >Découvrir la gestion pilotée</a\r
   >\r
 </section>\r
-`,Dn=`<section class="tabs-navigation-section">\r
+`,Nn=`<section class="tabs-navigation-section">\r
     <div class="tabs-navigation">\r
         <a class="tab tab--active" href="#">\r
             <span class="tab__text">L'essentiel</span>\r
@@ -4721,7 +4733,7 @@ c23.2-0.3,42.6,17.7,44,40.8v33.3c0,8.2,1.9,16.2,5.5,23.5L163.6,152.2z"\r
             <span class="tab__text">Fonctionnement</span>\r
         </a>\r
     </div>\r
-</section>`,Nn=[{name:"header",template:nn},{name:"footer",template:en},{name:"wrapper (66/33) (50/50) (33/66)",template:rn},{name:"homeHeroBanner",template:tn},{name:"promoBanner",template:sn},{name:"tabsNavigationSection",template:Dn},{name:"companyValueSection",template:an},{name:"advicesSection",template:on},{name:"insurancePartnersSection",template:cn},{name:"investmentDisclaimerSection",template:ln},{name:"awardsSection",template:dn},{name:"reviewsSection",template:pn},{name:"partnerNewsSection",template:un},{name:"heroBanner (Default, Catchline, Product)",template:_n},{name:"productAdvantagesSection",template:hn},{name:"productManagementSection",template:gn},{name:"productInsurancePartnerSection",template:vn},{name:"productContractualDocumentationSection",template:mn},{name:"productFeesSection",template:bn},{name:"faqRedirectionSection",template:fn},{name:"managementAdvantagesSection",template:wn},{name:"managementPlusSection",template:yn},{name:"managementOthersOverviewSection",template:xn},{name:"managementGuidedOverviewSection",template:Ln},{name:"managementGuidedPartnersSection",template:Cn},{name:"contractsPilotedSection",template:qn},{name:"contractsSupportSection",template:kn},{name:"altaNewsTalkingAboutSection",template:En},{name:"webconferencesSection",template:An},{name:"kitPressSection",template:Sn},{name:"contactPressSection",template:zn},{name:"pressSection",template:Pn},{name:"expertsVoiceSection",template:Rn},{name:"discoverIntegrationProgramSection",template:Vn},{name:"questionsSection",template:Tn},{name:"squadSection",template:jn},{name:"altaInNumberSection",template:In},{name:"altaprofitHistorySection",template:Mn},{name:"reasonToJoinSection",template:Fn},{name:"discoverOurJobSection",template:Bn},{name:"joinTheTeamSection",template:Un},{name:"pilotedGraphSection",template:Gn}],On=[{name:"components",value:U},{name:"patterns",value:X},{name:"blocks",value:Nn}];On.forEach(l=>{const n=document.createElement("section");n.classList.add("ads",l.name);const d=document.createElement("h3");d.innerText=l.name.toUpperCase(),n.appendChild(d),l.value.forEach(a=>{const e=document.createElement("div");e.id=a.name,e.classList.add("section","ads");const o=document.createElement("h4");o.innerText=a.name,e.appendChild(o);const t=document.createElement("div");t.innerHTML=a.template,t.classList.add("sub-section","ads"),e.appendChild(t),n.appendChild(e)}),document.querySelector("main.ads").appendChild(n)});const C=document.querySelectorAll(".management-others-card");if(C){let l=0;C.forEach(d=>{const a=d.querySelectorAll(".management-others-card__explaination");for(let o=0;o<a.length;o++){const r=a[o].offsetHeight;r>l&&(l=r)}l>0&&d.querySelector(".management-others-card__explainations").style.setProperty("height",`calc(${l}px + var(--spacing-8))`),d.querySelectorAll(".management-others-card__link").forEach(o=>{let t=o.dataset.name,r=d.querySelector(".management-others-card__explaination[data-name="+t+"]");o.addEventListener("mouseenter",()=>{r.classList.add("active")}),o.addEventListener("mouseleave",()=>{r.classList.remove("active")})})});const n=document.querySelectorAll(".management-guided-card");n.length&&C.length&&n[0].offsetWidth!=C[0].offsetWidth&&(n[0].offsetHeight>C[0].offsetHeight?C[0].style.height=n[0].offsetHeight-15+"px":n[0].style.height=C[0].offsetHeight+15+"px")}const q=document.querySelector(".header");if(q){let e=function(){w(l),o(l),t()},o=function(u){u.forEach(p=>{p.querySelector(".menu__name").addEventListener("click",b=>{b.preventDefault(),_(p)})})},t=function(){a.addEventListener("click",()=>{r()})},r=function(){const u=document.querySelector(".menu__item.active");u&&(u.classList.remove("active"),a.classList.remove("active"))},_=function(u){const p=document.querySelector(".menu__item.active");p===u?(u.classList.remove("active"),a.classList.remove("active")):p?(p.classList.remove("active"),u.classList.add("active")):(u.classList.add("active"),a.classList.add("active"))},m=function(u){const p=u.getBoundingClientRect(),b=q.getBoundingClientRect();return p.left-b.left},h=function(u){const p=u.getBoundingClientRect(),b=q.getBoundingClientRect();return p.right-b.left},w=function(u){const p=parseInt(window.getComputedStyle(q).getPropertyValue("padding-left"),10),b=parseInt(window.getComputedStyle(d).getPropertyValue("padding-left"),10);u.forEach(g=>{const y=g.querySelector(".expand-menu");if(g.classList.contains("menu__item--full")){const x=m(g);y.style.left=`${p+b-x}px`}else q.offsetWidth-h(y)<p?(g.classList.add("menu__item--right"),g.classList.remove("menu__item--left")):(g.classList.remove("menu__item--right"),g.getAttribute("data-position")==="left"&&g.classList.add("menu__item--left"))})};var init=e,displayExpandMenuItems=o,handleOverlayClick=t,closeMenu=r,toogleMenuItem=_,getElementLeftPosition=m,getElementRightPosition=h,positionMenuItems=w;const l=document.querySelectorAll(".menu__item"),n=document.querySelectorAll(".expand-menu__sub-menu"),d=document.querySelector(".header__menu"),a=document.querySelector(".header__overlay");window.addEventListener("resize",()=>{w(l)}),e(),n&&n.forEach(u=>{u.querySelectorAll(".link--arrow").forEach(b=>{let g=b.dataset.name,y=u.querySelector(".link--arrow[data-name="+g+"]");b.addEventListener("click",()=>{u.querySelector(".link--arrow").classList.remove("active"),b.classList.remove("active"),y.classList.add("active"),$(".expand-menu__sub-item").classList.remove("visible"),$(".expand-menu__sub-item[data-name="+g+"]").classList.add("visible")})})})}const z={speed:200},R=document.querySelectorAll(".awards-section");R&&R.forEach(l=>{const n=l.querySelector(".awards-section__content"),d=n.cloneNode(!0);n.classList.add("primary"),d.classList.add("secondary"),n.parentNode.appendChild(d);const a=n.querySelectorAll(".award-item").length;n.style.setProperty("animation",`awards-section--primary ${a*1e3/z.speed}s linear infinite`),d.style.setProperty("animation",`awards-section--secondary ${a*1e3/z.speed}s linear infinite`)});if(document.querySelector(".contracts-piloted-section-container")){let u=function(){if(console.dir(this),this.nextElementSibling.style.maxHeight)console.dir(this.nextElementSibling),this.nextElementSibling.style.maxHeight="",this.lastElementChild.style.transform="rotate(0deg)";else{const i=this.nextElementSibling.scrollHeight;this.nextElementSibling.style.maxHeight=`${i}px`,this.lastElementChild.style.transform="rotate(180deg)"}};var handleClick=u;const l={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:8,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},n=document.querySelectorAll(".btns-container__first-choice-container__btn"),d=document.querySelector(".btns-container__second-choice-container"),a=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),e=document.querySelectorAll(".filters-container__btns-container__btn"),o=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),t=document.querySelector(".results-container"),r=document.querySelectorAll(".toggle-button"),_=document.querySelectorAll(".card-container, .grid-row-body"),m=document.querySelector(".cards-display-container"),h=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body"),document.querySelector(".distribution-funds-array-section__btn").addEventListener("click",u);const p={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};n.forEach(i=>i.addEventListener("click",()=>b(i))),a.forEach(i=>i.addEventListener("click",()=>g(i))),e.forEach(i=>i.addEventListener("click",()=>y(i))),r.forEach(i=>i.addEventListener("click",()=>P())),_.forEach(i=>i.addEventListener("click",()=>E(i)));const b=i=>{p.secondChoice="",a.forEach(s=>s.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),n.forEach(s=>s.classList.remove("btns-container__first-choice-container__btn--active")),o.forEach(s=>s.classList.add("hidden")),i.classList.add("btns-container__first-choice-container__btn--active"),p.firstChoice=i.getAttribute("data-attr"),d.classList.remove("hidden"),document.querySelector(`.${i.getAttribute("data-attr")}`).classList.remove("hidden"),x()},g=i=>{a.forEach(s=>s.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),p.secondChoice=i.getAttribute("data-attr"),i.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"),x()},y=i=>{p.thirdChoice=i.getAttribute("data-attr"),e.forEach(s=>s.classList.remove("filters-container__btns-container__btn--active")),i.classList.add("filters-container__btns-container__btn--active"),x()},x=()=>{p.firstChoice!==""&&p.secondChoice!==""?t.classList.remove("hidden"):t.classList.add("hidden"),h.innerHTML="",m.innerHTML="";const i=l[p.firstChoice][p.secondChoice][p.thirdChoice];i.map(s=>m.innerHTML+=`
+</section>`,On=[{name:"header",template:nn},{name:"footer",template:en},{name:"wrapper (66/33) (50/50) (33/66)",template:rn},{name:"homeHeroBanner",template:tn},{name:"promoBanner",template:sn},{name:"tabsNavigationSection",template:Nn},{name:"companyValueSection",template:an},{name:"advicesSection",template:on},{name:"insurancePartnersSection",template:cn},{name:"investmentDisclaimerSection",template:ln},{name:"awardsSection",template:dn},{name:"reviewsSection",template:pn},{name:"partnerNewsSection",template:un},{name:"heroBanner (Default, Catchline, Product)",template:_n},{name:"productAdvantagesSection",template:bn},{name:"productManagementSection",template:hn},{name:"productInsurancePartnerSection",template:vn},{name:"sincePartnerSection",template:mn},{name:"productContractualDocumentationSection",template:gn},{name:"productFeesSection",template:fn},{name:"faqRedirectionSection",template:wn},{name:"managementAdvantagesSection",template:yn},{name:"managementPlusSection",template:xn},{name:"managementOthersOverviewSection",template:Ln},{name:"managementGuidedOverviewSection",template:Cn},{name:"managementGuidedPartnersSection",template:qn},{name:"contractsPilotedSection",template:kn},{name:"contractsSupportSection",template:En},{name:"altaNewsTalkingAboutSection",template:An},{name:"webconferencesSection",template:Pn},{name:"kitPressSection",template:zn},{name:"contactPressSection",template:Rn},{name:"pressSection",template:Sn},{name:"expertsVoiceSection",template:Vn},{name:"discoverIntegrationProgramSection",template:Tn},{name:"questionsSection",template:jn},{name:"squadSection",template:In},{name:"altaInNumberSection",template:Mn},{name:"altaprofitHistorySection",template:Fn},{name:"reasonToJoinSection",template:Bn},{name:"discoverOurJobSection",template:Un},{name:"joinTheTeamSection",template:Gn},{name:"pilotedGraphSection",template:Dn}],Hn=[{name:"components",value:U},{name:"patterns",value:X},{name:"blocks",value:On}];Hn.forEach(l=>{const n=document.createElement("section");n.classList.add("ads",l.name);const d=document.createElement("h3");d.innerText=l.name.toUpperCase(),n.appendChild(d),l.value.forEach(a=>{const e=document.createElement("div");e.id=a.name,e.classList.add("section","ads");const o=document.createElement("h4");o.innerText=a.name,e.appendChild(o);const t=document.createElement("div");t.innerHTML=a.template,t.classList.add("sub-section","ads"),e.appendChild(t),n.appendChild(e)}),document.querySelector("main.ads").appendChild(n)});const C=document.querySelectorAll(".management-others-card");if(C){let l=0;C.forEach(d=>{const a=d.querySelectorAll(".management-others-card__explaination");for(let o=0;o<a.length;o++){const r=a[o].offsetHeight;r>l&&(l=r)}l>0&&d.querySelector(".management-others-card__explainations").style.setProperty("height",`calc(${l}px + var(--spacing-8))`),d.querySelectorAll(".management-others-card__link").forEach(o=>{let t=o.dataset.name,r=d.querySelector(".management-others-card__explaination[data-name="+t+"]");o.addEventListener("mouseenter",()=>{r.classList.add("active")}),o.addEventListener("mouseleave",()=>{r.classList.remove("active")})})});const n=document.querySelectorAll(".management-guided-card");n.length&&C.length&&n[0].offsetWidth!=C[0].offsetWidth&&(n[0].offsetHeight>C[0].offsetHeight?C[0].style.height=n[0].offsetHeight-15+"px":n[0].style.height=C[0].offsetHeight+15+"px")}const q=document.querySelector(".header");if(q){let e=function(){w(l),o(l),t()},o=function(u){u.forEach(p=>{p.querySelector(".menu__name").addEventListener("click",b=>{b.preventDefault(),_(p)})})},t=function(){a.addEventListener("click",()=>{r()})},r=function(){const u=document.querySelector(".menu__item.active");u&&(u.classList.remove("active"),a.classList.remove("active"))},_=function(u){const p=document.querySelector(".menu__item.active");p===u?(u.classList.remove("active"),a.classList.remove("active")):p?(p.classList.remove("active"),u.classList.add("active")):(u.classList.add("active"),a.classList.add("active"))},m=function(u){const p=u.getBoundingClientRect(),b=q.getBoundingClientRect();return p.left-b.left},h=function(u){const p=u.getBoundingClientRect(),b=q.getBoundingClientRect();return p.right-b.left},w=function(u){const p=parseInt(window.getComputedStyle(q).getPropertyValue("padding-left"),10),b=parseInt(window.getComputedStyle(d).getPropertyValue("padding-left"),10);u.forEach(g=>{const y=g.querySelector(".expand-menu");if(g.classList.contains("menu__item--full")){const x=m(g);y.style.left=`${p+b-x}px`}else q.offsetWidth-h(y)<p?(g.classList.add("menu__item--right"),g.classList.remove("menu__item--left")):(g.classList.remove("menu__item--right"),g.getAttribute("data-position")==="left"&&g.classList.add("menu__item--left"))})};var init=e,displayExpandMenuItems=o,handleOverlayClick=t,closeMenu=r,toogleMenuItem=_,getElementLeftPosition=m,getElementRightPosition=h,positionMenuItems=w;const l=document.querySelectorAll(".menu__item"),n=document.querySelectorAll(".expand-menu__sub-menu"),d=document.querySelector(".header__menu"),a=document.querySelector(".header__overlay");window.addEventListener("resize",()=>{w(l)}),e(),n&&n.forEach(u=>{u.querySelectorAll(".link--arrow").forEach(b=>{let g=b.dataset.name,y=u.querySelector(".link--arrow[data-name="+g+"]");b.addEventListener("click",()=>{u.querySelector(".link--arrow").classList.remove("active"),b.classList.remove("active"),y.classList.add("active"),$(".expand-menu__sub-item").classList.remove("visible"),$(".expand-menu__sub-item[data-name="+g+"]").classList.add("visible")})})})}const z={speed:200},R=document.querySelectorAll(".awards-section");R&&R.forEach(l=>{const n=l.querySelector(".awards-section__content"),d=n.cloneNode(!0);n.classList.add("primary"),d.classList.add("secondary"),n.parentNode.appendChild(d);const a=n.querySelectorAll(".award-item").length;n.style.setProperty("animation",`awards-section--primary ${a*1e3/z.speed}s linear infinite`),d.style.setProperty("animation",`awards-section--secondary ${a*1e3/z.speed}s linear infinite`)});if(document.querySelector(".contracts-piloted-section-container")){let u=function(){if(console.dir(this),this.nextElementSibling.style.maxHeight)console.dir(this.nextElementSibling),this.nextElementSibling.style.maxHeight="",this.lastElementChild.style.transform="rotate(0deg)";else{const i=this.nextElementSibling.scrollHeight;this.nextElementSibling.style.maxHeight=`${i}px`,this.lastElementChild.style.transform="rotate(180deg)"}};var handleClick=u;const l={assuranceVie:{titresVie:{prudent:[{title:"Carte Blanche",srri:8,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.13%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:7,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-4.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 3",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-9.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalViePrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},espaceLuxVie:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 2",srri:3,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-3%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"},{title:"Profil 1",srri:6,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-5.53%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},capitalisation:{titreCapi:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},altaprofitsCapitalisation:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]},digitalCapiPrime:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}},planEpargneRetraite:{titrePER:{prudent:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],balanced:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}],dynamic:[{title:"Carte Blanche",srri:5,ytd:"",nOne:"",perfThreeYears:"",perfFiveYears:"",perf:"",volatility:"",name:"Lazard Frères Gestion",percentageRate:"-7.33%",informations:"Performances cumulées sur 5 ans",iconUrl:"./assets/logos/lazard_freres_gestion--fit.svg"}]}}},n=document.querySelectorAll(".btns-container__first-choice-container__btn"),d=document.querySelector(".btns-container__second-choice-container"),a=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container__btn"),e=document.querySelectorAll(".filters-container__btns-container__btn"),o=document.querySelectorAll(".btns-container__second-choice-container__btns-type-second-choice-container"),t=document.querySelector(".results-container"),r=document.querySelectorAll(".toggle-button"),_=document.querySelectorAll(".card-container, .grid-row-body"),m=document.querySelector(".cards-display-container"),h=document.querySelector(".array-display-container");document.querySelectorAll(".grid-row-body"),document.querySelector(".distribution-funds-array-section__btn").addEventListener("click",u);const p={firstChoice:"",secondChoice:"",thirdChoice:"prudent"};n.forEach(i=>i.addEventListener("click",()=>b(i))),a.forEach(i=>i.addEventListener("click",()=>g(i))),e.forEach(i=>i.addEventListener("click",()=>y(i))),r.forEach(i=>i.addEventListener("click",()=>P())),_.forEach(i=>i.addEventListener("click",()=>E(i)));const b=i=>{p.secondChoice="",a.forEach(s=>s.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),n.forEach(s=>s.classList.remove("btns-container__first-choice-container__btn--active")),o.forEach(s=>s.classList.add("hidden")),i.classList.add("btns-container__first-choice-container__btn--active"),p.firstChoice=i.getAttribute("data-attr"),d.classList.remove("hidden"),document.querySelector(`.${i.getAttribute("data-attr")}`).classList.remove("hidden"),x()},g=i=>{a.forEach(s=>s.classList.remove("btns-container__second-choice-container__btns-type-second-choice-container__btn--active")),p.secondChoice=i.getAttribute("data-attr"),i.classList.add("btns-container__second-choice-container__btns-type-second-choice-container__btn--active"),x()},y=i=>{p.thirdChoice=i.getAttribute("data-attr"),e.forEach(s=>s.classList.remove("filters-container__btns-container__btn--active")),i.classList.add("filters-container__btns-container__btn--active"),x()},x=()=>{p.firstChoice!==""&&p.secondChoice!==""?t.classList.remove("hidden"):t.classList.add("hidden"),h.innerHTML="",m.innerHTML="";const i=l[p.firstChoice][p.secondChoice][p.thirdChoice];i.map(s=>m.innerHTML+=`
             <div class="card-container">
               <div class="card-container__card-header">
                 <p class="card-container__card-header__title">${s.title}</p>
