@@ -13,8 +13,9 @@ import partnerNewsSection from './partner-news-section/template.html?raw';
 import heroBanner from './hero-banner/template.html?raw';
 import productInsurancePartnerSection from './product-insurance-partner-section/template.html?raw';
 import sincePartnerSection from './since-partner-section/template.html?raw';
-import productContractualDocumentationSection
-  from './product-contractual-documentation-section/template.html?raw';
+import premiumPartnerSection from './premium-partner-section/template.html?raw';
+import linksSection from './links-section/template.html?raw';
+import productContractualDocumentationSection from './product-contractual-documentation-section/template.html?raw';
 import productManagementSection from './product-management-section/template.html?raw';
 import productAdvantagesSection from './product-advantages-section/template.html?raw';
 import productFeesSection from './product-fees-section/template.html?raw';
@@ -115,6 +116,14 @@ const blocks = [
   {
     name: 'sincePartnerSection',
     template: sincePartnerSection,
+  },
+  {
+    name: 'premiumPartnerSection',
+    template: premiumPartnerSection,
+  },
+  {
+    name: 'linksSection',
+    template: linksSection,
   },
   {
     name: 'productContractualDocumentationSection',
