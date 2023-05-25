@@ -43,6 +43,7 @@ import discoverOurJobSection from './discover-our-job-section/template.html?raw'
 import joinTheTeamSection from './join-the-team-section/template.html?raw';
 import pilotedGraphSection from './piloted-graph-section/template.html?raw';
 import tabsNavigationSection from './tabs-navigation-section/template.html?raw';
+import whiteBookSection from './white-book-section/template.html?raw';
 
 const blocks = [
   {
@@ -224,6 +225,11 @@ const blocks = [
     name: 'pilotedGraphSection',
     template: pilotedGraphSection,
   },
+  {
+    name: 'whiteBookSection',
+    template: whiteBookSection,
+  },
+
 ];
 
 export default blocks;
