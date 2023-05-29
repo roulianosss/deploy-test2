@@ -92,6 +92,10 @@
       color: var(--color-primary-50);
     }
 
+    #{$self}__logo {
+      padding:0 !important;
+    }
+
     #{$self}__catchline {
       font-weight: var(--font-weight-light);
     }
