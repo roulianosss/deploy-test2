@@ -1,0 +1,11 @@
+.tabs-navigation-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--spacing-48) var(--spacing-24);
+
+  @media screen and (max-width: 480px) {
+    padding: var(--spacing-32) var(--spacing-16);
+  }
+}
