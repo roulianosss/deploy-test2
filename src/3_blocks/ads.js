@@ -44,6 +44,7 @@ import joinTheTeamSection from './join-the-team-section/template.html?raw';
 import pilotedGraphSection from './piloted-graph-section/template.html?raw';
 import tabsNavigationSection from './tabs-navigation-section/template.html?raw';
 import whiteBookSection from './white-book-section/template.html?raw';
+import capitalCalculatorSection from './capital-calculator-section/template.html?raw';
 
 const blocks = [
   {
@@ -230,6 +231,10 @@ const blocks = [
     template: whiteBookSection,
   },
 
+  {
+    name: 'capitalCalculatorSection',
+    template: capitalCalculatorSection,
+  },
 ];
 
 export default blocks;
