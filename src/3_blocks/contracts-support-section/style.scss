@@ -53,11 +53,11 @@
       transition: background-color var(--motion-duration-medium) ease-out;
 
       &:hover:not(&--active) {
-        background-color: #fff7f5;
+        background-color: var(--color-primary-90);
       }
 
       &--active {
-        background-color: var(--color-primary-50) ;
+        background-color: var(--color-primary-50);
         color: var(--color-neutral-100);
       }
 
@@ -90,11 +90,11 @@
         transition: background-color var(--motion-duration-medium) ease-out;
 
         &:hover:not(&--active) {
-          background-color: #fff7f5;
+          background-color: var(--color-primary-90);
         }
 
         &--active {
-          background-color: var(--color-primary-50) ;
+          background-color: var(--color-primary-50);
         }
 
         &--active h3,
@@ -178,11 +178,11 @@
     transition: background-color var(--motion-duration-medium) ease-out;
 
     &:hover:not(&--active) {
-      background-color: #fff7f5;
+      background-color: var(--color-primary-90);
     }
 
     &--active {
-      background-color: var(--color-primary-50) ;
+      background-color: var(--color-primary-50);
       color: var(--color-neutral-100);
     }
 
@@ -192,8 +192,6 @@
       font-size: var(--font-size-medium);
       white-space: nowrap;
     }
-
-    
   }
 
   @media screen and (max-width: 1280px) {
@@ -256,7 +254,7 @@
       text-align: center;
       color: var(--color-neutral-0);
     }
-    
+
     a {
       margin-bottom: var(--spacing-32);
     }
@@ -266,12 +264,13 @@
     display: flex;
     gap: var(--spacing-16);
     flex-wrap: wrap;
-  justify-content: center;  }
+    justify-content: center;
+  }
 
   &__netissima-conditions {
     width: 1184px;
     font-family: var(--font-family-body);
-    
+
     font-size: var(--font-size-tiny);
     color: var(--color-neutral-0);
     margin: 0 auto;
@@ -373,7 +372,6 @@
       max-width: 190px;
       font-family: var(--font-family-body);
 
-      
       font-size: var(--font-size-tiny);
       text-align: center;
       color: var(--color-neutral-0);
@@ -524,7 +522,6 @@
       margin-bottom: var(--spacing-48);
       font-family: var(--font-family-body);
 
-      
       font-size: var(--font-size-medium);
       text-align: center;
       color: var(--color-neutral-0);
@@ -589,7 +586,7 @@
     & p {
       width: 532px;
       font-family: var(--font-family-body);
-      
+
       font-size: var(--font-size-large);
     }
   }
@@ -685,10 +682,10 @@
       transition: background-color var(--motion-duration-medium) ease-out;
 
       &:hover:not(&--active) {
-        background-color: #fff7f5;
+        background-color: var(--color-primary-90);
       }
       &--active {
-        background-color: var(--color-primary-50) ;
+        background-color: var(--color-primary-50);
       }
 
       &--active p {
@@ -733,7 +730,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     & h3 {
       margin-bottom: var(--spacing-24);
       font-family: var(--font-family-heading);
@@ -745,7 +742,7 @@
     & > p {
       margin-bottom: var(--spacing-48);
       font-family: var(--font-family-body);
-      
+
       font-size: var(--font-size-medium);
       text-align: center;
       color: var(--color-neutral-0);
@@ -914,7 +911,7 @@
           & a {
             width: 183px;
             font-family: var(--font-family-body);
-            
+
             font-size: var(--font-size-small);
             text-align: center;
             text-decoration-line: underline;
