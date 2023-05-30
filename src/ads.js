@@ -17,7 +17,7 @@ const admin = () => {
   } 
   if (text === "preprod") {
     let pwd = prompt(`Mot de passe ?`);
-    if (pwd !== "50a") {
+    if (pwd !== process.env.password) {
       return admin();
     }
   }
