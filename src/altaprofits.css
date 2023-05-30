@@ -208,8 +208,8 @@ LOGO
  */
 .logo {
   padding: var(--spacing-16);
-  width: 128px;
-  height: 128px;
+  max-width: 200px;
+  max-height: 128px;
   object-fit: contain;
   object-position: center;
   --current-color-1: var(--color-neutral-0); }

@@ -18,6 +18,10 @@
   &__title {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
+
+  }
+  .two-line{
+    min-height: 43px;
   }
 
   &__description {
