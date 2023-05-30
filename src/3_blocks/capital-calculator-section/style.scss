@@ -6,10 +6,13 @@
     font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: var(--font-size-2);
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
     color: var(--color-neutral-0);
+    text-align: center;
+    width:100%;
+    h2{;
+      margin: 60px auto;
+      max-width: 22ch;
+    }
   }
 
   &__cursors-container {
@@ -131,6 +134,8 @@
     letter-spacing: -0.02em;
     color: #ff6442;
     white-space: nowrap;
+    width:100%;
+    text-align:center;
   }
 
   &__btns-container {
@@ -139,7 +144,7 @@
     margin: 0 auto;
     gap: 2rem;
     justify-content: center;
-    margin-bottom: 104px;
+    padding-bottom: 60px;
   }
 }
 
