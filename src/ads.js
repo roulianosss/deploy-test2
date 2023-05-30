@@ -2,28 +2,20 @@ import components from "./1_components/ads.js";
 import patterns from "./2_patterns/ads.js";
 import blocks from "./3_blocks/ads.js";
 
-// prompt("utilisateur");
-// let text = prompt("Utilisateur ?");
-// if (text !== "preprod") {
-//   text = prompt("Utilisateur ?");
-// } else {
-//   prompt(`Password ?`);
-// }
-// prompt("utilisateur");
-const admin = () => {
+const passwordRequire = () => {
   let text = prompt("Utilisateur ?");
-  if (text !== "preprod") {
-      return admin();
+  if (text !== window.atob('cHJlcHJvZA==')) {
+      return passwordRequire();
   } 
   if (text === "preprod") {
-    let pwd = prompt(`Mot de passe ?`);
-    if (pwd !== process.env.password) {
-      return admin();
+      let pwd = prompt(`Mot de passe ?`);
+    if (pwd !== window.atob('NTBh')) {
+      return passwordRequire();
     }
   }
 };
 
-admin();
+passwordRequire();
 
 const categories = [
   {
