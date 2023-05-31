@@ -4,6 +4,7 @@ import wrapper from './wrapper/template.html?raw';
 import homeHeroBanner from './home-hero-banner/template.html?raw';
 import promoBanner from './promo-banner/template.html?raw';
 import companyValueSection from './company-value-section/template.html?raw';
+import adviceIntroSection from './advice-intro-section/template.html?raw';
 import advicesSection from './advices-section/template.html?raw';
 import insurancePartnersSection from './insurance-partners-section/template.html?raw';
 import investmentDisclaimerSection from './investment-disclaimer-section/template.html?raw';
@@ -74,6 +75,10 @@ const blocks = [
   {
     name: 'companyValueSection',
     template: companyValueSection,
+  },
+  {
+    name: 'adviceIntroSection',
+    template: adviceIntroSection,
   },
   {
     name: 'advicesSection',

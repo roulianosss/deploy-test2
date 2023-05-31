@@ -3,20 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const defaultData = [
             [
                 {
-                    titre : "Sur 3 ans",
+                    titre: "Sur 3 ans",
                     percentage: 3.3,
-                    description: "Profil 1<br>Lazard Frères Gestion<br>SRI 3"
+                    description: "Profil 1<br>Lazard Frères Gestion<br>SRI 3",
+                    condition: "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 3 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
                 },
                 {
-                    titre : "Sur 5 ans",
+                    titre: "Sur 5 ans",
                     percentage: 8.4,
                     description: "Profil 7<br>Lazard Frères Gestion<br>SRI 4",
-                    active: true
+                    active: true,
+                    condition: "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 5 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
                 },
                 {
-                    titre : "depuis l'origine",
+                    titre: "depuis l'origine",
                     percentage: 11.9,
-                    description: "Conviction<br>Generali Wealth Solutions<br>SRI 5"
+                    description: "Conviction<br>Generali Wealth Solutions<br>SRI 5",
+                    condition: "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : performances des profils depuis l’origine de 2006 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
                 }
             ],
             [
@@ -50,19 +53,29 @@ document.addEventListener('DOMContentLoaded', function() {
         ];
         const parsedData = JSON.stringify(defaultData);
         const element = document.querySelector(".piloted-graph-section__btns-container");
-        if(element.getAttribute('data-content').length == 0){
+        if (element.hasAttribute('data-content').length) {
+            const dataParsed = JSON.parse(element.getAttribute('data-content').replace(/\\r\\n/g, ''));
+            var data = JSON.parse(dataParsed);
+            //console.log('from data-content');
+        }else{
             element.setAttribute("data-content", parsedData);
+            var data = defaultData;
+            //console.log('from default data');
+            //console.log(data);
         }
-
-        const data = JSON.parse(JSON.parse(element.getAttribute('data-content').replace(/\\r\\n/g, '')));
+        let header = data[0];
         const graphContainer = document.querySelector(
             ".piloted-graph-section__graph-container"
         )
         element.innerHTML = '';
-        data[0].forEach((donnee, i) => {
+        header.forEach((donnee, i) => {
             let active = donnee['active'] == 1 ? 'piloted-graph-section__btns-container__btn--active' : '';
-            element.innerHTML += '<div class="piloted-graph-section__btns-container__btn '+active+'" data-attr="'+i+'">'+donnee['titre']+'</div>';
+            element.innerHTML += '<div class="piloted-graph-section__btns-container__btn ' + active + '" data-attr="' + i + '">' + donnee['titre'] + '</div>';
         });
+
+        const conditionsText = document.querySelector(
+            ".piloted-graph-section__conditions p"
+        );
 
         const allGraphBtns = document.querySelectorAll(
             ".piloted-graph-section__btns-container__btn"
@@ -88,71 +101,62 @@ document.addEventListener('DOMContentLoaded', function() {
             const maxPercentage =
                 data[btnActive][data[btnActive].length - 1].percentage
 
+            conditionsText.textContent = data[btnActive][data[btnActive].length - 1].conditions;
+
             data[btnActive].forEach((graphBar,
                                      index
             ) => {
                 const graphBarHeight = (graphBar.percentage * 100) / maxPercentage
                 graphContainer.innerHTML += `
-    <div
-      class="piloted-graph-section__graph-container__bar-container"
+      <div class="piloted-graph-section__graph-container__bar-container">
+        <div class="piloted-graph-section__graph-container__bar-container__bar-graph piloted-graph-section__graph-container__bar-container__bar-graph--${index}">
+          ${graphBar.percentage}%
+        </div>
+        <div class="piloted-graph-section__graph-container__bar-container__bar-information">
+         ${graphBar.description}
+        </div>
+      </div>`;
 
-    >
-      <div
-        class="piloted-graph-section__graph-container__bar-container__bar-graph piloted-graph-section__graph-container__bar-container__bar-graph--${index}"
-
-      >
-        ${graphBar.percentage}%
-      </div>
-      <div
-        class="piloted-graph-section__graph-container__bar-container__bar-information"
-      >
-       ${graphBar.description}
-      </div>
-    </div>`
-
-                const bar = document.querySelector(`.piloted-graph-section__graph-container__bar-container__bar-graph--${index}`)
-                bar.style.maxHeight = `0`
-                bar.style.opacity = `0`
+                const bar = document.querySelector(
+                    `.piloted-graph-section__graph-container__bar-container__bar-graph--${index}`
+                );
+                bar.style.maxHeight = `0`;
+                bar.style.opacity = `0`;
 
                 setTimeout(() => {
-                        const bar = document.querySelector(`.piloted-graph-section__graph-container__bar-container__bar-graph--${index}`)
-                        bar.style.maxHeight = `${graphBarHeight}%`
-                        bar.style.opacity = `1`
-                        animateNumber(bar,
-                            graphBar.percentage,
-                            500)
-                    },
-                    10)
-            })
+                    const bar = document.querySelector(
+                        `.piloted-graph-section__graph-container__bar-container__bar-graph--${index}`
+                    );
+                    bar.style.maxHeight = `${graphBarHeight}%`;
+                    bar.style.opacity = `1`;
+                    animateNumber(bar, graphBar.percentage, 500);
+                }, 10);
+            });
         }
 
-        function animateNumber(element,
-                               endValue,
-                               duration
-        ) {
-            const startValue = 0
-            const interval = 10
-            const iterations = duration / interval
-            let currentValue = startValue
-            const increment = (endValue - startValue) / iterations
+        function animateNumber(element, endValue, duration) {
+            const startValue = 0;
+            const interval = 10;
+            const iterations = duration / interval;
+            let currentValue = startValue;
+            const increment = (endValue - startValue) / iterations;
 
             function updateValue() {
-                currentValue += increment
+                currentValue += increment;
                 if (currentValue >= endValue) {
-                    element.textContent = `${endValue} %`
+                    element.textContent = `${endValue} %`;
                 } else {
-                    element.textContent = `${currentValue.toFixed(1)} %`
-                    setTimeout(updateValue,
-                        interval)
+                    element.textContent = `${currentValue.toFixed(1)} %`;
+                    setTimeout(updateValue, interval);
                 }
             }
 
-            updateValue()
+            updateValue();
         }
 
-        const maxPercentage = data[1][data[1].length - 1].percentage
+        const maxPercentage = data[1][data[1].length - 1].percentage;
         data[1].forEach((graphBar) => {
-            const graphBarHeight = (graphBar.percentage * 100) / maxPercentage
+            const graphBarHeight = (graphBar.percentage * 100) / maxPercentage;
             graphContainer.innerHTML += `
     <div
       class="piloted-graph-section__graph-container__bar-container"
@@ -170,8 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
        ${graphBar.description}
       </div>
     </div>
-        `
-        })
-
+        `;
+        });
     }
 });
