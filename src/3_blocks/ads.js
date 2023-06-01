@@ -16,6 +16,7 @@ import productInsurancePartnerSection from './product-insurance-partner-section/
 import sincePartnerSection from './since-partner-section/template.html?raw';
 import premiumPartnerSection from './premium-partner-section/template.html?raw';
 import linksSection from './links-section/template.html?raw';
+import productIntroSection from './product-intro-section/template.html?raw';
 import productContractualDocumentationSection from './product-contractual-documentation-section/template.html?raw';
 import productManagementSection from './product-management-section/template.html?raw';
 import productAdvantagesSection from './product-advantages-section/template.html?raw';
@@ -46,6 +47,7 @@ import pilotedGraphSection from './piloted-graph-section/template.html?raw';
 import tabsNavigationSection from './tabs-navigation-section/template.html?raw';
 import whiteBookSection from './white-book-section/template.html?raw';
 import capitalCalculatorSection from './capital-calculator-section/template.html?raw';
+import lexiqueSection from './lexique-section/template.html?raw';
 
 const blocks = [
   {
@@ -107,6 +109,10 @@ const blocks = [
   {
     name: 'heroBanner (Default, Catchline, Product)',
     template: heroBanner,
+  },
+  {
+    name: 'productIntroSection',
+    template: productIntroSection,
   },
   {
     name: 'productAdvantagesSection',
@@ -235,11 +241,14 @@ const blocks = [
     name: 'whiteBookSection',
     template: whiteBookSection,
   },
-
   {
     name: 'capitalCalculatorSection',
     template: capitalCalculatorSection,
   },
+  {
+    name: 'lexiqueSection',
+    template: lexiqueSection,
+  }
 ];
 
 export default blocks;

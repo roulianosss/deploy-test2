@@ -1,6 +1,6 @@
 .capital-calculator-section {
   background-color: var(--color-primary-90);
-  width: 100%;
+  width:100%;
 
   &__title {
     font-family: var(--font-family-heading);
@@ -9,9 +9,10 @@
     color: var(--color-neutral-0);
     text-align: center;
     width:100%;
-    h2{;
-      margin: 60px auto;
+    h2{
+      display:inline-block;
       max-width: 22ch;
+      margin: 60px auto;
     }
   }
 
@@ -39,7 +40,7 @@
         font-size: 16px;
         line-height: 22px;
         // text-align: center;
-    color: var(--color-neutral-0);
+        color: var(--color-neutral-0);
         margin-bottom: 1rem;
       }
 

@@ -1,5 +1,5 @@
-.advice-intro-section {
-  margin: 0 auto;
+.product-intro-section {
+  width: 100%;
   padding: var(--spacing-32) var(--spacing-128) var(--spacing-48);
   /*@media screen and (max-width: 1280px) {
     padding: var(--spacing-32) var(--spacing-64) var(--spacing-64)
@@ -13,10 +13,11 @@
   &
   > div > div:first-of-type {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    column-gap: 40px
+    column-gap: 40px;
+    gap: var(--spacing-16);
   }
 
   .img {
@@ -69,10 +70,13 @@
 
   &__sommaire {
     background: #F3F5F6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding: 32px 70px;
     width:100%;
     z-index: 1;
-    .subtitle {
+    .title {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
       font-weight: 700;
@@ -108,5 +112,4 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-
 }

@@ -220,4 +220,13 @@ BACKOFFICE
 .toolbar-fixed .header {
   margin-top: 79px; }
 
+.local-tasks ul {
+  margin: 0 auto; }
+.local-tasks li {
+  float: left;
+  list-style-type: none;
+  padding: 15px; }
+.local-tasks a {
+  color: var(--color-primary-50); }
+
 /*# sourceMappingURL=altaprofits.css.map */
