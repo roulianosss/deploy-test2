@@ -48,6 +48,8 @@ import tabsNavigationSection from './tabs-navigation-section/template.html?raw';
 import whiteBookSection from './white-book-section/template.html?raw';
 import capitalCalculatorSection from './capital-calculator-section/template.html?raw';
 import lexiqueSection from './lexique-section/template.html?raw';
+import stayInformedSection from './stay-informed-section/template.html?raw';
+import contactUsSection from './contact-us-section/template.html?raw';
 
 const blocks = [
   {
@@ -248,6 +250,16 @@ const blocks = [
   {
     name: 'lexiqueSection',
     template: lexiqueSection,
+  },
+  {
+    name: 'stayInformedSection',
+    drupalTemplate: 'paragraph--ap-content--restez-informe',
+    template: stayInformedSection,
+  },
+  {
+    name: 'contactUsSection',
+    drupalTemplate: 'paragraph--ap-content--contactez-nous',
+    template: contactUsSection,
   }
 ];
 

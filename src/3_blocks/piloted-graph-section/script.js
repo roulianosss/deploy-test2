@@ -53,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
         ];
         const parsedData = JSON.stringify(defaultData);
         const element = document.querySelector(".piloted-graph-section__btns-container");
-        if (element.hasAttribute('data-content').length) {
+        if (element.hasAttribute('data-content')) {
             const dataParsed = JSON.parse(element.getAttribute('data-content').replace(/\\r\\n/g, ''));
             var data = JSON.parse(dataParsed);
             //console.log('from data-content');
+            //console.log(data);
         }else{
             element.setAttribute("data-content", parsedData);
             var data = defaultData;
@@ -89,19 +90,22 @@ document.addEventListener('DOMContentLoaded', function() {
             handleClick))
 
         function handleClick() {
-            graphContainer.innerHTML = ""
+            graphContainer.innerHTML = "";
 
             allGraphBtns.forEach((btn) =>
                 btn.classList.remove("piloted-graph-section__btns-container__btn--active")
             )
 
-            this.classList.add("piloted-graph-section__btns-container__btn--active")
+            this.classList.add("piloted-graph-section__btns-container__btn--active");
 
-            const btnActive = this.getAttribute("data-attr")
+            const btnActive = this.getAttribute("data-attr");
             const maxPercentage =
-                data[btnActive][data[btnActive].length - 1].percentage
-
-            conditionsText.textContent = data[btnActive][data[btnActive].length - 1].conditions;
+                data[btnActive][data[btnActive].length - 1].percentage;
+            const condition = data[0][btnActive].condition;
+            const conditionsText = document.querySelector(
+                ".piloted-graph-section__conditions p"
+            );
+            conditionsText.textContent = condition;
 
             data[btnActive].forEach((graphBar,
                                      index

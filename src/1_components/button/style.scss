@@ -75,7 +75,10 @@
   $self: &;
   position: relative;
   height: fit-content;
-
+  width: min-content;
+  &:has(.button--center) {
+    margin: 12px auto;
+  }
   &:has(.button--primary) {
     color: var(--color-neutral-100);
   }

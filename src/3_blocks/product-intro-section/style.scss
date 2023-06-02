@@ -76,6 +76,9 @@
     padding: 32px 70px;
     width:100%;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     .title {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
