@@ -13,6 +13,7 @@ import reviewsSection from './reviews-section/template.html?raw';
 import partnerNewsSection from './partner-news-section/template.html?raw';
 import heroBanner from './hero-banner/template.html?raw';
 import productInsurancePartnerSection from './product-insurance-partner-section/template.html?raw';
+import brochureSection from './brochure-section/template.html?raw';
 import sincePartnerSection from './since-partner-section/template.html?raw';
 import premiumPartnerSection from './premium-partner-section/template.html?raw';
 import linksSection from './links-section/template.html?raw';
@@ -127,6 +128,10 @@ const blocks = [
   {
     name: 'productInsurancePartnerSection',
     template: productInsurancePartnerSection,
+  },
+  {
+    name: 'brochureSection',
+    template: brochureSection,
   },
   {
     name: 'sincePartnerSection',
