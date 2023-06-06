@@ -2,6 +2,10 @@ if (document.querySelector(".piloted-graph-section")) {
   const data = [
     [
       {
+        conditions:
+          "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 3 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
+      },
+      {
         percentage: 3.3,
         description: "Prudent"
       },
@@ -16,6 +20,10 @@ if (document.querySelector(".piloted-graph-section")) {
     ],
     [
       {
+        conditions:
+          "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 5 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
+      },
+      {
         percentage: 5.3,
         description: "Prudent"
       },
@@ -29,6 +37,11 @@ if (document.querySelector(".piloted-graph-section")) {
       }
     ],
     [
+      {
+        conditions:
+          "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : performances des profils depuis l’origine de 2006 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
+      },
+
       {
         percentage: 7.3,
         description: "Prudent"
@@ -95,6 +108,7 @@ if (document.querySelector(".piloted-graph-section")) {
       data[btnActive][data[btnActive].length - 1].percentage;
 
     data[btnActive].forEach((graphBar, index) => {
+      if (index === 0) return
       const graphBarHeight = (graphBar.percentage * 100) / maxPercentage;
       graphContainer.innerHTML += `
     <div
@@ -131,13 +145,13 @@ if (document.querySelector(".piloted-graph-section")) {
     });
     switch (btnActive) {
       case "0":
-        conditionsText.textContent = conditionsData.threeYear;
+        conditionsText.textContent = data[0][0].conditions;
         break;
       case "1":
-        conditionsText.textContent = conditionsData.fiveYear;
+        conditionsText.textContent = data[1][0].conditions;
         break;
       case "2":
-        conditionsText.textContent = conditionsData.origin;
+        conditionsText.textContent = data[2][0].conditions;
         break;
       default:
         break;
@@ -164,7 +178,8 @@ if (document.querySelector(".piloted-graph-section")) {
   }
 
   const maxPercentage = data[1][data[1].length - 1].percentage;
-  data[1].forEach((graphBar) => {
+  data[1].forEach((graphBar, index) => {
+    if (index === 0) return
     const graphBarHeight = (graphBar.percentage * 100) / maxPercentage;
     graphContainer.innerHTML += `
     <div

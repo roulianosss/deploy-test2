@@ -55,7 +55,7 @@
       & input {
         border-radius: 8px;
         height: 7px;
-        width: 160px;
+        width: 100%;
         outline: none;
         -webkit-appearance: none;
       }
@@ -64,8 +64,8 @@
         background: linear-gradient(
           to right,
           #ff6442 0%,
-          #ff6442 80%,
-          #fbe1da 80%,
+          #ff6442 40%,
+          #fbe1da 40%,
           #fbe1da 100%
         );
       }
@@ -84,8 +84,8 @@
         background: linear-gradient(
           to right,
           #ff6442 0%,
-          #ff6442 35%,
-          #fbe1da 35%,
+          #ff6442 16%,
+          #fbe1da 16%,
           #fbe1da 100%
         );
       }
@@ -94,8 +94,8 @@
         background: linear-gradient(
           to right,
           #ff6442 0%,
-          #ff6442 55%,
-          #fbe1da 55%,
+          #ff6442 40%,
+          #fbe1da 40%,
           #fbe1da 100%
         );
       }
@@ -157,9 +157,14 @@
       width: fit-content;
       margin: 0 auto;
       padding: 0;
+      gap: 0.5rem;
 
       &__cursor-container {
         min-width: 100%;
+
+        & p {
+          margin-bottom: 0;
+        }
       }
     }
 
