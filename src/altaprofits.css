@@ -178,6 +178,11 @@ h1.--display, h2.--display, h3.--display {
 /*
 Body
 */
+body {
+  background-image: url(/themes/custom/altaprofits/assets/decoration/background.png);
+  background-size: cover;
+  background-repeat-x: no-repeat; }
+
 p, a, li, span, button, input {
   font-family: var(--font-family-body); }
   p.--micro, a.--micro, li.--micro, span.--micro, button.--micro, input.--micro {
@@ -219,5 +224,14 @@ BACKOFFICE
  */
 .toolbar-fixed .header {
   margin-top: 79px; }
+
+.local-tasks ul {
+  margin: 0 auto; }
+.local-tasks li {
+  float: left;
+  list-style-type: none;
+  padding: 15px; }
+.local-tasks a {
+  color: var(--color-primary-50); }
 
 /*# sourceMappingURL=altaprofits.css.map */

@@ -112,3 +112,12 @@
     }
   }
 }
+
+.owl-carousel {
+  .owl-item {
+    float: left;
+  }
+  .owl-stage-outer {
+    overflow: hidden;
+  }
+}

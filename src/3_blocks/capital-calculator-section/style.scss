@@ -1,15 +1,19 @@
 .capital-calculator-section {
   background-color: var(--color-primary-90);
-  width: 100%;
+  width:100%;
 
   &__title {
     font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: var(--font-size-2);
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
     color: var(--color-neutral-0);
+    text-align: center;
+    width:100%;
+    h2{
+      display:inline-block;
+      max-width: 22ch;
+      margin: 60px auto;
+    }
   }
 
   &__cursors-container {
@@ -36,7 +40,7 @@
         font-size: 16px;
         line-height: 22px;
         // text-align: center;
-    color: var(--color-neutral-0);
+        color: var(--color-neutral-0);
         margin-bottom: 1rem;
       }
 
@@ -131,6 +135,8 @@
     letter-spacing: -0.02em;
     color: #ff6442;
     white-space: nowrap;
+    width:100%;
+    text-align:center;
   }
 
   &__btns-container {
@@ -139,7 +145,7 @@
     margin: 0 auto;
     gap: 2rem;
     justify-content: center;
-    margin-bottom: 104px;
+    padding-bottom: 60px;
   }
 }
 

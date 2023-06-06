@@ -20,5 +20,9 @@
   &__logos {
     display: flex;
     flex-wrap: wrap;
+    .logo{
+      width: 128px !important;
+      height: 128px !important;
+    }
   }
 }

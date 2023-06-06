@@ -4,6 +4,7 @@ import wrapper from './wrapper/template.html?raw';
 import homeHeroBanner from './home-hero-banner/template.html?raw';
 import promoBanner from './promo-banner/template.html?raw';
 import companyValueSection from './company-value-section/template.html?raw';
+import adviceIntroSection from './advice-intro-section/template.html?raw';
 import advicesSection from './advices-section/template.html?raw';
 import insurancePartnersSection from './insurance-partners-section/template.html?raw';
 import investmentDisclaimerSection from './investment-disclaimer-section/template.html?raw';
@@ -12,9 +13,11 @@ import reviewsSection from './reviews-section/template.html?raw';
 import partnerNewsSection from './partner-news-section/template.html?raw';
 import heroBanner from './hero-banner/template.html?raw';
 import productInsurancePartnerSection from './product-insurance-partner-section/template.html?raw';
+import brochureSection from './brochure-section/template.html?raw';
 import sincePartnerSection from './since-partner-section/template.html?raw';
 import premiumPartnerSection from './premium-partner-section/template.html?raw';
 import linksSection from './links-section/template.html?raw';
+import productIntroSection from './product-intro-section/template.html?raw';
 import productContractualDocumentationSection from './product-contractual-documentation-section/template.html?raw';
 import productManagementSection from './product-management-section/template.html?raw';
 import productAdvantagesSection from './product-advantages-section/template.html?raw';
@@ -45,6 +48,9 @@ import pilotedGraphSection from './piloted-graph-section/template.html?raw';
 import tabsNavigationSection from './tabs-navigation-section/template.html?raw';
 import whiteBookSection from './white-book-section/template.html?raw';
 import capitalCalculatorSection from './capital-calculator-section/template.html?raw';
+import lexiqueSection from './lexique-section/template.html?raw';
+import stayInformedSection from './stay-informed-section/template.html?raw';
+import contactUsSection from './contact-us-section/template.html?raw';
 
 const blocks = [
   {
@@ -76,6 +82,10 @@ const blocks = [
     template: companyValueSection,
   },
   {
+    name: 'adviceIntroSection',
+    template: adviceIntroSection,
+  },
+  {
     name: 'advicesSection',
     template: advicesSection,
   },
@@ -104,6 +114,10 @@ const blocks = [
     template: heroBanner,
   },
   {
+    name: 'productIntroSection',
+    template: productIntroSection,
+  },
+  {
     name: 'productAdvantagesSection',
     template: productAdvantagesSection,
   },
@@ -114,6 +128,10 @@ const blocks = [
   {
     name: 'productInsurancePartnerSection',
     template: productInsurancePartnerSection,
+  },
+  {
+    name: 'brochureSection',
+    template: brochureSection,
   },
   {
     name: 'sincePartnerSection',
@@ -230,11 +248,24 @@ const blocks = [
     name: 'whiteBookSection',
     template: whiteBookSection,
   },
-
   {
     name: 'capitalCalculatorSection',
     template: capitalCalculatorSection,
   },
+  {
+    name: 'lexiqueSection',
+    template: lexiqueSection,
+  },
+  {
+    name: 'stayInformedSection',
+    drupalTemplate: 'paragraph--ap-content--restez-informe',
+    template: stayInformedSection,
+  },
+  {
+    name: 'contactUsSection',
+    drupalTemplate: 'paragraph--ap-content--contactez-nous',
+    template: contactUsSection,
+  }
 ];
 
 export default blocks;
