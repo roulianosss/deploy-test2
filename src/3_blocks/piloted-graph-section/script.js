@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const defaultData = [
       [
         {
-          conditions:
-            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 3 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
-        },
-        {
           titre: "Sur 3 ans",
           percentage: 3.3,
           description: "Profil 1<br>Lazard Frères Gestion<br>SRI 3",
@@ -27,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Conviction<br>Generali Wealth Solutions<br>SRI 5",
           condition:
             "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : performances des profils depuis l’origine de 2006 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
+        },
+        {
+          conditions:
+            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 3 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
         }
       ],
       [
-        {
-          conditions:
-            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 5 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
-        },
         {
           percentage: 5.3,
           description: "Profil 1<br>Lazard Frères Gestion<br>SRI 3"
@@ -45,14 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           percentage: 15.8,
           description: "Conviction<br>Generali Wealth Solutions<br>SRI 5"
+        },
+        {
+          conditions:
+            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : 5 ans annualisés courant de 2018 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
         }
       ],
       [
-        {
-          conditions:
-            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : performances des profils depuis l’origine de 2006 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
-        },
-
         {
           percentage: 7.3,
           description: "Profil 1<br>Lazard Frères Gestion<br>SRI 3"
@@ -64,6 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           percentage: 16.9,
           description: "Conviction<br>Generali Wealth Solutions<br>SRI 5"
+        },
+        {
+          conditions:
+            "Profils de gestion pilotée, sur les conseils de Lazard Frères Gestion, pour le contrat Altaprofits Vie. Période de performances : performances des profils depuis l’origine de 2006 à 2021. L’investissement sur les supports en unités de compte supporte un risque de perte en capital puisque leur valeur est sujette à fluctuation à la hausse comme à la baisse dépendant notamment de l’évolution des marchés financiers. Avant d’investir, il est recommandé d’établir son profil investisseur."
         }
       ]
     ];
@@ -90,6 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     element.innerHTML = "";
     header.forEach((donnee, i) => {
+      if (i === 3) return;
+      console.log(donnee, i);
       let active =
         donnee["active"] == 1
           ? "piloted-graph-section__btns-container__btn--active"
@@ -113,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     allGraphBtns.forEach((btn, index) => {
+      if (index === 3) return
       btn.innerHTML = data[0][index]["titre"];
     });
     /* */
@@ -131,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const btnActive = this.getAttribute("data-attr");
       const maxPercentage =
-        data[btnActive][data[btnActive].length - 1].percentage;
+        data[btnActive][data[btnActive].length - 2].percentage;
       const condition = data[0][btnActive].condition;
       const conditionsText = document.querySelector(
         ".piloted-graph-section__conditions p"
@@ -139,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
       conditionsText.textContent = condition;
 
       data[btnActive].forEach((graphBar, index) => {
+        if (index === 3) return;
         const graphBarHeight = (graphBar.percentage * 100) / maxPercentage;
         graphContainer.innerHTML += `
     <div
@@ -175,13 +178,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       switch (btnActive) {
         case "0":
-          conditionsText.textContent = conditionsData.threeYear;
+          conditionsText.textContent = data[0][3].conditions;
           break;
         case "1":
-          conditionsText.textContent = conditionsData.fiveYear;
+          conditionsText.textContent = data[1][3].conditions;
           break;
         case "2":
-          conditionsText.textContent = conditionsData.origin;
+          conditionsText.textContent = data[2][3].conditions;
           break;
         default:
           break;
@@ -208,8 +211,9 @@ document.addEventListener("DOMContentLoaded", function () {
       updateValue();
     }
 
-    const maxPercentage = data[1][data[1].length - 1].percentage;
-    data[1].forEach((graphBar) => {
+    const maxPercentage = data[1][data[1].length - 2].percentage;
+    data[1].forEach((graphBar, index) => {
+      if (index === 3) return;
       const graphBarHeight = (graphBar.percentage * 100) / maxPercentage;
       graphContainer.innerHTML += `
     <div
